@@ -20,6 +20,7 @@
     <object>objects\obj_player_wheel</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_orb</object>
+    <object>objects\player_parent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>player_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -61,6 +61,9 @@ timer = 1000;
 
 //COLLISSION CHECK
 rifthit = false;
+
+//OBJECT FADE AWAY
+image_alpha= 1;
 </string>
           </argument>
         </arguments>
@@ -150,12 +153,21 @@ sparking = random_range(1,10);
   if(sparking &lt; 4)part_particles_create(global.P_System, x-10, y+20, global.Particle1, 75);
   };
   
-  if(place_meeting(x,y, obj_orb)){
+ 
+  
+    if(place_meeting(x,y, obj_orb)){
    rifthit = true;
  } 
    if(rifthit == true) {
-    if image_alpha &gt; 0 image_alpha-=0.02;
+    image_alpha -= 0.04;
    }
+   
+   if image_alpha&lt;= 0{
+   instance_destroy();
+   instance_create(x,y, obj_player_wheel);
+   }
+   
+   
    
      show_debug_message(image_alpha);
   
