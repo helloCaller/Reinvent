@@ -11,26 +11,6 @@
     <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
-        <id>321</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_message</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>THE END!!</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -45,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
