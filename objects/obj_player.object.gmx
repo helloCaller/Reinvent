@@ -154,7 +154,7 @@ sparking = random_range(1,10);
    rifthit = true;
  } 
    if(rifthit == true) {
-    if image_alpha &gt; -3 image_alpha-=0.02;
+    if image_alpha &gt; 0 image_alpha-=0.02;
    }
    
      show_debug_message(image_alpha);
