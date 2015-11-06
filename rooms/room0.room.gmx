@@ -156,60 +156,7 @@
     <instance objName="obj_wall" x="352" y="320" name="inst_A72C04F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="384" y="320" name="inst_D1C9A755" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles>
-    <tile bgName="prehistoric_tiles" x="1120" y="432" w="32" h="48" xo="0" yo="0" id="10000272" name="inst_E338BD81" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="1088" y="432" w="32" h="48" xo="0" yo="0" id="10000274" name="inst_09AD568C" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="1056" y="432" w="32" h="48" xo="0" yo="0" id="10000275" name="inst_51788D79" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="1024" y="432" w="32" h="48" xo="0" yo="0" id="10000276" name="inst_A528629B" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="992" y="432" w="32" h="48" xo="0" yo="0" id="10000277" name="inst_B3F50A5D" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="960" y="432" w="32" h="48" xo="0" yo="0" id="10000278" name="inst_87637FDC" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="928" y="432" w="32" h="48" xo="0" yo="0" id="10000279" name="inst_C1D40EA9" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="896" y="432" w="32" h="48" xo="0" yo="0" id="10000280" name="inst_ED2AEA9E" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="864" y="432" w="32" h="48" xo="0" yo="0" id="10000281" name="inst_C1848511" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="832" y="432" w="32" h="48" xo="0" yo="0" id="10000282" name="inst_4CCF9E01" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="800" y="432" w="32" h="48" xo="0" yo="0" id="10000285" name="inst_3A62C1A4" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="768" y="432" w="32" h="48" xo="0" yo="0" id="10000286" name="inst_1B2B1428" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="736" y="432" w="32" h="48" xo="0" yo="0" id="10000287" name="inst_DE48F26A" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="704" y="432" w="32" h="48" xo="0" yo="0" id="10000288" name="inst_FC715113" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="672" y="432" w="32" h="48" xo="0" yo="0" id="10000289" name="inst_EFC83A96" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="640" y="432" w="32" h="48" xo="0" yo="0" id="10000290" name="inst_497B383D" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="608" y="432" w="32" h="48" xo="0" yo="0" id="10000291" name="inst_E8B10F77" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="576" y="432" w="32" h="48" xo="0" yo="0" id="10000292" name="inst_3186ED84" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="544" y="432" w="32" h="48" xo="0" yo="0" id="10000293" name="inst_1AD24F69" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="512" y="432" w="32" h="48" xo="0" yo="0" id="10000294" name="inst_93831BF9" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="480" y="432" w="32" h="48" xo="0" yo="0" id="10000295" name="inst_5099977D" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="448" y="432" w="32" h="48" xo="0" yo="0" id="10000296" name="inst_64F6B5CD" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="416" y="432" w="32" h="48" xo="0" yo="0" id="10000297" name="inst_F4854169" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="384" y="432" w="32" h="48" xo="0" yo="0" id="10000298" name="inst_A186B3B4" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="320" y="432" w="32" h="48" xo="0" yo="0" id="10000301" name="inst_933A778C" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="352" y="432" w="32" h="48" xo="0" yo="0" id="10000302" name="inst_60387CB2" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="288" y="432" w="32" h="48" xo="0" yo="0" id="10000303" name="inst_0624387B" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="256" y="432" w="32" h="48" xo="0" yo="0" id="10000304" name="inst_A8B60AE0" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="224" y="432" w="32" h="48" xo="0" yo="0" id="10000305" name="inst_2657CE90" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="192" y="432" w="32" h="48" xo="0" yo="0" id="10000306" name="inst_B6FBBC7F" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="160" y="432" w="32" h="48" xo="0" yo="0" id="10000309" name="inst_B60B542C" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="128" y="432" w="32" h="48" xo="0" yo="0" id="10000310" name="inst_0E9D530C" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="96" y="432" w="32" h="48" xo="0" yo="0" id="10000311" name="inst_97D90E7B" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="64" y="432" w="32" h="48" xo="0" yo="0" id="10000313" name="inst_0C72C7E5" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="32" y="432" w="32" h="48" xo="0" yo="0" id="10000314" name="inst_332B3C29" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="0" y="432" w="32" h="48" xo="0" yo="0" id="10000315" name="inst_66582A19" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="1152" y="417" w="32" h="64" xo="0" yo="0" id="10000316" name="inst_F2220519" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="backgroundfish" x="608" y="352" w="16" h="16" xo="64" yo="16" id="10000321" name="inst_15DF4EBF" depth="200000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="224" y="400" w="128" h="32" xo="64" yo="32" id="10000358" name="inst_FFC2D660" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="480" y="400" w="128" h="32" xo="64" yo="32" id="10000361" name="inst_C1D9DBBE" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="608" y="400" w="128" h="32" xo="64" yo="32" id="10000362" name="inst_FAD7604D" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="992" y="400" w="128" h="32" xo="64" yo="32" id="10000363" name="inst_93384E38" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="0" y="400" w="128" h="32" xo="64" yo="32" id="10000348" name="inst_BD47B630" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="128" y="400" w="128" h="32" xo="64" yo="32" id="10000349" name="inst_B4F70883" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="256" y="400" w="128" h="32" xo="64" yo="32" id="10000350" name="inst_38DE3A86" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="384" y="400" w="128" h="32" xo="64" yo="32" id="10000351" name="inst_699636A2" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="512" y="400" w="128" h="32" xo="64" yo="32" id="10000352" name="inst_F002D482" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="640" y="400" w="128" h="32" xo="64" yo="32" id="10000353" name="inst_70B80A09" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="768" y="400" w="128" h="32" xo="64" yo="32" id="10000354" name="inst_579565E3" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="896" y="400" w="128" h="32" xo="64" yo="32" id="10000355" name="inst_D2D041CD" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prehistoric_tiles" x="1024" y="400" w="128" h="32" xo="64" yo="32" id="10000356" name="inst_53B57F4B" depth="19000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="backgroundfish" x="206" y="272" w="400" h="160" xo="0" yo="0" id="10000364" name="inst_B88DD072" depth="18000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

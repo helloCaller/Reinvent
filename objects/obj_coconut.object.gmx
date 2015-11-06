@@ -31,6 +31,10 @@ grav = 0.4;
 hsp = 0;
 //vertical speed
 vsp = 0;
+
+
+bounceheight = 100;
+checkbounce = false;
 </string>
           </argument>
         </arguments>
@@ -53,89 +57,53 @@ vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(vsp &gt; 10){
-vsp += grav;
+            <string>if(place_meeting(x,y,obj_player)){
+vsp+=grav;
+
 }
 
-if(place_meeting(x,y-1, obj_wall)){
-vsp = key_jump * -jumpspeed;
+//tring to get a gradually decreasing bounce
+
+//if(place_meeting(x,y+hsp,obj_wall)){
+//while(!place_meeting(x,y+sign(hsp),obj_wall))
+  //  {
+    // y += sign(hsp);
+    // }
+     //if( y &gt; bounceheight){ 
+     //vsp -= 5;
+     //bounceheight -= 50;
+    //checkbounce = true;
+    //} else {
+    //vsp +=5
+    //}
+//}
+//show_debug_message(bounceheight);
+//if(vsp == bounceheight &amp;&amp; checkbounce == true){ 
+//show_debug_message(vsp);
+//show_debug_message("I should fall");
+//vsp = 0;
+//vsp += grav;
+//hsp -=1;
+
+//}
+
+
+if(place_meeting(x,y+hsp,obj_wall)){
+while(!place_meeting(x,y+sign(hsp),obj_wall))
+   {
+    y += sign(hsp);
+     }
+     vsp = 0;
+     hsp -= 3;
 }
+
 
 x+= hsp;
 y+= vsp;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000100000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>010000000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_debug_message("hit");
+show_debug_message(checkbounce);
+show_debug_message(vsp);
+
+
 </string>
           </argument>
         </arguments>
