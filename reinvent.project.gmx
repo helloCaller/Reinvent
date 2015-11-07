@@ -12,6 +12,8 @@
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_player_wheel</sprite>
     <sprite>sprites\spr_coconut</sprite>
+    <sprite>sprites\spr_player_grapple</sprite>
+    <sprite>sprites\spr_hook</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -23,11 +25,12 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_player_wheel</object>
+    <object>objects\obj_player_grapple</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_coconut</object>
     <object>objects\obj_breakable_wall</object>
     <object>objects\obj_orb</object>
-    <object>objects\player_parent</object>
+    <object>objects\obj_playerParent</object>
     <object>objects\obj_camera</object>
   </objects>
   <rooms name="rooms">
