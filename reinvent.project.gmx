@@ -32,6 +32,7 @@
     <object>objects\obj_orb</object>
     <object>objects\obj_playerParent</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_background</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
