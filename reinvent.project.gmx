@@ -16,10 +16,12 @@
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_wheels</sprite>
     <sprite>sprites\spr_player_spring_idle</sprite>
+    <sprite>sprites\spr_caveman_fish</sprite>
+    <sprite>sprites\spr_treeleaf</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
-    <background>background\tile_fish</background>
+    <background>background\fish</background>
     <background>background\tile_prehistoric</background>
     <background>background\tile_tree</background>
   </backgrounds>
@@ -29,12 +31,15 @@
     <object>objects\obj_player_wheel</object>
     <object>objects\obj_player_grapple</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_static</object>
     <object>objects\obj_coconut</object>
     <object>objects\obj_breakable_wall</object>
     <object>objects\obj_orb</object>
     <object>objects\obj_playerParent</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_background</object>
+    <object>objects\obj_caveman_fish</object>
+    <object>objects\obj_treeleaf</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

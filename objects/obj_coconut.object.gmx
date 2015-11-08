@@ -3,7 +3,7 @@
   <spriteName>spr_coconut</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,16 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
-grav = 0.8;
+grav = 1;
 //horizontal speed
 hsp = 0;
 //vertical speed
 vsp = 0;
 
 
- bounceheight = 250;
+ bounceheight = 600;
  checkbounce = false;
  cocohit = false;
+ bouncing = true;
+ 
+ image_angle = direction;
 </string>
           </argument>
         </arguments>
@@ -60,37 +63,52 @@ vsp = 0;
             <kind>1</kind>
             <string>
 
-if(place_meeting(x,y,obj_playerParent) &amp;&amp; cocohit = false){
+
+if(place_meeting(x,y,obj_playerParent) and cocohit = false){
 vsp+=grav;
 cocohit = true;
 }
 
+
+if( bounceheight &gt;= 690 ){
+bouncing = false;
+vsp = 0;
+vsp += grav;
+hsp = 0;
+};
+
 //tring to get a gradually decreasing bounce
-if(cocohit = true &amp;&amp; place_meeting(x,y+vsp,obj_wall)){
+if(place_meeting(x,y+vsp,obj_wall)){
 while(!place_meeting(x,y+sign(vsp),obj_wall))
     {
      y += sign(vsp);
     }
-     
-     vsp = 0;
-     if(y &gt; bounceheight){
-     vsp -= grav;
-     
-     
-     bounceheight += 50;
     
-    }else if(y == bounceheight){
-    vsp = 0;
-    } else{
-     vsp +=grav;
-    }
+     vsp = 0;
+     if(bouncing = true){
+     vsp -= grav;
+     checkbounce = true;
+     bounceheight += 10;
+    hsp -= 0.05;
+     
+     
+     }
 }
 
+if(checkbounce == true &amp;&amp; floor(y) == bounceheight){
+vsp = 0;
+show_debug_message("ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+vsp+=grav*1.5;
+
+} 
 
 
 
-
-
+ show_debug_message(bounceheight);
+image_angle = direction;
+if(vsp!= 0){
+direction ++
+}
 
 x+= hsp;
 y+= vsp;

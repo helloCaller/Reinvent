@@ -110,13 +110,13 @@ vsp += grav;
 
 }
 
-if(place_meeting(x,y+1, obj_wall)){
+if(place_meeting(x,y+1, obj_static)){
 vsp = key_jump * -jumpspeed;
 }
 //horizontal collision
-if(place_meeting(x+hsp,y,obj_wall))
+if(place_meeting(x+hsp,y,obj_static))
 {
-    while(!place_meeting(x+sign(hsp),y,obj_wall))
+    while(!place_meeting(x+sign(hsp),y,obj_static))
     {
      x += sign(hsp);
      }
@@ -125,8 +125,8 @@ if(place_meeting(x+hsp,y,obj_wall))
 }
 
 //vertical wall collision
-if(place_meeting(x, y+vsp, obj_wall)){
-    while(!place_meeting(x,y+sign(vsp),obj_wall)){
+if(place_meeting(x, y+vsp, obj_static)){
+    while(!place_meeting(x,y+sign(vsp),obj_static)){
      y+= sign(vsp);
      }
      vsp=0;
@@ -193,7 +193,8 @@ sparking = random_range(1,10);
         }
    }
   
-   } else {
+   } else { 
+   //add jump code here
    image_speed=0.5
    }
 
