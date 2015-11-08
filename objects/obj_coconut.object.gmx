@@ -60,7 +60,7 @@ vsp = 0;
             <kind>1</kind>
             <string>
 
-if(place_meeting(x,y,obj_player) &amp;&amp; cocohit = false){
+if(place_meeting(x,y,obj_playerParent) &amp;&amp; cocohit = false){
 vsp+=grav;
 cocohit = true;
 }

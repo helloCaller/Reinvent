@@ -145,7 +145,7 @@ y += vsp;
  view_yview += YscrollSpeed;
 
 //IF PLAYER GOES OFF THE MAP
-if(obj_player_wheel.y &gt; room_height+100){
+if(obj_player_grapple.y &gt; room_height+100){
 show_message("falling...falling....falling..splat");
 game_restart();
 

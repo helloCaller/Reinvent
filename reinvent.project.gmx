@@ -8,12 +8,14 @@
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
-    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_player_spring</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_player_wheel</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
+    <sprite>sprites\spr_wheels</sprite>
+    <sprite>sprites\spr_player_spring_idle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -23,7 +25,7 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_player</object>
+    <object>objects\obj_player_spring</object>
     <object>objects\obj_player_wheel</object>
     <object>objects\obj_player_grapple</object>
     <object>objects\obj_wall</object>
