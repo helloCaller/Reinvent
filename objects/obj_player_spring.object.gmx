@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
+
 grav = 0.4;
 //horizontal speed
 hsp = 0;
@@ -37,6 +38,8 @@ movespeed = 2;
 //scroll
 
 YscrollSpeed = 4; 
+
+movespeed = 2;
 
 global.P_System=part_system_create();
 global.Particle1=part_type_create();
@@ -91,6 +94,7 @@ onground = false;
             <kind>1</kind>
             <string>///STEP CODE
 
+//Keyboard commands
 //End game
 if(keyboard_check(vk_escape)){
 game_end();
@@ -98,7 +102,11 @@ game_end();
 //Get player input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(ord("Z"));
+
+
+
+
 
 
 //React to inputs
@@ -141,15 +149,7 @@ y += vsp;
 
  view_yview += YscrollSpeed;
 
-//IN CASE PLAYER FALLS
-if(obj_player_spring.y &gt; room_height+100){
-show_message("falling...falling....falling..splat");
-//destroy particle system
 
-game_restart();
-
-
-};
 
 
 //THIS FLIPS SPRITE
@@ -163,16 +163,8 @@ sparking = random_range(1,10);
   if(sparking &lt; 4)part_particles_create(global.P_System, x-10, y+20, global.Particle1, 75);
   };
   
- 
-  
-    if(place_meeting(x,y, obj_orb)){
-   rifthit = true;
- } 
-   if(rifthit == true) {
-    image_alpha -= 0.04;
-   }
-   
-   if image_alpha&lt;= 0{
+ if(keyboard_check_released(ord("S"))){
+
    instance_destroy();
    instance_create(x,y, obj_player_wheel);
    }
@@ -198,6 +190,8 @@ sparking = random_range(1,10);
    image_speed=0.5
    }
 
+   
+   
 </string>
           </argument>
         </arguments>

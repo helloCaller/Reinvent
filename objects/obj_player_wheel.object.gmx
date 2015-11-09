@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
+
 grav = 0.4;
 //horizontal speed
 hsp = 0;
@@ -44,7 +45,10 @@ image_speed = 0;
 facing =1;
 
 //boolean to check if drilling is happening
+movespeed = 5;
 drill= false
+
+onground = false;
 </string>
           </argument>
         </arguments>
@@ -95,10 +99,18 @@ drill= false
           <argument>
             <kind>1</kind>
             <string>///STEP CODE
+
+//Keyboard commands
 //Get player input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(ord("Z"));
+
+
+
+if(keyboard_check(vk_escape)){
+game_end();
+}
 
 
 //React to inputs
@@ -134,7 +146,7 @@ if(place_meeting(x, y+vsp, obj_static)){
      y+= sign(vsp);
      }
      vsp=0;
-
+onground=true;
 }
 
 
@@ -142,21 +154,41 @@ if(place_meeting(x, y+vsp, obj_static)){
 x += hsp;
 y += vsp;
 
- view_yview += YscrollSpeed;
+view_yview += YscrollSpeed;
 
-//IF PLAYER GOES OFF THE MAP
-if(obj_player_wheel.y &gt; room_height+100){
-show_message("falling...falling....falling..splat");
-game_restart();
 
-}
 
 //THIS FLIPS SPRITE
 if(keyboard_check_pressed(vk_right))facing = 1;
 if(keyboard_check_pressed(vk_left))facing = -1;
 
+//SWITCHES TO NEXT SPRITE
+ if(keyboard_check_released(ord("S"))){
 
+   instance_destroy();
+   instance_create(x,y, obj_player_grapple);
+   }
+
+
+  if(onground){
+        if(hsp==0){
+    sprite_index = spr_wheels;
+   image_speed = 0.5;
+   } else {
+   image_speed = 0.5;
+   //so as to restart image_index from 0
+        if(floor(sprite_index)!=spr_wheels){
+            image_index = 0;
+            sprite_index = spr_wheels;
+            
+        }
+   }
   
+   } else { 
+   //add jump code here
+   image_speed=0.5
+   }
+
  
   
   

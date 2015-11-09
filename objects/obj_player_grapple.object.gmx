@@ -95,10 +95,19 @@ drill= false
           <argument>
             <kind>1</kind>
             <string>///STEP CODE
+
+
+//Keyboard commands
 //Get player input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(ord("Z"));
+
+
+
+if(keyboard_check(vk_escape)){
+game_end();
+}
 
 
 //React to inputs
@@ -144,18 +153,17 @@ y += vsp;
 
  view_yview += YscrollSpeed;
 
-//IF PLAYER GOES OFF THE MAP
-if(obj_player_grapple.y &gt; room_height+100){
-show_message("falling...falling....falling..splat");
-game_restart();
 
-}
 
 //THIS FLIPS SPRITE
 if(keyboard_check_pressed(vk_right))facing = 1;
 if(keyboard_check_pressed(vk_left))facing = -1;
 
-
+//SWITCHES TO NEXT SPRITE
+if(keyboard_check_released(ord("S"))){
+instance_destroy();
+instance_create(x,y, obj_player_spring)
+}
   
  
   
