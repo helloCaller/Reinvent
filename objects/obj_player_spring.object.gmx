@@ -72,32 +72,24 @@ if inCutscene = 0{
 //sets up movement to be equal to which direction is being pressed
 move = key_left + key_right;
 hsp = move * movespeed;
-if(vsp &lt; 10){ 
-vsp += grav;
 
-}
+//Jump
+if onground{
+    if key_jump{
+        vsp = -jumpspeed;
+        onground = false;}}
 
-if(place_meeting(x,y+1, obj_static)){
-vsp = key_jump * -jumpspeed;
-}
-//horizontal collision
-if(place_meeting(x+hsp,y,obj_static))
-{
-    while(!place_meeting(x+sign(hsp),y,obj_static))
-    {
-     x += sign(hsp);
-     }
-     hsp = 0;
+//No longer on ground
+if onground{
+    if !place_meeting(x,y+1,obj_wall){
+        onground = false;}}
 
-}
+//Gravity
+if onground = 1{
+    grav = 0;}
+else grav = 0.4;    
 
 
-
-
-x += hsp;
-y += vsp;
-
- view_yview += YscrollSpeed;
 
 //IN CASE PLAYER FALLS
 if(obj_player_spring.y &gt; room_height+100){
@@ -131,6 +123,34 @@ sparking = random_range(1,10);
    }
   
    
+
+   
+//Collision
+//Floor
+if vsp &gt; 0{
+    if place_meeting(x,y+vsp+grav,obj_wall){
+        move_contact_solid(270,32);
+        onground = 1;
+        grav = 0;
+        vsp = 0;}}
+        
+//Ceiling
+if vsp &lt; 0{
+    if place_meeting(x,y+vsp+grav,obj_wall){
+        move_contact_solid(90,32);
+        vsp = 0;}}
+        
+//horizontal collision
+if hsp != 0{
+    if(place_meeting(x+hsp,y,obj_wall)){
+        move_contact_solid(90-sign(hsp)*90,32);
+        hsp = 0;}}        
+   
+if vsp &lt; 10 then vsp += grav;
+else vsp = 10;
+x += hsp;
+y += vsp;
+
    //movement animation 
    if(onground){
         if(hsp==0){
@@ -150,17 +170,6 @@ sparking = random_range(1,10);
    //add jump code here
    image_speed=0.5
    }
-
-   
-//vertical wall collision
-if(place_meeting(x, y+vsp, obj_wall)){
-    while(!place_meeting(x,y+sign(vsp),obj_static)){
-     y+= sign(vsp);
-     }
-     vsp=0;
-    onground=true;
-}
-else onground = false;
 </string>
           </argument>
         </arguments>
