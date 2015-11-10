@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\mp3_prehistoric</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_misc_indicator</sprite>
@@ -18,6 +20,7 @@
     <sprite>sprites\spr_wheels</sprite>
     <sprite>sprites\spr_player_spring_idle</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
+    <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
   </sprites>
@@ -35,6 +38,7 @@
       <object>objects\obj_player_wheel</object>
       <object>objects\obj_player_grapple</object>
     </objects>
+    <object>objects\obj_music</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_static</object>
     <object>objects\obj_breakable_wall</object>

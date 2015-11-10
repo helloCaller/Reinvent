@@ -29,6 +29,7 @@
 state = "in tree";
 gravity = 0;
 rotation = 0;
+cavemanTimer = 120;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,11 @@ rotation = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/////////////
+            <string>//////////////////////
+// Caveman Cutscene //
+//////////////////////
+
+/////////////
 // Falling //
 /////////////
 if state = "falling"{
@@ -83,9 +88,38 @@ if state = "rolling"{
 // Sitting //
 /////////////
 if state = "sitting"{
-    inCutscene = 0;
     hspeed = 0;
-    camera_target = obj_player_parent;} //More later
+    //Caveman waiting
+    if cavemanTimer &gt; 0{
+        cavemanTimer --;
+        if cavemanTimer = 100{
+            //lightbulb goes here}
+            }
+            //Caveman begins walking off screen
+        if cavemanTimer = 0{
+            obj_caveman_fish.state = "walking";
+            state = "caveman walking";}}}
+            
+/////////////////////////
+// Caveman Walking Off //
+/////////////////////////
+if state = "caveman walking"{
+    obj_caveman_fish.hspeed = 2;
+    obj_caveman_fish.image_xscale = 1;
+    if obj_caveman_fish.x &gt; view_xview + view_wview + 100{
+        state = "caveman walking back";}}
+        
+//////////////////////////
+// Caveman Walking Back //
+//////////////////////////
+if state = "caveman walking back"{
+    obj_caveman_fish.hspeed = -2;
+    obj_caveman_fish.image_xscale = -1;
+    if abs(obj_caveman_fish.x - obj_caveman_fish.startX) &lt; 2{
+        inCutscene = 0;
+        camera_target = obj_player_parent;
+        obj_caveman_fish.hspeed = 0;
+        state = "";}}
 </string>
           </argument>
         </arguments>
