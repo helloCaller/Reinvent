@@ -44,7 +44,6 @@
     <object>objects\obj_static</object>
     <object>objects\obj_breakable_wall</object>
     <object>objects\obj_orb</object>
-    <object>objects\obj_playerParent</object>
     <object>objects\obj_global</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_background</object>

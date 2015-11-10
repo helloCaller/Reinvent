@@ -80,13 +80,15 @@
 
 ///STEP CODE
 //Get player input
+/*
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
-
+*/
 
 //React to inputs
 //sets up movement to be equal to which direction is being pressed
+/*
 move = key_left + key_right;
 hsp = move * movespeed;
 if(vsp &lt; 10){ 
@@ -126,19 +128,24 @@ if(place_meeting(x, y+vsp, obj_static)){
 x += hsp;
 y += vsp;
 
- view_yview += YscrollSpeed;
+
 
 //IF PLAYER GOES OFF THE MAP
 if(obj_player_wheel.y &gt; room_height+100){
-show_message("falling...falling....falling..splat");
 game_restart();
 
 }
+*/
+if(keyboard_check_pressed(ord('S'))){
+   instance_destroy();
+   instance_create(x,y, obj_player_grapple);
+   }
 
 //THIS FLIPS SPRITE
+/*
 if(keyboard_check_pressed(vk_right))facing = 1;
 if(keyboard_check_pressed(vk_left))facing = -1;
-
+*/
 
   
  
