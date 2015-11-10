@@ -40,9 +40,6 @@
       <object>objects\obj_player_grapple</object>
     </objects>
     <object>objects\obj_music</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_static</object>
-    <object>objects\obj_breakable_wall</object>
     <object>objects\obj_orb</object>
     <object>objects\obj_global</object>
     <object>objects\obj_camera</object>
@@ -57,6 +54,12 @@
     </objects>
     <object>objects\obj_death_block</object>
     <object>objects\obj_water</object>
+    <objects name="walls">
+      <object>objects\obj_static</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_breakable_wall</object>
+    </objects>
+    <object>objects\obj_hook</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
