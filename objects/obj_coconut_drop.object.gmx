@@ -31,7 +31,8 @@
 var player = instance_place(x,y-1,obj_player_parent);
 if player != noone{
     if player.onground = 1{
-        obj_coconut.state = "falling";}}
+        obj_coconut.state = "falling";
+        instance_destroy();}}
 </string>
           </argument>
         </arguments>
