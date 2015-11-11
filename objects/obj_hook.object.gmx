@@ -164,8 +164,11 @@ y+=vsp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(c_black);
-draw_line(x,y, obj_player_grapple.x, obj_player_grapple.y);
+            <string>
+draw_set_colour(c_black);
+draw_line_width( x, y, obj_player_grapple.x, obj_player_grapple.y, 3);
+
+draw_sprite(spr_hook, 0, obj_player_grapple.x, obj_player_grapple.y);
 </string>
           </argument>
         </arguments>
