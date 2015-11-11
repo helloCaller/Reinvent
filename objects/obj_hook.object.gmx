@@ -63,13 +63,22 @@ state = " ";
           <argument>
             <kind>1</kind>
             <string>
+
+
 //Trying out states..This one is for when the hook is shot
 if state = "shootgrapple"{
-    obj_player_parent.inCutscene = 1;
+//I thought this would stop the player from moving
+    obj_player_grapple.inCutscene = 1;
+//but I had to add this
+if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
+    state = "finishgrapple";
+    }
+    
+    
     vsp -=3;
     camera_target = obj_hook;
 
-    if place_meeting(x,y+vsp,obj_static){ 
+if place_meeting(x,y+vsp,obj_static){ 
         move_contact_solid(90,-1);
         vsp=0;
         hookhit = true;
@@ -90,6 +99,12 @@ dist = point_distance(x,y, obj_player_parent.x, obj_player_parent.y);
     state="finishgrapple";
     }
     
+    //if player moves too far left or right while grappling it disengages
+    
+    if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
+    state = "finishgrapple";
+    }
+    
 }
         
  
@@ -100,6 +115,7 @@ dist = point_distance(x,y, obj_player_parent.x, obj_player_parent.y);
     
     camera_target = obj_player_parent;
     obj_player_grapple.inCutscene = 0;
+ 
     instance_destroy();
     
     state = " ";
@@ -109,20 +125,47 @@ dist = point_distance(x,y, obj_player_parent.x, obj_player_parent.y);
 
 
 if(hookhit == true){
-if timer &gt; 0 {
- timer --;
- } else {
- state = "grappling"
+    if (timer &gt; 0) {
+    timer --;
  }
+ 
+    if(timer &lt;= 0){
+    hookhit = false;
+    timer = 80;
+    state = "grappling";
+    
+    }
 }
 
  
-
 show_debug_message(state);
 
 
-
 y+=vsp;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_colour(c_black);
+draw_line(x,y, obj_player_grapple.x, obj_player_grapple.y);
 </string>
           </argument>
         </arguments>
