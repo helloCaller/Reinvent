@@ -31,7 +31,7 @@
 
 //slow player down
 movespeed = 2;
- onground = true;
+
 
 
 
@@ -139,7 +139,7 @@ sparking = random_range(1,10);
   
    
    //movement animation 
-   
+   if(onground){
         if(hsp==0){
     sprite_index = spr_player_spring_idle;
    image_speed = 0.5;
@@ -149,16 +149,15 @@ sparking = random_range(1,10);
         if(floor(sprite_index)!=spr_player_spring){
             image_index = 0;
             sprite_index = spr_player_spring;
-            image_speed = 0.5;
              }
         }
   
-    
+   } else { 
    //add jump code here
-   
-   
+   image_speed=0.5
+   }
 
-   show_debug_message(hsp);
+   
 //vertical wall collision
 
 /*

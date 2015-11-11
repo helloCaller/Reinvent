@@ -12,20 +12,18 @@
     <sprite>sprites\spr_misc_indicator</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
+    <sprite>sprites\spr_player_spring</sprite>
     <sprite>sprites\spr_player_wheel</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_wheels</sprite>
+    <sprite>sprites\spr_player_spring_idle</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
     <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_flippable_wall</sprite>
-    <sprites name="player_squares">
-      <sprite>sprites\spr_player_spring_idle</sprite>
-      <sprite>sprites\spr_player_spring</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>

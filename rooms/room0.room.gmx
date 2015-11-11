@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_camera" x="32" y="32" name="inst_7D1CBEC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_background" x="96" y="32" name="inst_A519F633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_spring" x="512" y="702" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_spring" x="512" y="704" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coconut_drop" x="639" y="608" name="inst_4AA5BDA1" locked="0" code="" scaleX="3.09677410125732" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="656" y="608" name="inst_47512D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="736" name="inst_8999939E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
