@@ -169,9 +169,9 @@ if(place_meeting(x+hsp,y,obj_static)){
      hsp = 0;
 }
 
-//Apply verticle and horizontal speed 
+//Apply horizontal speed 
 x += hsp;
-y += vsp;
+
 
 //vertical wall collision
 if(place_meeting(x, y+vsp, obj_wall)){
@@ -182,8 +182,8 @@ if(place_meeting(x, y+vsp, obj_wall)){
     onground=true;
 } else onground = false;
 
-
-
+//Apply verticle speed
+y += vsp;
 </string>
           </argument>
         </arguments>
