@@ -100,25 +100,30 @@ dist = point_distance(x, y, obj_hook.x, obj_hook.y);
 if(keyboard_check_pressed(vk_up)){
 instance_create(x,y, obj_hook);
 obj_hook.state = "shootgrapple";
+
 }
 
 if(instance_exists(obj_hook)){
- if (obj_hook.state = "grappling"){
-dist = point_distance(x, y, obj_hook.x, obj_hook.y);
-  if(dist&gt;0){
-    move_towards_point(obj_hook.x, obj_hook.y, 10);
-  } else{
-  speed = 0;
-  }
-   show_debug_message(dist);
-    }
- 
- 
- }
- 
+if(keyboard_check(ord("Z"))){
+obj_hook.state= "finishgrapple";
+}}
 
-
-
+/*
+if(instance_exists(obj_hook)){
+if obj_hook.state = "grappling"{
+dist = distance_to_point(obj_hook.x, obj_hook.y);
+if(dist &gt; 0){
+move_towards_point(obj_hook.x, obj_hook.y, 10);
+}
+  } 
+}
+ */ 
+  
+  
+ 
+  
+  
+    
 if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_spring);

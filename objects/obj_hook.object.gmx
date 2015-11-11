@@ -63,36 +63,49 @@ state = " ";
           <argument>
             <kind>1</kind>
             <string>
-
+//Trying out states..This one is for when the hook is shot
 if state = "shootgrapple"{
-obj_player_parent.inCutscene = 1;
-vsp -=3;
-camera_target = obj_hook;
+    obj_player_parent.inCutscene = 1;
+    vsp -=3;
+    camera_target = obj_hook;
 
-
- if place_meeting(x,y+vsp+grav,obj_static){ 
-        hookhit = true;
+    if place_meeting(x,y+vsp,obj_static){ 
         move_contact_solid(90,-1);
         vsp=0;
-     } 
+        hookhit = true;
+       } 
  }
+ 
+ //This is while the grappling is happening
  if state = "grappling"{
  camera_target = obj_player_parent;
-    if(place_meeting(x,y, obj_player_parent)){
-    obj_player_parent.vsp = 0;
-    instance_destroy();
-        state= "normal";
-        }
+ 
+ 
+dist = point_distance(x,y, obj_player_parent.x, obj_player_parent.y);
+
+    if(dist &gt; 10){
+    obj_player_grapple.y -= 10;
+    }else{
+    obj_player_grapple.vsp = 0;
+    state="finishgrapple";
+    }
+    
+}
         
- }
+ 
+ 
+ //returning state, back to normal
   
-  if state = "normal"{
-camera_target = obj_player_parent;
-obj_player_parent.inCutscene = 0;
+  if state = "finishgrapple"{
+    
+    camera_target = obj_player_parent;
+    obj_player_grapple.inCutscene = 0;
+    instance_destroy();
+    
+    state = " ";
 
 }
  
-
 
 
 if(hookhit == true){
@@ -105,7 +118,7 @@ if timer &gt; 0 {
 
  
 
-
+show_debug_message(state);
 
 
 
