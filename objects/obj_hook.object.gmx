@@ -104,10 +104,15 @@ if state = "shootgrapple"{
     
         show_debug_message(distanceY);
     
-    while(distanceY &gt; 10){
-        obj_player_grapple.y -= 10;
-        break;
-    }
+    if(distanceY &gt;= 30){
+        obj_player_grapple.vsp = -2;
+        obj_player_grapple.y += obj_player_grapple.vsp;
+        
+    } else {
+        instance_destroy();
+        
+        }
+    
     
     
     //if player moves too far left or right while grappling it disengages
