@@ -34,7 +34,7 @@ vsp = 0;
 jumpspeed =7;
 movespeed = 4;
 
-//Last ground variables for respawning
+ //Last ground variables for respawning
 lastGroundX = x;
 lastGroundY = y;
 
