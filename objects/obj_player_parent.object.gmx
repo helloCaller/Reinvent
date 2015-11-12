@@ -177,7 +177,7 @@ y += vsp;
 //vertical wall collision
 if(place_meeting(x, y+vsp, obj_wall)){
 
-    while(!place_meeting(x,y+sign(vsp),obj_static)){
+    while(!place_meeting(x,y+sign(vsp),obj_wall)){
      y+= sign(vsp);
      }
      onground = 1;
