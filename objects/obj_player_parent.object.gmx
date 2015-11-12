@@ -32,29 +32,16 @@ hsp = 0;
 //vertical speed
 vsp = 0;
 jumpspeed =7;
-movespeed = 2;
+movespeed = 4;
 
-//Last ground variables for respawning
+ //Last ground variables for respawning
 lastGroundX = x;
 lastGroundY = y;
 
-//scroll
 
-YscrollSpeed = 4; 
 
-global.P_System=part_system_create();
-global.Particle1=part_type_create();
-part_type_shape(global.Particle1,pt_shape_pixel);            //This defines the particles shape
-part_type_size(global.Particle1,1,1,0,0.4);                    //This is for the size
-part_type_scale(global.Particle1,1,1);                       //This is for scaling
-part_type_color1(global.Particle1,c_red);   
-                //This sets its colour. There are three different codes for this
-part_type_alpha1(global.Particle1,1);                        //This is its alpha. There are three different codes for this
-part_type_speed(global.Particle1,0.50,2,-0.10,0);            //The particles speed
-part_type_direction(global.Particle1,0,359,0,20);            //The direction
-part_type_orientation(global.Particle1,0,0,0,0,1);           //This changes the rotation of the particle
-part_type_blend(global.Particle1,1);                         //This is the blend mode, either additive or normal
-part_type_life(global.Particle1,1,10); 
+
+
 
 //IMAGE FLIP
 image_speed = 0.5;
@@ -70,7 +57,7 @@ rifthit = false;
 image_alpha= 1;
 
 //Check if player is touching the ground
-onground = false;
+onground = 0;
 
 
 </string>
@@ -130,11 +117,79 @@ if onground{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/////////////////////////
+            <string>///Setting up movements
+
+/////////////////////////
 // In Cutscene Changes //
 /////////////////////////
 if inCutscene{
     speed = 0;}
+    
+
+
+//If not in cut scene move left and right
+if inCutscene = 0{
+    key_right = keyboard_check(vk_right);
+    key_left = -keyboard_check(vk_left);
+    key_jump = keyboard_check_pressed(ord('Z'));
+    } else{
+    key_right = 0
+    key_left = 0
+    key_jump = 0
+    }
+    
+    
+if inCutscene = 0{
+    if(keyboard_check_pressed(vk_right))facing = 1;
+    if(keyboard_check_pressed(vk_left))facing = -1;
+    } 
+    
+
+//Movement calculated
+move = key_left + key_right;
+hsp = move * movespeed;
+
+if(vsp &lt; 10){ 
+vsp += grav;
+}
+
+
+
+if(place_meeting(x,y+1, obj_static)){
+vsp = key_jump * -jumpspeed;
+
+}
+
+
+
+//horizontal collision
+if(place_meeting(x+hsp,y,obj_static)){
+    while(!place_meeting(x+sign(hsp),y,obj_static)){
+     x += sign(hsp);
+     }
+     hsp = 0;
+}
+
+//Apply horizontal speed 
+x += hsp;
+y += vsp;
+
+//vertical wall collision
+if(place_meeting(x, y+vsp, obj_wall)){
+
+    while(!place_meeting(x,y+sign(vsp),obj_static)){
+     y+= sign(vsp);
+     }
+     onground = 1;
+     vsp=0;
+   
+} else {
+onground = 0;
+}
+
+
+
+
 </string>
           </argument>
         </arguments>

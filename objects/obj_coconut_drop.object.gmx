@@ -29,10 +29,12 @@
 // Check if player is standing on tree //
 /////////////////////////////////////////
 var player = instance_place(x,y-1,obj_player_parent);
+
 if player != noone{
-    if player.onground = 1{
-        obj_coconut.state = "falling";
-        instance_destroy();}}
+   if (player.onground == 1 &amp;&amp; obj_coconut.cutscenehappened == false){
+     obj_coconut.state = "falling";}}
+     
+    
 </string>
           </argument>
         </arguments>

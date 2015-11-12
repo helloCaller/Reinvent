@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>35</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -30,6 +30,9 @@ state = "in tree";
 gravity = 0;
 rotation = 0;
 cavemanTimer = 120;
+
+
+cutscenehappened = false;
 </string>
           </argument>
         </arguments>
@@ -115,11 +118,17 @@ if state = "caveman walking"{
 if state = "caveman walking back"{
     obj_caveman_fish.hspeed = -2;
     obj_caveman_fish.image_xscale = -1;
+    cutscenehappened = true;//added this so the cutscene only triggers once
+    
     if abs(obj_caveman_fish.x - obj_caveman_fish.startX) &lt; 2{
         inCutscene = 0;
         camera_target = obj_player_parent;
         obj_caveman_fish.hspeed = 0;
-        state = "";}}
+        
+        
+        state = " ";}}
+        
+        
 </string>
           </argument>
         </arguments>
