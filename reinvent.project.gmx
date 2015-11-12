@@ -17,8 +17,8 @@
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_wheels</sprite>
-    <sprite>sprites\spr_wheels</sprite>
-    <sprite>sprites\spr_wheels</sprite>
+    <sprite>sprites\spr_caveman_fish</sprite>
+    <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_flippable_wall</sprite>
