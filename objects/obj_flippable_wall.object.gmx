@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_static</parentName>
+  <parentName>obj_wall</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -96,8 +96,7 @@ if(place_meeting(x, y+vsp, obj_wall)){
 } 
 
 }
-show_debug_message(vsp);
-show_debug_message(state);
+
  y+=vsp;
  x+=hsp; 
 </string>
