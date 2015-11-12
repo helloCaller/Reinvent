@@ -38,7 +38,7 @@ movespeed = 4;
 lastGroundX = x;
 lastGroundY = y;
 
-//scroll
+
 
 
 
@@ -57,7 +57,7 @@ rifthit = false;
 image_alpha= 1;
 
 //Check if player is touching the ground
-onground = false;
+onground = 0;
 
 
 </string>
@@ -148,13 +148,16 @@ if inCutscene = 0{
 //Movement calculated
 move = key_left + key_right;
 hsp = move * movespeed;
+
 if(vsp &lt; 10){ 
 vsp += grav;
 }
 
 
+
 if(place_meeting(x,y+1, obj_static)){
 vsp = key_jump * -jumpspeed;
+
 }
 
 
@@ -167,18 +170,23 @@ if(place_meeting(x+hsp,y,obj_static)){
      hsp = 0;
 }
 
-//Apply verticle and horizontal speed 
+//Apply horizontal speed 
 x += hsp;
 y += vsp;
 
 //vertical wall collision
 if(place_meeting(x, y+vsp, obj_wall)){
+
     while(!place_meeting(x,y+sign(vsp),obj_static)){
      y+= sign(vsp);
      }
+     onground = 1;
      vsp=0;
-    onground=true;
-} else onground = false;
+   
+} else {
+onground = 0;
+}
+
 
 
 

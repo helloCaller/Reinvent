@@ -12,18 +12,20 @@
     <sprite>sprites\spr_misc_indicator</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
-    <sprite>sprites\spr_player_spring</sprite>
-    <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_player_wheel</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_wheels</sprite>
-    <sprite>sprites\spr_player_spring_idle</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
     <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
+    <sprite>sprites\spr_flippable_wall</sprite>
+    <sprites name="player_square">
+      <sprite>sprites\spr_player_spring_idle</sprite>
+      <sprite>sprites\spr_player_spring</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -37,10 +39,11 @@
       <object>objects\obj_player_parent</object>
       <object>objects\obj_player_spring</object>
       <object>objects\obj_player_wheel</object>
+      <object>objects\obj_player_lever</object>
+      <object>objects\obj_player_drill</object>
       <object>objects\obj_player_grapple</object>
     </objects>
     <object>objects\obj_music</object>
-    <object>objects\obj_orb</object>
     <object>objects\obj_global</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_background</object>
@@ -58,8 +61,10 @@
       <object>objects\obj_static</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_breakable_wall</object>
+      <object>objects\obj_flippable_wall</object>
     </objects>
     <object>objects\obj_hook</object>
+    <object>objects\object24</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
