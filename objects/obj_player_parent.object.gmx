@@ -180,7 +180,6 @@ if(place_meeting(x, y+vsp, obj_wall)){
     while(!place_meeting(x,y+sign(vsp),obj_static)){
      y+= sign(vsp);
      }
-     move_contact_solid(90,-1);
      onground = 1;
      vsp=0;
    

@@ -67,11 +67,10 @@ state = " ";
 
 //Trying out states..This one is for when the hook is shot
 if state = "shootgrapple"{
-                    
-    obj_player_grapple.inCutscene = 1;//I thought this would stop the player from moving
-    //but I had to add this
-    //adjust number to limit how far left or right player can go before grapple disengages
-    if(obj_player_grapple.hsp &gt; 3 || obj_player_grapple.hsp &lt; -3){
+//I thought this would stop the player from moving
+    obj_player_grapple.inCutscene = 1;
+//but I had to add this
+if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
     state = "finishgrapple";
     }
     
@@ -79,12 +78,11 @@ if state = "shootgrapple"{
     vsp -=3;
     camera_target = obj_hook;
 
-    if(place_meeting(x, y+vsp, obj_static)){
-        move_contact_solid(90, -1)
-         vsp=0;
-         hookhit = true;
-    } 
-    
+if place_meeting(x,y+vsp,obj_static){ 
+        move_contact_solid(90,-1);
+        vsp=0;
+        hookhit = true;
+       } 
  }
  
  //This is while the grappling is happening
