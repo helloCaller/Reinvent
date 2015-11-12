@@ -16,7 +16,6 @@
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
-    <sprite>sprites\spr_wheels</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
     <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
@@ -25,6 +24,9 @@
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
       <sprite>sprites\spr_player_spring</sprite>
+    </sprites>
+    <sprites name="player_wheels">
+      <sprite>sprites\spr_wheels</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
