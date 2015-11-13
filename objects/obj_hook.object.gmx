@@ -66,9 +66,10 @@ state = " ";
             <string>
 
 
-//Trying out states..This one is for when the hook is shot
+//Trying out states..
+//Grapple is initiated
 if state = "shootgrapple"{
-    aHookFiredAlready = true;
+    aHookFiredAlready = true; //check if it's been fired already
     obj_player_grapple.inCutscene = 1;//I thought this would stop the player from moving
 
     if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){//but I had to add this
@@ -76,11 +77,11 @@ if state = "shootgrapple"{
     }
     
     
-    vsp -=3;
-    camera_target = obj_hook;
+    vsp -=3;//shoot upwards
+    camera_target = obj_hook;//change camera target
 
-   if(place_meeting(x, y+vsp, obj_static)){
-    while(!place_meeting(x,y+sign(vsp),obj_static)){
+   if(place_meeting(x, y+vsp, obj_static)){//collision check
+    while(!place_meeting(x,y+sign(vsp),obj_static)){ 
      y+= sign(vsp);
      }
         vsp=0;
@@ -89,9 +90,11 @@ if state = "shootgrapple"{
         
      y+=vsp;
      
-     if( obj_hook.y &gt; room_height+100){
-     state = "finishgrapple";
-     }
+    
+     //If grapple shoots up into the sky
+       if(obj_hook.y &lt; room_height - room_height - 100){
+            state = "finishgrapple";
+        }
  }
 
  //This is while the grappling is happening
@@ -101,31 +104,17 @@ if state = "shootgrapple"{
    
     
     distanceY = obj_player_grapple.y - obj_hook.y;
-    
-        show_debug_message(distanceY);
-    
     if(distanceY &gt;= 30){
         obj_player_grapple.vsp = -2;
         obj_player_grapple.y += obj_player_grapple.vsp;
-        
     } else {
         instance_destroy();
-        
         }
     
-    
-    
     //if player moves too far left or right while grappling it disengages
-    
     if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
-    state = "finishgrapple";
+        state = "finishgrapple";
     }
-    
-    
-        
-        
-        
-    
 }
         
  
@@ -137,9 +126,10 @@ if state = "shootgrapple"{
     camera_target = obj_player_parent;
     obj_player_grapple.inCutscene = 0;
     aHookFiredAlready = false;
+    state = " ";
     instance_destroy();
     
-    state = " ";
+    
 
 }
  
@@ -159,7 +149,7 @@ if(hookhit == true){
 }
 
  
-show_debug_message(state);
+
 
 
 

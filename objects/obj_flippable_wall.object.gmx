@@ -59,16 +59,19 @@ rotation = 0;
 
 if state = "flipping"{
 
-    vsp += -1;
+    vsp = -10;
     
-    if(vsp &lt;= -15){
-    state="in air";
-    }
-           
-            
-
-    hsp = 3;
-    rotation += 5;
+        hsp = 3;
+        rotation += 5;
+   
+    
+   
+    
+    y+=vsp;
+    x+=hsp; 
+    
+    state = "in air";
+    
 }
 
 
@@ -83,6 +86,7 @@ if(place_meeting(x+hsp,y,obj_static)){
      rotation = 0;
      
 }
+x+=hsp;
 
 //vertical wall collision
 if(place_meeting(x, y+vsp, obj_wall)){
@@ -94,11 +98,11 @@ if(place_meeting(x, y+vsp, obj_wall)){
     rotation = 0;
     
 } 
+y+=vsp;
 
 }
 
- y+=vsp;
- x+=hsp; 
+
 </string>
           </argument>
         </arguments>
