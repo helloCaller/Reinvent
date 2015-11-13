@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize Variables
+            <string>//Flash White
+whiteFlash = 0;
+
+//Jumping variable
+jumping = 0;
+
+//Camera target
+camera_target = id;
+
+///Initialize Variables
 grav = 0.4;
 //horizontal speed
 hsp = 0;
@@ -34,14 +43,19 @@ vsp = 0;
 jumpspeed =7;
 movespeed = 4;
 
- //Last ground variables for respawning
-lastGroundX = x;
-lastGroundY = y;
+//Last ground variables for respawning
+//lastGroundX = x;
+//lastGroundY = y;
 
 
 
+//Key Presses
+key_left = 0;
+key_right = 0;
+key_jump = 0;
 
-
+//Upgrade state
+upgradeState = "none";
 
 //IMAGE FLIP
 image_speed = 0.5;
@@ -86,15 +100,23 @@ onground = 0;
 // Death Block //
 /////////////////
 if place_meeting(x,y,obj_death_block){
-    x = lastGroundX;
-    y = lastGroundY;}
+    x = respawnX;
+    y = respawnY;}
 
 /////////////////////////////
-// Last Ground for Respawn //
+// Last Ground for Respawn //    //Unused
 /////////////////////////////
-if onground{
+/*if onground{
     lastGroundX = x;
-    lastGroundY = y;}
+    lastGroundY = y;}*/
+    
+/////////////////   
+// Flash White //
+/////////////////
+if whiteFlash &gt; 0{
+    whiteFlash -= 1/30;
+    if whiteFlash &lt; 0 then whiteFlash = 0;}  
+
 </string>
           </argument>
         </arguments>
@@ -123,9 +145,13 @@ if onground{
 // In Cutscene Changes //
 /////////////////////////
 if inCutscene{
-    speed = 0;}
+    hsp = 0; vsp = 0;}
     
-
+////////////////
+// On Ground? //
+////////////////
+onground = place_meeting(x,y+1,obj_static);
+if vsp &lt; 0 then onground = 0;
 
 //If not in cut scene move left and right
 if inCutscene = 0{
@@ -137,13 +163,11 @@ if inCutscene = 0{
     key_left = 0
     key_jump = 0
     }
-    
-    
+     
 if inCutscene = 0{
     if(keyboard_check_pressed(vk_right))facing = 1;
     if(keyboard_check_pressed(vk_left))facing = -1;
     } 
-    
 
 //Movement calculated
 move = key_left + key_right;
@@ -154,11 +178,11 @@ vsp += grav;
 }
 
 
-
+//Jumping
 if(place_meeting(x,y+1, obj_wall)){
-vsp = key_jump * -jumpspeed;
-
-}
+    vsp = key_jump * -jumpspeed;
+    jumping = 1;
+    }
 
 
 
@@ -170,12 +194,21 @@ if(place_meeting(x+hsp,y,obj_wall)){
      hsp = 0;
 }
 
-//Apply horizontal speed 
-x += hsp;
-y += vsp;
+//Wall Above
+if vsp &lt; 0{
+    if place_meeting(x,y+vsp,obj_static){
+        move_contact_solid(90,32);
+        vsp = 0;}}
+        
+//Wall Below
+if vsp &gt; 0{
+    if place_meeting(x,y+vsp,obj_static){
+        move_contact_solid(270,32);
+        vsp = 0;
+        onground = 1;}}
 
 //vertical wall collision
-if(place_meeting(x, y+vsp, obj_wall)){
+/*if(place_meeting(x, y+vsp, obj_wall)){
 
     while(!place_meeting(x,y+sign(vsp),obj_wall)){
      y+= sign(vsp);
@@ -185,14 +218,38 @@ if(place_meeting(x, y+vsp, obj_wall)){
    
 } else {
 onground = 0;
-}
-
+}*/
 
 if(keyboard_check_pressed(ord("R"))){
 game_restart()
 }
 
+//Apply speed 
+x += hsp;
+y += vsp;
 
+//Still jumping?
+if jumping{
+    if vsp &gt;= 0 then jumping = 0;}
+
+//////////////////////
+// Room Change Area //
+//////////////////////
+var roomChange = instance_place(x,y,obj_room_change_area);
+if roomChange != noone{
+    inCutscene = 1;
+    with obj_coconut{
+        instance_destroy()}
+    hsp = 0;
+    vsp = 0;
+    if obj_fade.fadeState = ""{
+        obj_fade.fadeState = "out";}
+    if obj_fade.fadeState = "in"{
+        var nextRm = roomChange.nextRoom;
+        room_goto(nextRm);
+        inCutscene = 0;}}
+        
+if keyboard_check_pressed(ord('U')) then room_goto(room_2);
 </string>
           </argument>
         </arguments>
@@ -215,7 +272,20 @@ game_restart()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index, image_index,x,y,facing,1,0,c_white,1);
+            <string>//Draw player
+draw_sprite_ext(sprite_index, image_index,x,y,facing,1,0,c_white,1);
+
+//Flash white
+if whiteFlash &gt; 0{
+    d3d_set_fog(true, c_white, 0, 0);
+    draw_sprite_ext(sprite_index, image_index,x,y,facing,1,0,c_white,whiteFlash);
+    d3d_set_fog(false, 0, 0, 0);}
+    
+//For Bug Testing
+/*draw_set_font(fn_arial);
+draw_set_color(c_white);
+draw_text(x,y-32,jumping);
+//draw_text(x,y-64,obj_fade.fadeState);
 </string>
           </argument>
         </arguments>

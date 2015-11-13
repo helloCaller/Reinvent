@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-10000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,20 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar inCutscene;
-inCutscene = 0;
-
-//Respawn X &amp; Y
-globalvar respawnX;
-respawnX = 0;
-globalvar respawnY;        //PUT THESE IN ROOM CREATION CODE
-respawnY = 0; 
+            <string>fadeState = "in";
+fadeSpeed = 30; //How many frames to take to fully fade in/out
+fadeAlpha = 1.25;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="1">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -55,15 +50,55 @@ respawnY = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//End game
-if(keyboard_check(vk_escape)){
-game_end();
-}
-
-//Going past initialization room
-if room = room_initialize then room_goto_next();
-
-if keyboard_check_pressed(ord("P")) game_restart();
+            <string>//////////////
+// Fade Out //
+//////////////
+if fadeState = "out"{
+    if fadeAlpha &lt; 1.25{
+        fadeAlpha += 1/fadeSpeed;
+        if fadeAlpha &gt;= 1.25{
+            fadeState = "in";
+            fadeAlpha = 1.25;}}}
+        
+/////////////
+// Fade In //
+/////////////
+if fadeState = "in"{
+    if fadeAlpha &gt; 0{
+        fadeAlpha -= 1/fadeSpeed;
+        if fadeAlpha &lt;= 0{
+            fadeState = "";
+            fadeAlpha = 0;}}}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///////////////
+// Draw Fade //
+///////////////
+if fadeAlpha != 0{
+    draw_set_color(c_black);
+    draw_set_alpha(fadeAlpha);
+    draw_rectangle(view_xview-5,view_yview-5,view_xview+view_wview+5,view_yview+view_hview+5,0);
+    draw_set_alpha(1);}
 </string>
           </argument>
         </arguments>
