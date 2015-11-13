@@ -12,11 +12,13 @@
     <sprite>sprites\spr_misc_indicator</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
-    <sprite>sprites\spr_player_wheel</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_wheels</sprite>
+    <sprite>sprites\spr_grapple</sprite>
+    <sprite>sprites\spr_lever</sprite>
+    <sprite>sprites\spri_drill</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
     <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
@@ -61,7 +63,7 @@
       <object>objects\obj_static</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_breakable_wall</object>
-      <object>objects\obj_flippable_wall</object>
+      <object>objects\obj_flippable</object>
     </objects>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
