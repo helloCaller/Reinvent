@@ -114,6 +114,38 @@ if(keyboard_check_pressed(ord('S'))){
    instance_create(x,y, obj_player_lever);
    }
 
+       //Jumping
+    if jumping{
+        sprite_index = spr_player_jump_square_wheels; //Replace with wheels later
+        image_speed = 0.34;
+        if floor(image_index) = 1{
+            image_speed = 0;}}    
+            
+    //Falling
+    else if vsp &gt; 0{
+        sprite_index = spr_player_jump_square_wheels; //Replace with wheels later
+        image_speed = 0;
+        image_index = 2;}
+   
+   //Everything else
+   
+   else{
+   //movement animation 
+   
+        if(hsp==0){
+    sprite_index = spr_player_wheels_idle;
+   image_speed = 0.334;
+   } else {
+   image_speed = 0.334;
+   //so as to restart image_index from 0
+        if(floor(sprite_index)!=spr_wheels){
+            image_index = 0;
+            sprite_index = spr_wheels
+             }
+        }
+   }
+
+   
 //THIS FLIPS SPRITE
 /*
 if(keyboard_check_pressed(vk_right))facing = 1;

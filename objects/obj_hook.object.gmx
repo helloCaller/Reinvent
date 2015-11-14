@@ -70,7 +70,7 @@ state = " ";
 //Grapple is initiated
 if state = "shootgrapple"{
     aHookFiredAlready = true; //check if it's been fired already
-    obj_player_grapple.inCutscene = 1;//I thought this would stop the player from moving
+    inCutscene = 1;//I thought this would stop the player from moving
 
     if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){//but I had to add this
         state = "finishgrapple";
@@ -124,7 +124,7 @@ if state = "shootgrapple"{
   if state = "finishgrapple"{
     
     camera_target = obj_player_parent;
-    obj_player_grapple.inCutscene = 0;
+    inCutscene = 0;
     aHookFiredAlready = false;
     state = " ";
     instance_destroy();
@@ -197,5 +197,8 @@ draw_line_width( x, y, obj_player_grapple.x, obj_player_grapple.y, 3);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>5,5</point>
+    <point>5,5</point>
+  </PhysicsShapePoints>
 </object>

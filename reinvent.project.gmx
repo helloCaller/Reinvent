@@ -28,6 +28,10 @@
       <sprite>sprites\spr_player_spring_idle</sprite>
       <sprite>sprites\spr_player_spring</sprite>
     </sprites>
+    <sprite>sprites\spr_caveman_angry</sprite>
+    <sprite>sprites\spr_frustration_cloud</sprite>
+    <sprite>sprites\spr_player_jump_square_wheels</sprite>
+    <sprite>sprites\spr_player_wheels_idle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -36,6 +40,10 @@
     <background>background\tile_tree</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
+  <fonts name="fonts">
+    <font>fonts\fn_arial</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_player_parent</object>
@@ -47,7 +55,9 @@
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
+    <object>objects\obj_fade</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_room_change_area</object>
     <object>objects\obj_background</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_caveman_fish</object>
@@ -69,7 +79,10 @@
     <object>objects\object24</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\room_initialize</room>
+    <room>rooms\room_1</room>
+    <room>rooms\room_2</room>
+    <room>rooms\room_blank</room>
     <room>rooms\roomtest</room>
   </rooms>
   <help>
