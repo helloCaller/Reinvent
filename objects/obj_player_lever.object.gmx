@@ -89,10 +89,7 @@ state= " ";
             <string>event_inherited(); 
 
 
-//States code for this in obj_throwable
-
-
-
+//State code in obj_throwable
 
 
 
