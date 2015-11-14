@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>-50000</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(mp3_prehistoric,1,1);
+            <string>audio_play_sound(mp3_prehistoric_v2,1,1);
 
 
 
@@ -52,8 +52,11 @@
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check_pressed(ord("M"))){
-audio_pause_sound(mp3_prehistoric);
+audio_pause_sound(mp3_prehistoric_v2);
 }
+
+
+
 </string>
           </argument>
         </arguments>

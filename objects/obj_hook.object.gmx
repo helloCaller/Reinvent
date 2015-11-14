@@ -38,7 +38,7 @@ aHookFiredAlready = false;
 
 hookhit = false;
 
-timer = 80;
+timer = 50;
 
 state = " ";
 </string>
@@ -70,7 +70,7 @@ state = " ";
 //Grapple is initiated
 if state = "shootgrapple"{
     aHookFiredAlready = true; //check if it's been fired already
-    obj_player_grapple.inCutscene = 1;//I thought this would stop the player from moving
+    obj_player_grapple.inCutscene = 1;
 
     if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){//but I had to add this
         state = "finishgrapple";
@@ -81,12 +81,12 @@ if state = "shootgrapple"{
     camera_target = obj_hook;//change camera target
 
    if(place_meeting(x, y+vsp, obj_static)){//collision check
-    while(!place_meeting(x,y+sign(vsp),obj_static)){ 
-     y+= sign(vsp);
-     }
+        while(!place_meeting(x,y+sign(vsp),obj_static)){ 
+         y+= sign(vsp);
+        }
         vsp=0;
         hookhit = true;
-       }
+    }
         
      y+=vsp;
      
@@ -99,10 +99,8 @@ if state = "shootgrapple"{
 
  //This is while the grappling is happening
  if state = "grappling"{
- 
     camera_target = obj_player_parent;
    
-    
     distanceY = obj_player_grapple.y - obj_hook.y;
     if(distanceY &gt;= 30){
         obj_player_grapple.vsp = -2;
@@ -115,10 +113,9 @@ if state = "shootgrapple"{
     if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
         state = "finishgrapple";
     }
+    
 }
         
- 
- 
  //returning state, back to normal
   
   if state = "finishgrapple"{
@@ -134,7 +131,6 @@ if state = "shootgrapple"{
 }
  
 
-
 if(hookhit == true){
     if (timer &gt; 0) {
     timer --;
@@ -142,7 +138,7 @@ if(hookhit == true){
  
     if(timer &lt;= 0){
     hookhit = false;
-    timer = 80;
+    timer = 50;
     state = "grappling";
     
     }
@@ -177,8 +173,8 @@ if(hookhit == true){
             <kind>1</kind>
             <string>
 draw_set_colour(c_black);
-draw_line_width( x, y, obj_player_grapple.x, obj_player_grapple.y, 3);
-
+draw_line_width( x, y, obj_player_grapple.x, obj_player_grapple.y, 2);
+draw_sprite_ext(spr_hook, image_index, x, y, image_xscale, image_yscale, 0, c_white, image_alpha );
 
 </string>
           </argument>
@@ -197,5 +193,8 @@ draw_line_width( x, y, obj_player_grapple.x, obj_player_grapple.y, 3);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>5,5</point>
+    <point>5,5</point>
+  </PhysicsShapePoints>
 </object>

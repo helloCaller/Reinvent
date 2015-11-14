@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\mp3_prehistoric</sound>
+    <sound>sound\mp3_prehistoric_v2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
@@ -15,18 +16,26 @@
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
-    <sprite>sprites\spr_wheels</sprite>
     <sprite>sprites\spr_grapple</sprite>
-    <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spri_drill</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
     <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
-    <sprite>sprites\spr_flippable_wall</sprite>
+    <sprite>sprites\spr_throwable</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
       <sprite>sprites\spr_player_spring</sprite>
+      <sprite>sprites\spr_player_jump_square_wheels</sprite>
+    </sprites>
+    <sprite>sprites\spr_caveman_angry</sprite>
+    <sprite>sprites\spr_frustration_cloud</sprite>
+    <sprites name="player_wheels">
+      <sprite>sprites\spr_player_wheels_idle</sprite>
+      <sprite>sprites\spr_wheels</sprite>
+    </sprites>
+    <sprites name="player_lever">
+      <sprite>sprites\spr_lever</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -36,6 +45,9 @@
     <background>background\tile_tree</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fn_arial</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_player_parent</object>
@@ -47,7 +59,9 @@
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
+    <object>objects\obj_fade</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_room_change_area</object>
     <object>objects\obj_background</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_caveman_fish</object>
@@ -58,18 +72,21 @@
       <object>objects\obj_coconut</object>
     </objects>
     <object>objects\obj_death_block</object>
+    <object>objects\obj_throwable</object>
     <object>objects\obj_water</object>
     <objects name="walls">
       <object>objects\obj_static</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_breakable_wall</object>
-      <object>objects\obj_flippable</object>
     </objects>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\room_initialize</room>
+    <room>rooms\room_1</room>
+    <room>rooms\room_2</room>
+    <room>rooms\room_blank</room>
     <room>rooms\roomtest</room>
   </rooms>
   <help>
