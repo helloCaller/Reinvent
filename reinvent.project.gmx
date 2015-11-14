@@ -22,7 +22,7 @@
     <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
-    <sprite>sprites\spr_flippable_wall</sprite>
+    <sprite>sprites\spr_throwable</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
       <sprite>sprites\spr_player_spring</sprite>
@@ -72,12 +72,12 @@
       <object>objects\obj_coconut</object>
     </objects>
     <object>objects\obj_death_block</object>
+    <object>objects\obj_throwable</object>
     <object>objects\obj_water</object>
     <objects name="walls">
       <object>objects\obj_static</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_breakable_wall</object>
-      <object>objects\obj_flippable</object>
     </objects>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
