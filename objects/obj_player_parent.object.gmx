@@ -64,8 +64,7 @@ facing= 1;
 //TIMER
 timer = 1000;
 
-//COLLISSION CHECK
-rifthit = false;
+
 
 //OBJECT FADE AWAY
 image_alpha= 1;
@@ -73,7 +72,8 @@ image_alpha= 1;
 //Check if player is touching the ground
 onground = 0;
 
-
+//check if player is beside an object
+sidecontact = false;
 </string>
           </argument>
         </arguments>
@@ -153,6 +153,7 @@ if inCutscene{
 onground = place_meeting(x,y+1,obj_static);
 if vsp &lt; 0 then onground = 0;
 
+
 //If not in cut scene move left and right
 if inCutscene = 0{
     key_right = keyboard_check(vk_right);
@@ -179,7 +180,7 @@ vsp += grav;
 
 
 //Jumping
-if(place_meeting(x,y+1, obj_wall)){
+if(place_meeting(x,y+1, obj_static)){
     vsp = key_jump * -jumpspeed;
     jumping = 1;
     }
@@ -187,13 +188,26 @@ if(place_meeting(x,y+1, obj_wall)){
 
 
 //horizontal collision
-if(place_meeting(x+hsp,y,obj_wall)){
-    while(!place_meeting(x+sign(hsp),y,obj_wall)){
+//
+if(place_meeting(x+hsp,y,obj_static)){
+    while(!place_meeting(x+sign(hsp),y,obj_static)){
      x += sign(hsp);
+     
      }
-     hsp = 0;
+    hsp = 0;
+    
+} 
+
+if(place_meeting(x+1, y, obj_static) || place_meeting(x-1,y, obj_static)){
+    sidecontact = true;
+} else{
+    sidecontact = false;
 }
 
+
+
+show_debug_message(sidecontact);
+  
 //Wall Above
 if vsp &lt; 0{
     if place_meeting(x,y+vsp,obj_static){

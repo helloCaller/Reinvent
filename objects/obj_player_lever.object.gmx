@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>event_inherited();
 //CODE UNIQUE TO WHEEL PLAYER GOES HERE
+
+
+state= " ";
 </string>
           </argument>
         </arguments>
@@ -50,10 +53,13 @@
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check_pressed(ord("X"))){
-if(place_meeting(x+2*image_xscale,y, obj_flippable) || place_meeting(x-2*image_xscale,y, obj_flippable)){
-    
-obj_flippable.state = "flipping";
-}
+    if(place_meeting(x+2*image_xscale,y, obj_flippable)){
+        obj_flippable.state = "playerOnLeftFlipping";
+        }
+        
+    if(place_meeting(x-2*image_xscale,y, obj_flippable)){
+        obj_flippable.state = "playerOnRightFlipping";
+        }
 
 }
 
@@ -84,7 +90,6 @@ obj_flippable.state = "flipping";
 
 ///////
 //States code for this in obj_flippable
-
 
 
 

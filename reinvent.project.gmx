@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\mp3_prehistoric</sound>
+    <sound>sound\mp3_prehistoric_v2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
@@ -15,9 +16,7 @@
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
-    <sprite>sprites\spr_wheels</sprite>
     <sprite>sprites\spr_grapple</sprite>
-    <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spri_drill</sprite>
     <sprite>sprites\spr_caveman_fish</sprite>
     <sprite>sprites\spr_caveman_fish_walk</sprite>
@@ -27,11 +26,17 @@
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
       <sprite>sprites\spr_player_spring</sprite>
+      <sprite>sprites\spr_player_jump_square_wheels</sprite>
     </sprites>
     <sprite>sprites\spr_caveman_angry</sprite>
     <sprite>sprites\spr_frustration_cloud</sprite>
-    <sprite>sprites\spr_player_jump_square_wheels</sprite>
-    <sprite>sprites\spr_player_wheels_idle</sprite>
+    <sprites name="player_wheels">
+      <sprite>sprites\spr_player_wheels_idle</sprite>
+      <sprite>sprites\spr_wheels</sprite>
+    </sprites>
+    <sprites name="player_lever">
+      <sprite>sprites\spr_lever</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -40,7 +45,6 @@
     <background>background\tile_tree</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fn_arial</font>
   </fonts>

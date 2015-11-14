@@ -38,7 +38,7 @@ aHookFiredAlready = false;
 
 hookhit = false;
 
-timer = 80;
+timer = 50;
 
 state = " ";
 </string>
@@ -99,10 +99,8 @@ if state = "shootgrapple"{
 
  //This is while the grappling is happening
  if state = "grappling"{
- 
     camera_target = obj_player_parent;
    
-    
     distanceY = obj_player_grapple.y - obj_hook.y;
     if(distanceY &gt;= 30){
         obj_player_grapple.vsp = -2;
@@ -142,7 +140,7 @@ if(hookhit == true){
  
     if(timer &lt;= 0){
     hookhit = false;
-    timer = 80;
+    timer = 50;
     state = "grappling";
     
     }
