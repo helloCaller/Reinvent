@@ -234,23 +234,18 @@ if vsp &gt; 0{
 } else {
 onground = 0;
 }*/
+
+//Quicksand condition--maybe this could be stored as a state somewhere else
      if(place_meeting(x, y, obj_quicksand)){
-        vsp=1;
+        vsp = 1;
         timer -= 1;
             if(timer == 0){
                 room_restart();
             } 
             show_debug_message(timer);
-          /*  
-            if(object_exists(obj_hook)){
-                vsp=0;
-                } else {
-                 vsp = 1;
-                 }
-                 */
-            
-            if(hsp !=0 || jumping){
-                vsp = 2;
+          
+            if(hsp !=0 || key_jump){
+                vsp = 3;
                 }
      } else {
             timer = 200;
