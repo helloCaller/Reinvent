@@ -13,6 +13,7 @@
     <sprite>sprites\spr_misc_indicator</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
+    <sprite>sprites\spr_quicksand</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
@@ -60,6 +61,7 @@
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
     <object>objects\obj_fade</object>
+    <object>objects\obj_pause</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_room_change_area</object>
     <object>objects\obj_background</object>
@@ -81,6 +83,7 @@
     </objects>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
+    <object>objects\obj_quicksand</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>

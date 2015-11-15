@@ -62,7 +62,7 @@ image_speed = 0.5;
 facing= 1;
 
 //TIMER
-timer = 1000;
+timer = 200;
 
 
 
@@ -207,7 +207,7 @@ if(place_meeting(x+1, y, obj_static) || place_meeting(x-1,y, obj_static)){
 
 
 
-show_debug_message(sidecontact);
+
   
 //Wall Above
 if vsp &lt; 0{
@@ -234,10 +234,30 @@ if vsp &gt; 0{
 } else {
 onground = 0;
 }*/
+     if(place_meeting(x, y, obj_quicksand)){
+        vsp=1;
+        timer -= 1;
+            if(timer == 0){
+                room_restart();
+            } 
+            show_debug_message(timer);
+          /*  
+            if(object_exists(obj_hook)){
+                vsp=0;
+                } else {
+                 vsp = 1;
+                 }
+                 */
+            
+            if(hsp !=0 || jumping){
+                vsp = 2;
+                }
+     } else {
+            timer = 200;
+            }
+            
+            
 
-if(keyboard_check_pressed(ord("R"))){
-game_restart()
-}
 
 //Apply speed 
 x += hsp;

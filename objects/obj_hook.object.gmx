@@ -38,7 +38,7 @@ aHookFiredAlready = false;
 
 hookhit = false;
 
-timer = 50;
+timer = 30;
 
 state = " ";
 </string>
@@ -78,9 +78,11 @@ if state = "shootgrapple"{
     
     
     vsp -=3;//shoot upwards
+    
     camera_target = obj_hook;//change camera target
 
-   if(place_meeting(x, y+vsp, obj_static)){//collision check
+   //collision check
+     if(place_meeting(x, y+vsp, obj_static)){
         while(!place_meeting(x,y+sign(vsp),obj_static)){ 
          y+= sign(vsp);
         }
@@ -138,7 +140,7 @@ if(hookhit == true){
  
     if(timer &lt;= 0){
     hookhit = false;
-    timer = 50;
+    timer = 30;
     state = "grappling";
     
     }
