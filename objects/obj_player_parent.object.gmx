@@ -207,7 +207,7 @@ if(place_meeting(x+1, y, obj_static) || place_meeting(x-1,y, obj_static)){
 
 
 
-show_debug_message(sidecontact);
+
   
 //Wall Above
 if vsp &lt; 0{
@@ -235,9 +235,7 @@ if vsp &gt; 0{
 onground = 0;
 }*/
 
-if(keyboard_check_pressed(ord("R"))){
-game_restart()
-}
+
 
 //Apply speed 
 x += hsp;

@@ -60,6 +60,7 @@
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
     <object>objects\obj_fade</object>
+    <object>objects\obj_pause</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_room_change_area</object>
     <object>objects\obj_background</object>
