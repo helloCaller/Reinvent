@@ -124,9 +124,9 @@
     <instance objName="obj_quicksand" x="640" y="576" name="inst_2AABACB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_quicksand" x="672" y="576" name="inst_CA83D24A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_quicksand" x="704" y="576" name="inst_92F4C671" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_throwable" x="208" y="496" name="inst_140D706E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_throwable" x="320" y="496" name="inst_5FDEB7BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_breakable_wall" x="112" y="496" name="inst_AD648FCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_throwable" x="240" y="496" name="inst_51C79887" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_throwable" x="384" y="496" name="inst_85AC3FDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="0" y="512" w="32" h="32" xo="0" yo="0" id="10001019" name="inst_778E2255" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
