@@ -49,15 +49,16 @@
           <argument>
             <kind>1</kind>
             <string>if(pause){
-    
+    show_debug_message(view_wview[0]);
     draw_set_colour(c_black);
-    draw_rectangle(0, 0, room_height*2, room_width*2, 0);
-    /*
+    //draw rectangle that covers viewport 
+    draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], 0);
+    
     draw_set_halign(fa_center);
     draw_set_font(fn_arial);
     draw_set_colour(c_white);
-    draw_text(room_height/2, room_width/2, "Game Paused");
-    */
+    draw_text(view_xview[0] + view_wview[0]/2,view_yview[0] + view_hview[0]/2 , "Game Paused");
+    
     
 }
 </string>
