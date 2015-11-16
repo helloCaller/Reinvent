@@ -198,14 +198,14 @@ if(place_meeting(x+hsp,y,obj_static)){
     hsp = 0;
     
 } 
-
+/*
 if(place_meeting(x+1, y, obj_static) || place_meeting(x-1,y, obj_static)){
     sidecontact = true;
 } else{
     sidecontact = false;
 }
 
-
+*/
 
 
   

@@ -40,6 +40,107 @@ currentY = obj_throwable.y;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if state = "playerOnLeftFlipping"{
+    vsp = -10;
+    hsp = 3;
+    rotation += 3
+   
+    y+=  vsp;
+    x+=  hsp; 
+    
+    if(currentY - y &gt;= 80){ //setting the height at which to come down
+         state = "in air";
+    }
+    
+}  
+ 
+
+if state = "playerOnRightFlipping"{
+      vsp = -10;
+      hsp = -3;
+      rotation -= 3;
+   
+      y+= vsp;
+      x+= hsp; 
+    
+    if(currentY - y &gt;= 80){ //setting the height at which to come down
+        state = "in air";
+    }
+    
+}
+
+if state = "in air"{
+    vsp += grav;
+    //collision
+     if(place_meeting(x+hsp, y,obj_player_parent)){
+       while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
+           x += sign(hsp);
+        }
+            hsp=0;
+            rotation = 0;
+    }
+
+      
+    if(place_meeting(x+hsp, y,obj_static)){
+        while(!place_meeting(x+sign(hsp), y,obj_static)){
+           x += sign(hsp);
+        }
+            hsp = 0;
+            rotation = 0;
+    }
+    
+    
+    x+=hsp;
+    
+
+// collision
+     if(place_meeting(x, y+vsp,obj_player_parent)){
+        while(!place_meeting(x, y+sign(vsp),obj_player_parent)){
+           y += sign(vsp)
+        }
+            hsp = 0;
+           vsp = 0 ;
+           rotation = 0;
+    }
+
+      
+    if(place_meeting(x, y+vsp, obj_static)){
+        while(!place_meeting(x, y+sign(vsp),obj_static)){
+          y+= sign(vsp);
+        }
+          hsp=0;
+          vsp=0;
+          rotation=0;
+    } 
+
+    
+      y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
+
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -58,7 +159,7 @@ currentY = obj_throwable.y;
           <argument>
             <kind>1</kind>
             <string>
-
+/*
 
 if state = "playerOnLeftFlipping"{
     vsp = -10;
@@ -93,11 +194,11 @@ if state = "in air"{
     vsp += grav;
     //collision
      if(place_meeting(x+hsp, y,obj_player_parent)){
-        while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
+       while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
            x += sign(hsp);
         }
-           hsp=0;
-           rotation = 0;
+            hsp=0;
+            rotation = 0;
     }
 
       
@@ -105,8 +206,8 @@ if state = "in air"{
         while(!place_meeting(x+sign(hsp), y,obj_static)){
            x += sign(hsp);
         }
-           hsp = 0;
-           rotation = 0;
+            hsp = 0;
+            rotation = 0;
     }
     
     
@@ -118,7 +219,7 @@ if state = "in air"{
         while(!place_meeting(x, y+sign(vsp),obj_player_parent)){
            y += sign(vsp)
         }
-           hsp = 0;
+            hsp = 0;
            vsp = 0 ;
            rotation = 0;
     }
@@ -138,7 +239,7 @@ if state = "in air"{
 
 }
 
-
+*/
 </string>
           </argument>
         </arguments>
