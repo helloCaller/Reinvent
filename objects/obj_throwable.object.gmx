@@ -34,7 +34,11 @@ state = " ";
 grav = 0.5;
 rotation = 0;
 
-currentY = obj_throwable.y;
+
+
+currentY = y;
+
+
 </string>
           </argument>
         </arguments>
@@ -58,8 +62,7 @@ currentY = obj_throwable.y;
           <argument>
             <kind>1</kind>
             <string>
-
-
+    
 if state = "playerOnLeftFlipping"{
     vsp = -10;
     hsp = 3;
@@ -73,7 +76,7 @@ if state = "playerOnLeftFlipping"{
     }
     
 }  
- 
+
 
 if state = "playerOnRightFlipping"{
       vsp = -10;
@@ -91,13 +94,13 @@ if state = "playerOnRightFlipping"{
 
 if state = "in air"{
     vsp += grav;
-    //collision
+    //collision objects + player
      if(place_meeting(x+hsp, y,obj_player_parent)){
-        while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
+       while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
            x += sign(hsp);
         }
-           hsp=0;
-           rotation = 0;
+            hsp=0;
+            rotation = 0;
     }
 
       
@@ -105,8 +108,8 @@ if state = "in air"{
         while(!place_meeting(x+sign(hsp), y,obj_static)){
            x += sign(hsp);
         }
-           hsp = 0;
-           rotation = 0;
+            hsp = 0;
+            rotation = 0;
     }
     
     
@@ -118,7 +121,7 @@ if state = "in air"{
         while(!place_meeting(x, y+sign(vsp),obj_player_parent)){
            y += sign(vsp)
         }
-           hsp = 0;
+            hsp = 0;
            vsp = 0 ;
            rotation = 0;
     }
@@ -136,7 +139,10 @@ if state = "in air"{
     
       y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
 
-}
+    }
+    
+    
+
 
 
 </string>
