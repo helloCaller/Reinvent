@@ -36,7 +36,7 @@
       <sprite>sprites\spr_wheels</sprite>
       <sprite>sprites\spr_wheels_jump</sprite>
     </sprites>
-    <sprites name="player_lever">
+    <sprites name="player_lever/arms">
       <sprite>sprites\spr_lever_idle</sprite>
       <sprite>sprites\spr_lever_walking</sprite>
     </sprites>
