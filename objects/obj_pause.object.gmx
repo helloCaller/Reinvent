@@ -69,7 +69,7 @@ tether = "Tether Offline....Pulley not found";
         tiresredorgreen = c_green;
         pausetext[0] = "Wheels Online....Speed accelerated#";
         
-    }
+    } 
     
     if(instance_exists(obj_player_lever)){
         armsredorgreen = c_green;
