@@ -139,7 +139,7 @@ if whiteFlash &gt; 0{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> ///Setting up movements
+            <string>///Setting up movements
 
 /////////////////////////
 // In Cutscene Changes //
@@ -238,7 +238,7 @@ onground = 0;
 }*/
 
 //Quicksand condition--maybe this could be stored as a state somewhere else
-      if(place_meeting(x, y-64, obj_quicksand)){
+     if(place_meeting(x, y-64, obj_quicksand)){
         room_restart();
      } else if(place_meeting(x, y, obj_quicksand)){
         if(hsp != 0){
@@ -251,8 +251,6 @@ onground = 0;
         }
      }
             
-            
-
 
 //Apply speed 
 x += hsp;

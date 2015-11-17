@@ -25,6 +25,7 @@
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_throwable</sprite>
+    <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_caveman_angry</sprite>
     <sprite>sprites\spr_frustration_cloud</sprite>
     <sprites name="player_square">
@@ -61,12 +62,19 @@
       <object>objects\obj_player_drill</object>
       <object>objects\obj_player_grapple</object>
     </objects>
+    <objects name="walls">
+      <object>objects\obj_static</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_breakable_wall</object>
+      <object>objects\obj_water</object>
+      <object>objects\obj_quicksand</object>
+      <object>objects\obj_room_change_area</object>
+    </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
     <object>objects\obj_fade</object>
     <object>objects\obj_pause</object>
     <object>objects\obj_camera</object>
-    <object>objects\obj_room_change_area</object>
     <object>objects\obj_background</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_caveman_fish</object>
@@ -78,6 +86,7 @@
     </objects>
     <object>objects\obj_death_block</object>
     <object>objects\obj_throwable</object>
+<<<<<<< HEAD
     <object>objects\obj_water</object>
     <objects name="walls">
       <object>objects\obj_static</object>
@@ -85,15 +94,17 @@
       <object>objects\obj_breakable_wall</object>
       <object>objects\obj_wall_movethrough</object>
     </objects>
+=======
+>>>>>>> refs/remotes/origin/David
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
-    <object>objects\obj_quicksand</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\room_1</room>
+    <room>rooms\puzzleRoom_1</room>
     <room>rooms\room_2</room>
     <room>rooms\room_blank</room>
+    <room>rooms\puzzleRoom_4</room>
     <room>rooms\roomtest</room>
   </rooms>
   <help>
