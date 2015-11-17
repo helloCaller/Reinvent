@@ -66,13 +66,13 @@ state = " ";
             <string>
 
 
-//Trying out states..
+
 //Grapple is initiated
 if state = "shootgrapple"{
     aHookFiredAlready = true; //check if it's been fired already
     obj_player_grapple.inCutscene = 1;
 
-    if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){//but I had to add this
+    if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
         state = "finishgrapple";
     }
     
@@ -108,8 +108,23 @@ if state = "shootgrapple"{
         obj_player_grapple.vsp = -2;
         obj_player_grapple.y += obj_player_grapple.vsp;
     } else {
-        instance_destroy();
+    //Stops player at the top of tether/grapple
+        obj_player_grapple.grav = 0;
+        obj_player_grapple.vsp = 0;
+            
+            //moves player up and through on jump
+            if(obj_player_grapple.key_jump){
+                 obj_wall_movethrough.sprite_index = -1;
+                 obj_wall_movethrough.allowedthrough = true;
+                 obj_player_grapple.vsp = -12;
+                 obj_player_grapple.inCutscene = 1;
+                 state="finishgrapple";
+                }
         }
+        
+        //set collision box to non existant
+       // obj_wall_movethrough.image_index = -1;
+       // obj_wall_movethrough.movethroughengage = true;
     
     //if player moves too far left or right while grappling it disengages
     if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
@@ -124,6 +139,7 @@ if state = "shootgrapple"{
     
     camera_target = obj_player_parent;
     obj_player_grapple.inCutscene = 0;
+    obj_player_grapple.grav = 0.4;
     aHookFiredAlready = false;
     state = " ";
     instance_destroy();

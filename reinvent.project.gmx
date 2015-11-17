@@ -14,6 +14,7 @@
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
     <sprite>sprites\spr_quicksand</sprite>
+    <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
@@ -82,6 +83,7 @@
       <object>objects\obj_static</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_breakable_wall</object>
+      <object>objects\obj_wall_movethrough</object>
     </objects>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
