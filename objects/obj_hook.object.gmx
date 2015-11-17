@@ -72,11 +72,7 @@ if state = "shootgrapple"{
     aHookFiredAlready = true; //check if it's been fired already
     obj_player_grapple.inCutscene = 1;
 
-<<<<<<< HEAD
-    if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
-=======
-    if(obj_player_grapple.hsp &gt;= 1 || obj_player_grapple.hsp &lt;= -1){//but I had to add this
->>>>>>> refs/remotes/origin/David
+    if(obj_player_grapple.hsp &gt; 1 || obj_player_grapple.hsp &lt; -1){
         state = "finishgrapple";
     }
     
