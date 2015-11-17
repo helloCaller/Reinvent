@@ -231,6 +231,15 @@
     <instance objName="obj_wall" x="1792" y="864" name="inst_2BB14127" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1808" y="864" name="inst_C13DF593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="1680" y="752" name="inst_36E1E918" locked="0" code="" scaleX="4.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="800" y="496" name="inst_9D12A17F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="816" y="496" name="inst_7096591B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="832" y="496" name="inst_1A12BA9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="848" y="496" name="inst_1E36D91B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="864" y="496" name="inst_803DC4D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="840" y="503" name="inst_E097AD6C" locked="0" code="" scaleX="2.25" scaleY="0.53125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="768" y="384" name="inst_09161221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="784" y="384" name="inst_562ED5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flippable" x="800" y="720" name="inst_0648B03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="704" w="128" h="32" xo="64" yo="32" id="10000613" name="inst_80A2D176" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

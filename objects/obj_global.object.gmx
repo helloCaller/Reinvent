@@ -27,6 +27,16 @@
             <kind>1</kind>
             <string>globalvar inCutscene;
 inCutscene = 0;
+
+//Respawn X &amp; Y
+globalvar respawnX;
+respawnX = 0;
+globalvar respawnY;        //PUT THESE IN ROOM CREATION CODE
+respawnY = 0; 
+
+
+pause = 0;
+
 </string>
           </argument>
         </arguments>
@@ -53,6 +63,11 @@ inCutscene = 0;
 if(keyboard_check(vk_escape)){
 game_end();
 }
+
+//Going past initialization room
+if room = room_initialize then room_goto_next();
+
+if keyboard_check_pressed(ord("R")) game_restart();
 </string>
           </argument>
         </arguments>

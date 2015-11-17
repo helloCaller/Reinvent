@@ -3,8 +3,8 @@
   <spriteName>spr_coconut</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>35</depth>
-  <persistent>0</persistent>
+  <depth>9</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -66,6 +66,7 @@ if state = "falling"{
     camera_target = obj_coconut;
     gravity = 0.4;
     rotation -= 3;
+    inCutscene = 1;
     if place_meeting(x,y+vspeed+gravity,obj_wall){ //Check if going to hit ground
         move_contact_solid(270,vspeed+gravity); //Move to ground
         hspeed = 1; //Start moving horizontally
@@ -85,6 +86,7 @@ if state = "rolling"{
     if point_distance(x,y,obj_caveman_fish.x,y) &lt; 16{ //Touch caveman
         state = "sitting";
         obj_caveman_fish.image_speed = 0;
+        obj_caveman_fish.state = "standing"
         obj_caveman_fish.image_xscale = -1;}} 
         
 /////////////
@@ -110,23 +112,60 @@ if state = "caveman walking"{
     obj_caveman_fish.hspeed = 2;
     obj_caveman_fish.image_xscale = 1;
     if obj_caveman_fish.x &gt; view_xview + view_wview + 100{
-        state = "caveman walking back";}}
+        state = "caveman walking back";
+        cavemanTimer = 100;
+        obj_caveman_fish.hspeed = -2;
+        obj_caveman_fish.image_xscale = -1;}}
         
 //////////////////////////
 // Caveman Walking Back //
 //////////////////////////
 if state = "caveman walking back"{
-    obj_caveman_fish.hspeed = -2;
-    obj_caveman_fish.image_xscale = -1;
     cutscenehappened = true;//added this so the cutscene only triggers once
     
-    if abs(obj_caveman_fish.x - obj_caveman_fish.startX) &lt; 2{
-        inCutscene = 0;
-        camera_target = obj_player_parent;
-        obj_caveman_fish.hspeed = 0;
+    if abs(obj_caveman_fish.x - obj_caveman_fish.startX-32) &lt; 2{
+        obj_caveman_fish.hspeed = 0
+        obj_caveman_fish.state = "standing";
+        state = "creating wagon";}}
         
-        
-        state = " ";}}
+////////////////////
+// Creating Wagon //
+////////////////////
+if state = "creating wagon"{
+    if cavemanTimer &gt; 0{
+        cavemanTimer --;
+        if cavemanTimer = 50{
+            obj_caveman_fish.image_xscale = 1;
+            camera_target = obj_fish;}}
+    else{
+        //Smoke goes here
+        if cavemanTimer = 0{
+            obj_fish.state = "cart";
+            obj_fish.whiteFlash = 1;}
+        if cavemanTimer &gt; -100{
+            cavemanTimer --;}
+        else{
+            if cavemanTimer = -100{
+                obj_fade.fadeState = "out";
+                cavemanTimer--;}
+            if cavemanTimer = -101{
+                if obj_fade.fadeState = "in"{
+                    cavemanTimer --;
+                    with obj_caveman_fish{
+                        instance_destroy();}
+                    with obj_fish{
+                        instance_destroy();}}}
+            if cavemanTimer = -102{
+                camera_target = obj_player_parent;
+                if obj_fade.fadeState = "" then cavemanTimer --;}
+            if cavemanTimer &lt; -102 and cavemanTimer &gt; -160{
+                cavemanTimer --;}
+            if cavemanTimer = -160{
+                    cavemanTimer --;
+                    inCutscene = 0;
+                    obj_player_parent.upgradeState = "wheels";
+                    obj_player_parent.whiteFlash = 1;
+                    state = "done";}}}}
         
         
 </string>
