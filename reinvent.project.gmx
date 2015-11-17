@@ -65,6 +65,7 @@
     <objects name="walls">
       <object>objects\obj_static</object>
       <object>objects\obj_wall</object>
+      <object>objects\obj_wall_movethrough</object>
       <object>objects\obj_breakable_wall</object>
       <object>objects\obj_water</object>
       <object>objects\obj_quicksand</object>
@@ -86,14 +87,6 @@
     </objects>
     <object>objects\obj_death_block</object>
     <object>objects\obj_throwable</object>
-    <object>objects\obj_water</object>
-    <objects name="walls">
-      <object>objects\obj_static</object>
-      <object>objects\obj_wall</object>
-      <object>objects\obj_breakable_wall</object>
-      <object>objects\obj_wall_movethrough</object>
-    </objects>
-
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
   </objects>
