@@ -17,8 +17,8 @@ respawnY = 688;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1071</w>
-    <h>922</h>
+    <w>1096</w>
+    <h>700</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,9 +27,9 @@ respawnY = 688;</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>328</xoffset>
-    <yoffset>-88</yoffset>
+    <page>1</page>
+    <xoffset>-324</xoffset>
+    <yoffset>-233</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -237,7 +237,7 @@ respawnY = 688;</code>
     <instance objName="obj_wall" x="2016" y="448" name="inst_F3EDFBFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="432" name="inst_08EAFF66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="416" name="inst_832B4AA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_breakable_wall" x="800" y="112" name="inst_E097AD6C" locked="0" code="" scaleX="2.25" scaleY="0.52999997138977" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="800" y="112" name="inst_E097AD6C" locked="0" code="" scaleX="2.25" scaleY="0.529999971389771" colour="4294967295" rotation="0"/>
     <instance objName="obj_breakable_wall" x="752" y="80" name="inst_09161221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_breakable_wall" x="784" y="80" name="inst_562ED5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="864" name="inst_D974B12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
