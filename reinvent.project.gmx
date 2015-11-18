@@ -93,6 +93,7 @@
       <object>objects\obj_breakable_wall</object>
       <object>objects\obj_wall_movethrough</object>
     </objects>
+
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
   </objects>
