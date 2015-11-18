@@ -16,17 +16,13 @@
     <sprite>sprites\spr_quicksand</sprite>
     <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_coconut</sprite>
-    <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_grapple</sprite>
     <sprite>sprites\spri_drill</sprite>
-    <sprite>sprites\spr_caveman_fish</sprite>
-    <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_throwable</sprite>
     <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\spr_caveman_angry</sprite>
     <sprite>sprites\spr_frustration_cloud</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
@@ -41,6 +37,11 @@
     <sprites name="player_lever/arms">
       <sprite>sprites\spr_lever_idle</sprite>
       <sprite>sprites\spr_lever_walking</sprite>
+    </sprites>
+    <sprites name="cavemen">
+      <sprite>sprites\spr_caveman_fish</sprite>
+      <sprite>sprites\spr_caveman_fish_walk</sprite>
+      <sprite>sprites\spr_caveman_angry</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -93,7 +94,6 @@
       <object>objects\obj_breakable_wall</object>
       <object>objects\obj_wall_movethrough</object>
     </objects>
-
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
   </objects>
