@@ -63,12 +63,13 @@
       <object>objects\obj_player_grapple</object>
     </objects>
     <objects name="walls">
-      <object>objects\obj_statics</object>
-      <object>objects\obj_walls</object>
-      <object>objects\obj_breakable_walls</object>
-      <object>objects\obj_waters</object>
-      <object>objects\obj_quicksand</object>
+      <object>objects\obj_static</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_breakable_wall</object>
       <object>objects\obj_room_change_area</object>
+      <object>objects\obj_quicksand</object>
+      <object>objects\obj_wall_movethrough</object>
+      <object>objects\obj_water</object>
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
@@ -86,13 +87,6 @@
     </objects>
     <object>objects\obj_death_block</object>
     <object>objects\obj_throwable</object>
-    <object>objects\obj_water</object>
-    <objects name="walls">
-      <object>objects\obj_static</object>
-      <object>objects\obj_wall</object>
-      <object>objects\obj_breakable_wall</object>
-      <object>objects\obj_wall_movethrough</object>
-    </objects>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
   </objects>
