@@ -231,15 +231,11 @@ respawnY = 688;</code>
     <instance objName="obj_wall" x="1776" y="864" name="inst_A4C18658" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1792" y="864" name="inst_2BB14127" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1808" y="864" name="inst_C13DF593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="1680" y="752" name="inst_36E1E918" locked="0" code="" scaleX="4.5" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="480" name="inst_1E709A8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="464" name="inst_FE1A8826" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="448" name="inst_F3EDFBFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="432" name="inst_08EAFF66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="416" name="inst_832B4AA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_breakable_wall" x="800" y="112" name="inst_E097AD6C" locked="0" code="" scaleX="2.25" scaleY="0.529999971389771" colour="4294967295" rotation="0"/>
-    <instance objName="obj_breakable_wall" x="752" y="80" name="inst_09161221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_breakable_wall" x="784" y="80" name="inst_562ED5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="864" name="inst_D974B12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="848" name="inst_E25297A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="832" name="inst_DAF3B822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

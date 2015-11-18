@@ -182,9 +182,11 @@ vsp += grav;
 
 //Jumping
 if(place_meeting(x,y+1, obj_static)){
-    vsp = key_jump * -jumpspeed;
+    if(key_jump){
+     vsp = -jumpspeed;
     jumping = 1;
     }
+}
 
 
 
