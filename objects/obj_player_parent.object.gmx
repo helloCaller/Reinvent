@@ -139,7 +139,7 @@ if whiteFlash &gt; 0{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> ///Setting up movements
+            <string>///Setting up movements
 
 /////////////////////////
 // In Cutscene Changes //
@@ -182,9 +182,11 @@ vsp += grav;
 
 //Jumping
 if(place_meeting(x,y+1, obj_static)){
-    vsp = key_jump * -jumpspeed;
+    if(key_jump){
+     vsp = -jumpspeed;
     jumping = 1;
     }
+}
 
 
 
@@ -236,23 +238,19 @@ onground = 0;
 }*/
 
 //Quicksand condition--maybe this could be stored as a state somewhere else
-     if(place_meeting(x, y, obj_quicksand)){
-        vsp = 1;
-        timer -= 1;
-            if(timer == 0){
-                room_restart();
-            } 
-            show_debug_message(timer);
-          
-            if(hsp !=0 || key_jump){
-                vsp = 3;
-                }
-     } else {
-            timer = 200;
-            }
+     if(place_meeting(x, y-64, obj_quicksand)){
+        room_restart();
+     } else if(place_meeting(x, y, obj_quicksand)){
+        if(hsp != 0){
+            hsp = hsp/4;
+        }
+        if(key_jump){
+            vsp += 4;
+        } else {
+            vsp = 0.5;
+        }
+     }
             
-            
-
 
 //Apply speed 
 x += hsp;
