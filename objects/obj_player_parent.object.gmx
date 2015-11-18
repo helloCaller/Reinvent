@@ -236,7 +236,7 @@ if vsp &gt; 0{
 } else {
 onground = 0;
 }*/
-/*
+
 //Quicksand condition--maybe this could be stored as a state somewhere else
      if(place_meeting(x, y-64, obj_quicksand)){
         room_restart();
@@ -251,7 +251,7 @@ onground = 0;
         }
      }
             
-*/
+
 //Apply speed 
 x += hsp;
 y += vsp;

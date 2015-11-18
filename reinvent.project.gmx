@@ -62,11 +62,17 @@
       <object>objects\obj_player_drill</object>
       <object>objects\obj_player_grapple</object>
     </objects>
+    <objects name="walls">
+      <object>objects\obj_static</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_breakable_wall</object>
+      <object>objects\obj_water</object>
+      <object>objects\obj_quicksand</object>
+      <object>objects\obj_room_change_area</object>
+    </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
-    <object>objects\obj_room_change_area</object>
     <object>objects\obj_fade</object>
-    <object>objects\obj_quicksand</object>
     <object>objects\obj_pause</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_background</object>
@@ -87,6 +93,7 @@
       <object>objects\obj_breakable_wall</object>
       <object>objects\obj_wall_movethrough</object>
     </objects>
+
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
   </objects>
