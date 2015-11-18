@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>audio_play_sound(mp3_prehistoric_v2,1,1);
 
-
+audioplaying = 1;
 
 </string>
           </argument>
@@ -52,10 +52,14 @@
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check_pressed(ord("M"))){
-audio_pause_sound(mp3_prehistoric_v2);
+    if(audioplaying==1){
+        audio_pause_sound(mp3_prehistoric_v2);
+        audioplaying = 0;
+    } else {
+    audio_resume_sound(mp3_prehistoric_v2);
+    audioplaying = 1;
+    }
 }
-
-
 
 </string>
           </argument>
