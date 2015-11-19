@@ -19,7 +19,6 @@
     <w>1698</w>
     <h>1020</h>
     <showGrid>0</showGrid>
-
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -30,7 +29,6 @@
     <page>0</page>
     <xoffset>-149</xoffset>
     <yoffset>6</yoffset>
-
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -334,7 +332,6 @@
     <instance objName="obj_wall" x="-32" y="176" name="inst_0A7B3C7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-32" y="160" name="inst_ED716ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_movethrough" x="880" y="672" name="inst_ACF6ABA2" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
-
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="1136" y="640" w="80" h="32" xo="96" yo="32" id="10002502" name="inst_2814555C" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
