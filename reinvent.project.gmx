@@ -42,6 +42,7 @@
       <sprite>sprites\spr_lever_idle</sprite>
       <sprite>sprites\spr_lever_walking</sprite>
     </sprites>
+    <sprite>sprites\spr_lightbulb</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -79,6 +80,7 @@
     <object>objects\obj_background</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_caveman_fish</object>
+    <object>objects\obj_caveman</object>
     <objects name="Coconut_Tree">
       <object>objects\obj_coconut_drop</object>
       <object>objects\obj_treeleaf</object>
@@ -93,9 +95,9 @@
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
+    <room>rooms\puzzleRoom_4</room>
     <room>rooms\room_2</room>
     <room>rooms\room_blank</room>
-    <room>rooms\puzzleRoom_4</room>
     <room>rooms\roomtest</room>
   </rooms>
   <help>

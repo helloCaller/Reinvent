@@ -28,8 +28,8 @@ respawnY = 688;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>224</xoffset>
-    <yoffset>292</yoffset>
+    <xoffset>328</xoffset>
+    <yoffset>-88</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -54,7 +54,7 @@ respawnY = 688;</code>
   <instances>
     <instance objName="obj_wall" x="1936" y="736" name="inst_58A5D012" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1968" y="736" name="inst_6779186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_spring" x="1600" y="704" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_spring" x="1520" y="704" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coconut_drop" x="639" y="608" name="inst_4AA5BDA1" locked="0" code="" scaleX="3.09999990463257" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="656" y="608" name="inst_47512D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="736" name="inst_8999939E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -231,11 +231,16 @@ respawnY = 688;</code>
     <instance objName="obj_wall" x="1776" y="864" name="inst_A4C18658" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1792" y="864" name="inst_2BB14127" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1808" y="864" name="inst_C13DF593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water" x="1680" y="752" name="inst_36E1E918" locked="0" code="" scaleX="4.5" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="480" name="inst_1E709A8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="464" name="inst_FE1A8826" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="448" name="inst_F3EDFBFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="432" name="inst_08EAFF66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="416" name="inst_832B4AA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="800" y="112" name="inst_E097AD6C" locked="0" code="" scaleX="2.25" scaleY="0.529999971389771" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="752" y="80" name="inst_09161221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakable_wall" x="784" y="80" name="inst_562ED5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flippable" x="832" y="80" name="inst_0648B03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="864" name="inst_D974B12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="848" name="inst_E25297A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="832" name="inst_DAF3B822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -271,7 +276,6 @@ respawnY = 688;</code>
     <instance objName="obj_wall" x="96" y="704" name="inst_ACB484F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="112" y="704" name="inst_28E11CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="704" name="inst_8FB5ED0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="1680" y="752" name="inst_DB4EC683" locked="0" code="" scaleX="4.5" scaleY="3.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="704" w="128" h="32" xo="64" yo="32" id="10000613" name="inst_80A2D176" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -361,71 +365,8 @@ respawnY = 688;</code>
     <tile bgName="tile_prehistoric" x="1808" y="768" w="32" h="32" xo="32" yo="32" id="10001001" name="inst_BA2D183C" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1808" y="800" w="32" h="32" xo="32" yo="32" id="10001002" name="inst_42123393" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1808" y="832" w="32" h="32" xo="32" yo="32" id="10001003" name="inst_C94B2EC4" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="320" y="672" w="32" h="32" xo="96" yo="64" id="10002592" name="inst_54DA2E71" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="320" y="704" w="32" h="32" xo="32" yo="32" id="10002593" name="inst_641C07C4" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="96" y="672" w="32" h="32" xo="32" yo="32" id="10002595" name="inst_F2B49F93" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="128" y="672" w="32" h="32" xo="32" yo="32" id="10002596" name="inst_1EADC714" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="160" y="672" w="32" h="32" xo="32" yo="32" id="10002597" name="inst_AC5FF90F" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="192" y="672" w="32" h="32" xo="32" yo="32" id="10002598" name="inst_41CC011E" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="192" y="704" w="32" h="32" xo="32" yo="32" id="10002599" name="inst_D03CBA9C" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="208" y="640" w="32" h="32" xo="32" yo="32" id="10002600" name="inst_473F7190" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="192" y="640" w="32" h="32" xo="32" yo="32" id="10002601" name="inst_DA92CA2F" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="176" y="640" w="32" h="32" xo="32" yo="32" id="10002602" name="inst_66B0C347" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="160" y="640" w="32" h="32" xo="32" yo="32" id="10002603" name="inst_F0B57E02" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="144" y="640" w="32" h="32" xo="32" yo="32" id="10002604" name="inst_CB67AC15" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="128" y="640" w="32" h="32" xo="32" yo="32" id="10002605" name="inst_761FE91A" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="112" y="640" w="32" h="32" xo="32" yo="32" id="10002606" name="inst_07134F1D" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="96" y="640" w="32" h="32" xo="32" yo="32" id="10002607" name="inst_F2FEEAAD" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="80" y="640" w="32" h="32" xo="32" yo="32" id="10002608" name="inst_D5DD883D" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="96" y="608" w="32" h="32" xo="32" yo="32" id="10002609" name="inst_47CE7829" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="128" y="608" w="32" h="32" xo="32" yo="32" id="10002610" name="inst_E0BD2E0F" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="160" y="608" w="32" h="32" xo="32" yo="32" id="10002611" name="inst_6AAD4AA9" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="224" y="608" w="32" h="32" xo="96" yo="64" id="10002613" name="inst_8C44A3D7" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="192" y="608" w="32" h="32" xo="32" yo="32" id="10002614" name="inst_2E30A7BA" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="128" y="576" w="32" h="32" xo="32" yo="32" id="10002615" name="inst_94EF845D" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="96" y="576" w="32" h="32" xo="32" yo="32" id="10002616" name="inst_0042AAE7" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="160" y="576" w="32" h="32" xo="96" yo="64" id="10002617" name="inst_F78BEC13" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="96" y="544" w="32" h="32" xo="96" yo="64" id="10002620" name="inst_8605B722" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="0" y="416" w="32" h="32" xo="96" yo="64" id="10002621" name="inst_56324F31" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1872" y="704" w="32" h="32" xo="64" yo="64" id="10002624" name="inst_0DA00A7D" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1904" y="704" w="32" h="32" xo="32" yo="32" id="10002625" name="inst_365F5D3B" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1936" y="704" w="32" h="32" xo="32" yo="32" id="10002626" name="inst_502A9272" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1968" y="704" w="32" h="32" xo="32" yo="32" id="10002627" name="inst_0391E3EA" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="2000" y="704" w="32" h="32" xo="32" yo="32" id="10002628" name="inst_61C870D5" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1968" y="672" w="32" h="32" xo="64" yo="64" id="10002629" name="inst_24541360" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="864" y="704" w="32" h="32" xo="64" yo="64" id="10002631" name="inst_1D37FC44" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="896" y="704" w="32" h="32" xo="32" yo="32" id="10002632" name="inst_D778C0A8" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="928" y="704" w="32" h="32" xo="32" yo="32" id="10002633" name="inst_4CCA87FF" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="960" y="704" w="32" h="32" xo="32" yo="32" id="10002634" name="inst_300641CD" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="992" y="704" w="32" h="32" xo="32" yo="32" id="10002635" name="inst_8081ABB9" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1024" y="704" w="32" h="32" xo="32" yo="32" id="10002636" name="inst_60522B5D" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1056" y="704" w="32" h="32" xo="32" yo="32" id="10002637" name="inst_C71387DA" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1088" y="704" w="32" h="32" xo="32" yo="32" id="10002638" name="inst_A688DC9D" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1120" y="704" w="32" h="32" xo="32" yo="32" id="10002639" name="inst_870444AE" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1152" y="704" w="32" h="32" xo="32" yo="32" id="10002640" name="inst_9B6DC1F0" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1184" y="704" w="32" h="32" xo="32" yo="32" id="10002641" name="inst_A7EDB1A2" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1216" y="704" w="32" h="32" xo="32" yo="32" id="10002642" name="inst_438A28F2" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1248" y="704" w="32" h="32" xo="32" yo="32" id="10002643" name="inst_7EB2B6F4" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="976" y="672" w="32" h="32" xo="64" yo="64" id="10002647" name="inst_5D0BAB5F" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1008" y="672" w="32" h="32" xo="32" yo="32" id="10002649" name="inst_26CC5278" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1040" y="672" w="32" h="32" xo="32" yo="32" id="10002650" name="inst_8D0ECFB5" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1072" y="672" w="32" h="32" xo="32" yo="32" id="10002651" name="inst_9FF3899B" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1104" y="672" w="32" h="32" xo="32" yo="32" id="10002652" name="inst_C6A5A4D0" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1136" y="672" w="32" h="32" xo="32" yo="32" id="10002653" name="inst_0CAAF34B" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1168" y="672" w="32" h="32" xo="32" yo="32" id="10002654" name="inst_77691B4C" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1408" y="704" w="32" h="32" xo="96" yo="64" id="10002658" name="inst_43D4C39C" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1280" y="704" w="32" h="32" xo="32" yo="32" id="10002659" name="inst_9DC0C7A9" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1312" y="704" w="32" h="32" xo="32" yo="32" id="10002660" name="inst_391F6766" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1344" y="704" w="32" h="32" xo="32" yo="32" id="10002661" name="inst_257B5608" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1376" y="704" w="32" h="32" xo="32" yo="32" id="10002663" name="inst_C4F69EC0" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1200" y="672" w="32" h="32" xo="32" yo="32" id="10002664" name="inst_791D29CF" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1232" y="672" w="32" h="32" xo="32" yo="32" id="10002665" name="inst_17129C3B" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1264" y="672" w="32" h="32" xo="32" yo="32" id="10002666" name="inst_75D980C1" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1328" y="672" w="32" h="32" xo="96" yo="64" id="10002668" name="inst_83A5C96E" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1296" y="672" w="32" h="32" xo="32" yo="32" id="10002669" name="inst_29B2B93A" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_tree" x="1840" y="608" w="160" h="128" xo="0" yo="128" id="10002630" name="inst_369BEB31" depth="40" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_tree" x="1840" y="608" w="160" h="128" xo="0" yo="128" id="10001290" name="inst_860B8BE2" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="576" y="480" w="16" h="16" xo="0" yo="0" id="10000005" name="inst_8969D5A6" depth="25" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1880" y="629" w="32" h="32" xo="0" yo="64" id="10002671" name="inst_21FB4653" depth="25" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="22" y="341" w="32" h="32" xo="0" yo="64" id="10001284" name="inst_27EFD6B9" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="75" y="339" w="32" h="32" xo="0" yo="64" id="10001285" name="inst_E9BD0544" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1930" y="628" w="32" h="32" xo="0" yo="64" id="10001287" name="inst_55EE9620" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

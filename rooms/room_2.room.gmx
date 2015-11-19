@@ -17,9 +17,9 @@ respawnY = 480;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1096</w>
-    <h>700</h>
-    <showGrid>-1</showGrid>
+    <w>1071</w>
+    <h>922</h>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -28,8 +28,8 @@ respawnY = 480;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-372</xoffset>
-    <yoffset>-238</yoffset>
+    <xoffset>86</xoffset>
+    <yoffset>55</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
