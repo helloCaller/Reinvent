@@ -16,7 +16,6 @@
     <sprite>sprites\spr_quicksand</sprite>
     <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_coconut</sprite>
-    <sprite>sprites\spr_player_grapple</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_grapple</sprite>
     <sprite>sprites\spri_drill</sprite>
