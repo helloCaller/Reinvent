@@ -30,16 +30,19 @@
     <sprite>sprites\spr_frustration_cloud</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
+      <sprite>sprites\spr_player_spring_dead</sprite>
       <sprite>sprites\spr_player_spring</sprite>
       <sprite>sprites\spr_player_jump_square_wheels</sprite>
     </sprites>
     <sprites name="player_wheels">
       <sprite>sprites\spr_player_wheels_idle</sprite>
+      <sprite>sprites\spr_player_wheels_dead</sprite>
       <sprite>sprites\spr_wheels</sprite>
       <sprite>sprites\spr_wheels_jump</sprite>
     </sprites>
     <sprites name="player_lever/arms">
       <sprite>sprites\spr_lever_idle</sprite>
+      <sprite>sprites\spr_lever_dead</sprite>
       <sprite>sprites\spr_lever_walking</sprite>
     </sprites>
   </sprites>
@@ -94,8 +97,8 @@
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\room_2</room>
-    <room>rooms\room_blank</room>
     <room>rooms\puzzleRoom_4</room>
+    <room>rooms\room_blank</room>
     <room>rooms\roomtest</room>
   </rooms>
   <help>
