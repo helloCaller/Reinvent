@@ -268,8 +268,9 @@ obj_wall.visible = 0;</code>
     <instance objName="obj_wall" x="128" y="704" name="inst_8FB5ED0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_throwable" x="832" y="80" name="inst_3F8A9D4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="1680" y="752" name="inst_3E41813B" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="1680" y="783" name="inst_DE9F32F7" locked="0" code="" scaleX="4.5" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="1680" y="785" name="inst_D1A68526" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water" x="1680" y="784" name="inst_DE9F32F7" locked="0" code="" scaleX="4.5" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water" x="1680" y="818" name="inst_D1A68526" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water" x="1680" y="850" name="inst_E880E328" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="704" w="128" h="32" xo="64" yo="32" id="10000613" name="inst_80A2D176" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
