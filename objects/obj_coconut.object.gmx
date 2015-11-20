@@ -87,6 +87,7 @@ if state = "rolling"{
         state = "sitting";
         obj_caveman_fish.image_speed = 0;
         obj_caveman_fish.state = "standing"
+        obj_caveman_fish.emotion = -1;
         obj_caveman_fish.image_xscale = -1;}} 
         
 /////////////
@@ -97,9 +98,10 @@ if state = "sitting"{
     //Caveman waiting
     if cavemanTimer &gt; 0{
         cavemanTimer --;
-        if cavemanTimer = 100{
+        if cavemanTimer = 80{
             //lightbulb goes here}
-            }
+            obj_caveman_fish.emotion = spr_lightbulb;
+            obj_caveman_fish.emotionTimer = 0;}
             //Caveman begins walking off screen
         if cavemanTimer = 0{
             obj_caveman_fish.state = "walking";
