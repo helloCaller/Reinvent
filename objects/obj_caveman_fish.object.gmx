@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>10</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_caveman</parentName>
   <maskName>spr_caveman_fish</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,12 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 1/9;
-state = "angry";
-startX = x;
-emotion = -1;
-emotionSpeed = 30;
-emotionTimer = 0;
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
@@ -53,34 +48,7 @@ emotionTimer = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>////////////////
-// Animations //
-////////////////
-
-//Angry
-if state = "angry"{
-    image_speed = 1/30;
-    sprite_index = spr_caveman_angry;
-    emotion = spr_frustration_cloud;}
-
-//Standing
-if state = "standing"{
-    image_speed = 1/9;
-    sprite_index = spr_caveman_fish;
-    emotion = -1;}
-    
-//Walking
-if state = "walking"{
-    image_speed = 1/6;
-    sprite_index = spr_caveman_fish_walk;
-    emotion = -1;}
-    
-///////////////////    
-// Emotion Timer //
-///////////////////
-if emotion != -1{
-    emotionTimer += 1/emotionSpeed;
-    if emotionTimer &gt; image_number then emotionTimer = 0;}
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
@@ -103,9 +71,7 @@ if emotion != -1{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,1);
-if emotion != -1{
-    draw_sprite_ext(emotion,emotionTimer,x,y-48,1,1,0,c_white,1);}
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
