@@ -17,9 +17,9 @@ respawnY = 480;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1096</w>
-    <h>700</h>
-    <showGrid>-1</showGrid>
+    <w>1071</w>
+    <h>922</h>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -28,8 +28,8 @@ respawnY = 480;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-372</xoffset>
-    <yoffset>-238</yoffset>
+    <xoffset>86</xoffset>
+    <yoffset>55</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -124,6 +124,10 @@ respawnY = 480;</code>
     <instance objName="obj_quicksand" x="704" y="576" name="inst_92F4C671" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_throwable" x="240" y="496" name="inst_51C79887" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_throwable" x="448" y="496" name="inst_85AC3FDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_movethrough" x="288" y="304" name="inst_1A46D674" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_movethrough" x="320" y="304" name="inst_49F79835" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_movethrough" x="352" y="304" name="inst_D486ECCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_movethrough" x="384" y="304" name="inst_75E566FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="0" y="512" w="32" h="32" xo="0" yo="0" id="10001019" name="inst_778E2255" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
