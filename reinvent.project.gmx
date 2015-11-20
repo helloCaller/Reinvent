@@ -48,11 +48,60 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
+    <background>background\fish</background>
+    <background>background\tile_prehistoric</background>
+    <background>background\tile_tree</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts"/>
-  <objects name="objects"/>
-  <rooms name="rooms"/>
+  <fonts name="fonts">
+    <font>fonts\fn_arial</font>
+  </fonts>
+  <objects name="objects">
+    <objects name="Player">
+      <object>objects\obj_player_parent</object>
+      <object>objects\obj_player_spring</object>
+      <object>objects\obj_player_wheel</object>
+      <object>objects\obj_player_lever</object>
+      <object>objects\obj_player_drill</object>
+      <object>objects\obj_player_grapple</object>
+    </objects>
+    <objects name="walls">
+      <object>objects\obj_static</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_breakable_wall</object>
+      <object>objects\obj_room_change_area</object>
+      <object>objects\obj_quicksand</object>
+      <object>objects\obj_wall_movethrough</object>
+      <object>objects\obj_water</object>
+    </objects>
+    <object>objects\obj_music</object>
+    <object>objects\obj_global</object>
+    <object>objects\obj_fade</object>
+    <object>objects\obj_pause</object>
+    <object>objects\obj_camera</object>
+    <object>objects\obj_background</object>
+    <object>objects\obj_fish</object>
+    <object>objects\obj_caveman_fish</object>
+    <object>objects\obj_caveman</object>
+    <objects name="Coconut_Tree">
+      <object>objects\obj_coconut_drop</object>
+      <object>objects\obj_treeleaf</object>
+      <object>objects\obj_coconut_old</object>
+      <object>objects\obj_coconut</object>
+    </objects>
+    <object>objects\obj_death_block</object>
+    <object>objects\obj_throwable</object>
+    <object>objects\obj_hook</object>
+    <object>objects\object24</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room_initialize</room>
+    <room>rooms\puzzleRoom_1</room>
+    <room>rooms\puzzleRoom_4</room>
+    <room>rooms\room_2</room>
+    <room>rooms\room_blank</room>
+    <room>rooms\roomtest</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
