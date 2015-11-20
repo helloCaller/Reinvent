@@ -103,7 +103,6 @@
     <room>rooms\room_2</room>
     <room>rooms\room_blank</room>
     <room>rooms\challengeRoom_4</room>
-    <room>rooms\room_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

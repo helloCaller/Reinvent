@@ -240,7 +240,6 @@ respawnY = 688;</code>
     <instance objName="obj_breakable_wall" x="800" y="112" name="inst_E097AD6C" locked="0" code="" scaleX="2.25" scaleY="0.52999997138977" colour="4294967295" rotation="0"/>
     <instance objName="obj_breakable_wall" x="752" y="80" name="inst_09161221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_breakable_wall" x="784" y="80" name="inst_562ED5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="832" y="80" name="inst_0648B03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="864" name="inst_D974B12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="848" name="inst_E25297A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1824" y="832" name="inst_DAF3B822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
