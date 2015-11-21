@@ -96,7 +96,7 @@ if state = "shootgrapple"{
  //This is while the grappling is happening
  if state = "grappling"{
    // camera_target = obj_player_parent;
-    inCutscene = 1;
+   inCutscene = 1;
     distanceY = obj_player_grapple.y - obj_hook.y;
    
      if(distanceY &gt;= 30){
@@ -108,11 +108,12 @@ if state = "shootgrapple"{
         obj_player_grapple.vsp = 0;
             
             //moves player up and through on jump
-            if(obj_player_grapple.key_jump){
+            if(keyboard_check_pressed(ord("Z"))){
+                    
                  obj_wall_movethrough.sprite_index = -1;
                  obj_wall_movethrough.allowedthrough = true;
+                 
                  obj_player_grapple.vsp = -12;
-                 obj_player_grapple.inCutscene = 1;
                  state="finishgrapple";
                 }
         }
