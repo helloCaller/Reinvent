@@ -10,6 +10,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_death</sprite>
     <sprite>sprites\spr_misc_indicator</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spri_watertop</sprite>
@@ -74,6 +75,7 @@
       <object>objects\obj_quicksand</object>
       <object>objects\obj_wall_movethrough</object>
       <object>objects\obj_water</object>
+      <object>objects\obj_death_block</object>
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
@@ -90,7 +92,6 @@
       <object>objects\obj_coconut_old</object>
       <object>objects\obj_coconut</object>
     </objects>
-    <object>objects\obj_death_block</object>
     <object>objects\obj_throwable</object>
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
@@ -100,9 +101,9 @@
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\puzzleRoom_4</room>
+    <room>rooms\challengeRoom_4</room>
     <room>rooms\room_2</room>
     <room>rooms\room_blank</room>
-    <room>rooms\challengeRoom_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
