@@ -72,7 +72,7 @@ state = " ";
 if state = "shootgrapple"{
     aHookFiredAlready = true; //check if it's been fired already
     inCutscene = 1;
-    vsp -=3;//shoot upwards
+    vsp = -16;//shoot upwards
     //camera_target = obj_hook;//change camera target
 
    //collision check
