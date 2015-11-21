@@ -47,6 +47,8 @@
       <sprite>sprites\spr_lever_walking</sprite>
     </sprites>
     <sprite>sprites\spr_lightbulb</sprite>
+    <sprite>sprites\spr_drilling</sprite>
+    <sprite>sprites\spr_wall_jumpthrough</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -74,6 +76,7 @@
       <object>objects\obj_room_change_area</object>
       <object>objects\obj_quicksand</object>
       <object>objects\obj_wall_movethrough</object>
+      <object>objects\obj_wall_jumpthrough</object>
       <object>objects\obj_water</object>
       <object>objects\obj_death_block</object>
     </objects>
