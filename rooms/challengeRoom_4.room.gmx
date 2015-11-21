@@ -464,13 +464,13 @@
     <instance objName="obj_wall" x="1296" y="608" name="inst_F6E37186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1280" y="608" name="inst_2FFBD0B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1280" y="592" name="inst_AC1F38B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="624" name="inst_988E1D63" locked="0" code="" scaleX="55" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="144" y="656" name="inst_92EDD74C" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="304" y="672" name="inst_DC1ECADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="1216" y="576" name="inst_4821E662" locked="0" code="" scaleX="4" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="1328" y="640" name="inst_D72E64DE" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1984" y="560" name="inst_DD85255E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1984" y="528" name="inst_4CA823C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="368" y="608" name="inst_AA97DD1E" locked="0" code="" scaleX="54" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="144" y="656" name="inst_5B84984E" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1216" y="560" name="inst_BC2B5718" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1328" y="640" name="inst_9CB10BF5" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
