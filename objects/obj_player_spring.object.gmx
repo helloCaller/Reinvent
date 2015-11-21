@@ -106,12 +106,13 @@ if upgradeState = "wheels"{
             <string>event_inherited(); //Executes parent code
 
   
- 
-  
+ //disabled for test build
+ /* 
  if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_wheel);
    }
+   */
  
    
    /////SPRITE ANIMATION
