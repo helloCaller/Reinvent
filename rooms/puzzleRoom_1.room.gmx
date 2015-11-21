@@ -269,6 +269,7 @@ obj_wall.visible = 0;</code>
     <instance objName="obj_watertop" x="1680" y="720" name="inst_80D1E812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_watertop" x="1744" y="720" name="inst_541FBBB7" locked="0" code="" scaleX="1.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="1680" y="784" name="inst_42810918" locked="0" code="" scaleX="4.5" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_jumpthrough" x="1536" y="688" name="inst_BE177B0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="704" w="128" h="32" xo="64" yo="32" id="10000613" name="inst_80A2D176" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

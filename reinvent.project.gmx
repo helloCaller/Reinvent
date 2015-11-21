@@ -48,6 +48,7 @@
     </sprites>
     <sprite>sprites\spr_lightbulb</sprite>
     <sprite>sprites\spr_drilling</sprite>
+    <sprite>sprites\spr_wall_jumpthrough</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -97,6 +98,7 @@
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
+    <object>objects\obj_wall_jumpthrough</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
