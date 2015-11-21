@@ -51,7 +51,7 @@ state = " ";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>event_inherited();
 
 var breakableR = instance_place(x-5*image_xscale,y, obj_breakable_wall);
 var breakableL = instance_place(x+5*image_xscale,y, obj_breakable_wall);
