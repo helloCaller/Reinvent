@@ -49,6 +49,7 @@
     <sprite>sprites\spr_lightbulb</sprite>
     <sprite>sprites\spr_drilling</sprite>
     <sprite>sprites\spr_wall_jumpthrough</sprite>
+    <sprite>sprites\spr_intro</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -99,13 +100,16 @@
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
+    <object>objects\obj_intro</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
+    <room>rooms\introRoom</room>
     <room>rooms\puzzleRoom_1</room>
+    <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\room_2</room>
-    <room>rooms\puzzleRoom_4</room>
     <room>rooms\room_blank</room>
   </rooms>
   <help>
