@@ -76,6 +76,7 @@
       <object>objects\obj_room_change_area</object>
       <object>objects\obj_quicksand</object>
       <object>objects\obj_wall_movethrough</object>
+      <object>objects\obj_wall_jumpthrough</object>
       <object>objects\obj_water</object>
       <object>objects\obj_death_block</object>
     </objects>
@@ -98,13 +99,12 @@
     <object>objects\obj_hook</object>
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
-    <object>objects\obj_wall_jumpthrough</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
+    <room>rooms\challengeRoom_4</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\puzzleRoom_4</room>
-    <room>rooms\challengeRoom_4</room>
     <room>rooms\room_2</room>
     <room>rooms\room_blank</room>
   </rooms>

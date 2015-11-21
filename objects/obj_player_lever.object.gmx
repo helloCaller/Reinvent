@@ -52,7 +52,8 @@ state= " ";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>event_inherited();
+
 var throwableR = instance_place(x-5*image_xscale,y, obj_throwable);
 var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 

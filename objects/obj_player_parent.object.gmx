@@ -101,7 +101,13 @@ sidecontact = false;
 /////////////////
 if place_meeting(x,y,obj_death_block){
     x = respawnX;
-    y = respawnY;}
+    y = respawnY;
+    if(instance_exists(obj_hook)){
+        with(obj_hook){
+        instance_destroy()
+        }
+    }
+}
 
 /////////////////////////////
 // Last Ground for Respawn //    //Unused

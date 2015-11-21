@@ -105,15 +105,6 @@ if upgradeState = "wheels"{
             <kind>1</kind>
             <string>event_inherited(); //Executes parent code
 
-
-
-
-
-//PARTICLE SYSTEM ON JUMP
-/*if(key_jump){
-sparking = random_range(1,10);
-  if(sparking &lt; 4)part_particles_create(global.P_System, x-10, y+20, global.Particle1, 75);
-  };*/
   
  
   
