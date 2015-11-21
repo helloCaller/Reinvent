@@ -38,8 +38,9 @@ aHookFiredAlready = false;
 
 hookhit = false;
 
-timer = 30;
-
+/*
+timer = 5;
+*/
 state = " ";
 </string>
           </argument>
@@ -70,18 +71,9 @@ state = " ";
 //Grapple is initiated
 if state = "shootgrapple"{
     aHookFiredAlready = true; //check if it's been fired already
-    obj_player_grapple.inCutscene = 1;
-
-
-    if(obj_player_grapple.hsp &gt;= 1 || obj_player_grapple.hsp &lt;= -1){//but I had to add this
-
-        state = "finishgrapple";
-    }
-    
-    
+    inCutscene = 1;
     vsp -=3;//shoot upwards
-    
-    camera_target = obj_hook;//change camera target
+    //camera_target = obj_hook;//change camera target
 
    //collision check
      if(place_meeting(x, y+vsp, obj_static)){
@@ -89,7 +81,7 @@ if state = "shootgrapple"{
          y+= sign(vsp);
         }
         vsp=0;
-        hookhit = true;
+        state = "grappling";
     }
         
      y+=vsp;
@@ -103,10 +95,11 @@ if state = "shootgrapple"{
 
  //This is while the grappling is happening
  if state = "grappling"{
-    camera_target = obj_player_parent;
-   
+   // camera_target = obj_player_parent;
+    inCutscene = 1;
     distanceY = obj_player_grapple.y - obj_hook.y;
-    if(distanceY &gt;= 30){
+   
+     if(distanceY &gt;= 30){
         obj_player_grapple.vsp = -2;
         obj_player_grapple.y += obj_player_grapple.vsp;
     } else {
@@ -123,34 +116,23 @@ if state = "shootgrapple"{
                  state="finishgrapple";
                 }
         }
-        
-        //set collision box to non existant
-       // obj_wall_movethrough.image_index = -1;
-       // obj_wall_movethrough.movethroughengage = true;
-    
-    //if player moves too far left or right while grappling it disengages
-    if(obj_player_grapple.hsp &gt; 2 || obj_player_grapple.hsp &lt; -2){
-        state = "finishgrapple";
-    }
-    
+      
 }
         
  //returning state, back to normal
   
   if state = "finishgrapple"{
     
-    camera_target = obj_player_parent;
-    obj_player_grapple.inCutscene = 0;
+   // camera_target = obj_player_parent;
+    inCutscene = 0;
     obj_player_grapple.grav = 0.4;
     aHookFiredAlready = false;
     state = " ";
     instance_destroy();
     
-    
-
 }
  
-
+/*
 if(hookhit == true){
     if (timer &gt; 0) {
     timer --;
@@ -158,12 +140,12 @@ if(hookhit == true){
  
     if(timer &lt;= 0){
     hookhit = false;
-    timer = 30;
+    timer = 5;
     state = "grappling";
     
     }
 }
-
+*/
  
 
 
