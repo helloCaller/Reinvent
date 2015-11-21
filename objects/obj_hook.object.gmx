@@ -108,7 +108,9 @@ if state = "shootgrapple"{
         obj_player_grapple.vsp = 0;
             
             //moves player up and through on jump
-            if(keyboard_check_pressed(ord("Z"))){
+            if(instance_exists(obj_wall_movethrough)){
+                //if player is at top of grapple height they can jump up
+                if(place_meeting(x, y + 30, obj_player_grapple) &amp;&amp; keyboard_check_pressed(ord("Z"))){
                     
                  obj_wall_movethrough.sprite_index = -1;
                  obj_wall_movethrough.allowedthrough = true;
@@ -116,7 +118,8 @@ if state = "shootgrapple"{
                  obj_player_grapple.vsp = -12;
                  state="finishgrapple";
                 }
-        }
+            }
+    }
       
 }
         
@@ -132,6 +135,9 @@ if state = "shootgrapple"{
     instance_destroy();
     
 }
+
+
+
  
 /*
 if(hookhit == true){
