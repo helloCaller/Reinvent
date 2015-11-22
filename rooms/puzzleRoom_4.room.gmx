@@ -208,7 +208,6 @@
     <instance objName="obj_wall_movethrough" x="864" y="512" name="inst_6112755D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_movethrough" x="896" y="512" name="inst_A891D6D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_background" x="0" y="192" name="inst_8591CF27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music" x="16" y="192" name="inst_B42E6758" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_grapple" x="48" y="480" name="inst_315431AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1312" y="496" name="inst_7F5322AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1312" y="480" name="inst_A2185F9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
