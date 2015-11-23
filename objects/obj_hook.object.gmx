@@ -42,6 +42,8 @@ hookhit = false;
 timer = 5;
 */
 state = " ";
+
+startingY = y;
 </string>
           </argument>
         </arguments>
@@ -70,27 +72,30 @@ state = " ";
 
 //Grapple is initiated
 if state = "shootgrapple"{
-    aHookFiredAlready = true; //check if it's been fired already
-    inCutscene = 1;
-    vsp = -16;//shoot upwards
+    
+        aHookFiredAlready = true; //check if it's been fired already
+        inCutscene = 1;
+         vsp = -16;//shoot upwards
     //camera_target = obj_hook;//change camera target
 
    //collision check
-     if(place_meeting(x, y+vsp, obj_static)){
-        while(!place_meeting(x,y+sign(vsp),obj_static)){ 
-         y+= sign(vsp);
+        if(place_meeting(x, y+vsp, obj_static)){
+         while(!place_meeting(x,y+sign(vsp),obj_static)){ 
+            y+= sign(vsp);
+         }
+            vsp=0;
+            state = "grappling";
         }
-        vsp=0;
-        state = "grappling";
-    }
         
-     y+=vsp;
+        y+=vsp;
      
     
      //If grapple shoots up into the sky
        if(obj_hook.y &lt; room_height - room_height - 100){
             state = "finishgrapple";
         }
+        
+       
  }
 
  //This is while the grappling is happening
@@ -108,7 +113,9 @@ if state = "shootgrapple"{
         obj_player_grapple.vsp = 0;
             
             //moves player up and through on jump
-            if(instance_exists(obj_wall_movethrough)){
+            
+            }
+    if(instance_exists(obj_wall_movethrough)){
                 //if player is at top of grapple height they can jump up
                 if(place_meeting(x, y + 30, obj_player_grapple) &amp;&amp; keyboard_check_pressed(ord("Z"))){
                     
@@ -118,8 +125,7 @@ if state = "shootgrapple"{
                  obj_player_grapple.vsp = -12;
                  state="finishgrapple";
                 }
-            }
-    }
+        }
       
 }
         

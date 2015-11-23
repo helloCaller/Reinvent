@@ -102,6 +102,7 @@ sidecontact = false;
 if place_meeting(x,y,obj_death_block){
     x = respawnX;
     y = respawnY;
+    
     if(instance_exists(obj_hook)){
         inCutscene = 0;
         with(obj_hook){
@@ -234,10 +235,7 @@ if vsp &gt; 0{
 
 
 //Quicksand condition--maybe this could be stored as a state somewhere else
-     if(place_meeting(x, y-64, obj_quicksand)){
-        x = respawnX;
-        y = respawnY;
-     } else if(place_meeting(x, y, obj_quicksand)){
+      if(place_meeting(x, y, obj_quicksand)){
         if(hsp != 0){
             hsp = hsp/4;
         }
@@ -247,6 +245,19 @@ if vsp &gt; 0{
             vsp = 0.5;
         }
      }
+     
+     if(place_meeting(x, y-64, obj_quicksand)){
+        x = respawnX;
+        y = respawnY;
+        //Destroy hook if it exists
+            if(instance_exists(obj_hook)){
+                inCutscene = 0;
+                with(obj_hook){
+                instance_destroy()
+            }
+    }
+        
+     } 
             
 
 //Apply speed 
