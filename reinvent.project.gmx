@@ -16,6 +16,7 @@
     <sprite>sprites\spri_watertop</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
     <sprite>sprites\spr_quicksand</sprite>
+    <sprite>sprites\spr_wall_jumpthrough</sprite>
     <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_hook</sprite>
@@ -48,7 +49,6 @@
     </sprites>
     <sprite>sprites\spr_lightbulb</sprite>
     <sprite>sprites\spr_drilling</sprite>
-    <sprite>sprites\spr_wall_jumpthrough</sprite>
     <sprite>sprites\spr_intro</sprite>
   </sprites>
   <backgrounds name="background">
@@ -104,9 +104,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_4</room>
     <room>rooms\introRoom</room>
     <room>rooms\puzzleRoom_1</room>
+    <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\room_2</room>
   </rooms>
