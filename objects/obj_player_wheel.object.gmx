@@ -51,13 +51,11 @@
             <kind>1</kind>
             <string>event_inherited(); //Executes parent code
 
-//siabled for test build
 /*
 if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_lever);
-   }
-   */
+   }*/
 
    ////SPRITE ANIMATION
    

@@ -18,8 +18,8 @@ obj_wall.visible = 0;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1071</w>
-    <h>922</h>
+    <w>1096</w>
+    <h>700</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,9 +28,9 @@ obj_wall.visible = 0;</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>224</xoffset>
-    <yoffset>292</yoffset>
+    <page>1</page>
+    <xoffset>1234</xoffset>
+    <yoffset>132</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -55,7 +55,7 @@ obj_wall.visible = 0;</code>
   <instances>
     <instance objName="obj_wall" x="1936" y="736" name="inst_58A5D012" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1968" y="736" name="inst_6779186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_spring" x="1600" y="704" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_spring" x="1568" y="704" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coconut_drop" x="639" y="608" name="inst_4AA5BDA1" locked="0" code="" scaleX="3.09999990463257" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="656" y="608" name="inst_47512D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="736" name="inst_8999939E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -247,8 +247,7 @@ obj_wall.visible = 0;</code>
     <instance objName="obj_wall" x="1904" y="736" name="inst_FAC17CD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1920" y="736" name="inst_3D2F7AB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_background" x="16" y="16" name="inst_D824A169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music" x="48" y="16" name="inst_24EA68CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_room_change_area" x="2000" y="544" name="inst_69DE4BC9" locked="0" code="nextRoom = room_2;&#xA;" scaleX="2.5" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_change_area" x="2000" y="544" name="inst_69DE4BC9" locked="0" code="" scaleX="2.5" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2000" y="736" name="inst_3EC7DBC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="736" name="inst_90133C6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="720" name="inst_78A2A473" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -269,6 +268,7 @@ obj_wall.visible = 0;</code>
     <instance objName="obj_watertop" x="1680" y="720" name="inst_80D1E812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_watertop" x="1744" y="720" name="inst_541FBBB7" locked="0" code="" scaleX="1.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="1680" y="784" name="inst_42810918" locked="0" code="" scaleX="4.5" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music" x="48" y="16" name="inst_258E48A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="704" w="128" h="32" xo="64" yo="32" id="10000613" name="inst_80A2D176" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
