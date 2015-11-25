@@ -78,7 +78,9 @@ if state = "shootgrapple"{
         vsp = -16;//shoot upwards
         
         //this makes sure movethrough is solid when the hook comes at it
-        obj_wall_movethrough.allowedthrough = false;
+        if(instance_exists(obj_wall_movethrough)){
+            obj_wall_movethrough.allowedthrough = false;
+            };
     
         //camera_target = obj_hook;//change camera target
 
@@ -119,7 +121,7 @@ if state = "shootgrapple"{
     
         if(instance_exists(obj_wall_movethrough)){
                 //if player is at top of grapple height they can jump through
-                if(place_meeting(x, y + 30, obj_player_grapple) &amp;&amp; keyboard_check_pressed(ord("Z"))){
+                if(place_meeting(x, y + 30, obj_player_grapple) &amp;&amp; keyboard_check_pressed(vk_space)){
                  obj_wall_movethrough.allowedthrough = true;   
                  obj_wall_movethrough.sprite_index = -1;
                  obj_player_grapple.vsp = -12;

@@ -104,10 +104,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
+    <room>rooms\challengeRoom_4</room>
     <room>rooms\introRoom</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\puzzleRoom_4</room>
-    <room>rooms\challengeRoom_4</room>
     <room>rooms\room_2</room>
   </rooms>
   <help>

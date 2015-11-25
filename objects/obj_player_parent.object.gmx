@@ -166,7 +166,7 @@ if vsp &lt; 0 then onground = 0;
 if inCutscene = 0{
     key_right = keyboard_check(vk_right);
     key_left = -keyboard_check(vk_left);
-    key_jump = keyboard_check_pressed(ord('Z'));
+    key_jump = keyboard_check_pressed(vk_space);
     } else{
     key_right = 0
     key_left = 0
