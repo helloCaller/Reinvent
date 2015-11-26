@@ -50,6 +50,8 @@
     <sprite>sprites\spr_lightbulb</sprite>
     <sprite>sprites\spr_drilling</sprite>
     <sprite>sprites\spr_intro</sprite>
+    <sprite>sprites\spr_destructable_block</sprite>
+    <sprite>sprites\sprite36</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -101,6 +103,7 @@
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
+    <object>objects\obj_destructible_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
