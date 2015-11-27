@@ -57,12 +57,10 @@
       <sprite>sprites\spr_caveman_fish</sprite>
       <sprite>sprites\spr_caveman_fish_walk</sprite>
       <sprite>sprites\spr_caveman_panic</sprite>
-      <sprite>sprites\spr_caveman_push</sprite>
       <sprite>sprites\spr_cavewoman_idle</sprite>
-      <sprite>sprites\spr_cavewoman_pull</sprite>
       <sprite>sprites\spr_frustration_cloud</sprite>
       <sprite>sprites\spr_lightbulb</sprite>
-      <sprite>sprites\spr_cavewoman_sad</sprite>
+      <sprite>sprites\spr_cavewoman_pull</sprite>
     </sprites>
     <sprite>sprites\spr_lightbulbs</sprite>
     <sprite>sprites\spr_drilling</sprite>
@@ -121,19 +119,18 @@
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
-    <object>objects\obj_vft</object>
-    <object>objects\obj_shell</object>
-    <object>objects\obj_cavewoman</object>
+    <object>objects\obj_venus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
-    <room>rooms\puzzleRoom_4</room>
-    <room>rooms\challengeRoom_4</room>
     <room>rooms\puzzleRoom_3</room>
+    <room>rooms\puzzleRoom_4</room>
+    <room>rooms\puzzleRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
+    <room>rooms\challengeRoom_2</room>
     <room>rooms\challengeRoom_3</room>
+    <room>rooms\challengeRoom_4</room>
     <room>rooms\finalRoom</room>
     <room>rooms\introRoom</room>
     <room>rooms\outroRoom</room>
