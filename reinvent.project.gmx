@@ -23,7 +23,6 @@
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\spr_vft</sprite>
     <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
@@ -121,7 +120,6 @@
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
     <object>objects\obj_venus</object>
-    <object>objects\obj_vft</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
