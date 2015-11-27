@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = -1;
+            <string>//sprite_index = -1;
 
 
 
+image_index = 0;
 
-
-image_speed = 1/16;
+image_speed = 0;
 
 
 </string>
@@ -56,7 +56,8 @@ image_speed = 1/16;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>  if(round(image_index) == 16){
+            <string>  /*
+  if(round(image_index) == 16){
   image_index = 0
   }
   
@@ -67,8 +68,24 @@ image_speed = 1/16;
         mask_index = 37;
    }
  
+ */
+ show_debug_message(image_index);
+  //show_debug_message(y);
+
  
- show_debug_message(mask_index);
+ if(instance_exists(obj_player_parent)){
+    distY = round(y - obj_player_parent.y);
+    distX = round(x - obj_player_parent.x);
+    
+ //close venus near peak of jump. 
+    if(distY &gt;= 70 &amp;&amp; distX &lt; 48 &amp;&amp; distX &gt; -48){
+        image_index = 1;
+    }else{
+        image_index = 0;
+    }
+ }
+ 
+ 
 </string>
           </argument>
         </arguments>

@@ -72,8 +72,7 @@ image_alpha= 1;
 //Check if player is touching the ground
 onground = 0;
 
-//check if player is beside an object
-sidecontact = false;
+
 </string>
           </argument>
         </arguments>
@@ -109,6 +108,10 @@ if place_meeting(x,y,obj_death_block){
         instance_destroy()
         }
     }
+    
+    if(instance_exists(obj_throwable)){
+        obj_throwable.state = "reset"
+        }
     
 }
 

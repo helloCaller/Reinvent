@@ -18,8 +18,7 @@
     <sprite>sprites\spr_quicksand</sprite>
     <sprite>sprites\spr_wall_jumpthrough</sprite>
     <sprite>sprites\spr_wall_movethrough</sprite>
-    <sprite>sprites\spr_wall_jumpthrough</sprite>
-    <sprite>sprites\spr_drillwall</sprite>
+    <sprite>sprites\spr_destructable_block</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
@@ -64,13 +63,11 @@
       <sprite>sprites\spr_lightbulb</sprite>
       <sprite>sprites\spr_cavewoman_pull</sprite>
     </sprites>
-    <sprite>sprites\spr_lightbulb</sprite>
+    <sprite>sprites\spr_lightbulbs</sprite>
     <sprite>sprites\spr_drilling</sprite>
-    <sprite>sprites\spr_intro</sprite>
-    <sprite>sprites\spr_destructable_block</sprite>
     <sprite>sprites\sprite36</sprite>
     <sprite>sprites\spr_venus</sprite>
- </sprites>
+  </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\fish</background>
@@ -101,6 +98,7 @@
       <object>objects\obj_wall_jumpthrough</object>
       <object>objects\obj_water</object>
       <object>objects\obj_death_block</object>
+      <object>objects\obj_destructible_wall</object>
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
@@ -122,16 +120,15 @@
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
-    <object>objects\obj_destructible_wall</object>
     <object>objects\obj_venus</object>
     <object>objects\obj_vft</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
+    <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\puzzleRoom_1</room>
-    <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
     <room>rooms\challengeRoom_2</room>
     <room>rooms\challengeRoom_3</room>
@@ -140,7 +137,7 @@
     <room>rooms\introRoom</room>
     <room>rooms\outroRoom</room>
     <room>rooms\room_blank</room>
-</rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
