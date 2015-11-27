@@ -27,9 +27,9 @@ global.cameraOffset = 0;</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>1</page>
-    <xoffset>-157</xoffset>
-    <yoffset>-139</yoffset>
+    <page>0</page>
+    <xoffset>577</xoffset>
+    <yoffset>173</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -585,6 +585,7 @@ global.cameraOffset = 0;</code>
     <instance objName="obj_wall" x="800" y="496" name="inst_5876DF2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="800" y="512" name="inst_21AEBE43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="800" y="528" name="inst_3BCA3B9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cavewoman" x="848" y="672" name="inst_70E73F4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="1088" y="544" w="80" h="32" xo="96" yo="32" id="10002502" name="inst_2814555C" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
