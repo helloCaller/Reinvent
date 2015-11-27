@@ -34,7 +34,8 @@ state = " ";
 grav = 0.5;
 rotation = 0;
 
-
+startX = x;
+startY = y;
 
 currentY = y;
 
@@ -139,9 +140,13 @@ if state = "in air"{
     
       y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
 
+}
+    
+    if state = "reset"{
+        x = startX;
+        y = startY;
+        state= " ";
     }
-    
-    
 
 
 
