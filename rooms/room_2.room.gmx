@@ -89,6 +89,7 @@ respawnY = 480;</code>
     <instance objName="obj_wall" x="528" y="512" name="inst_00341C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="544" y="512" name="inst_943D2AC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="560" y="512" name="inst_5D181F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_wheel" x="48" y="480" name="inst_1A9BE538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-16" y="256" name="inst_C5940F00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-16" y="272" name="inst_1EA43C6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-16" y="288" name="inst_FEE8A7ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

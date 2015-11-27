@@ -72,7 +72,8 @@ image_alpha= 1;
 //Check if player is touching the ground
 onground = 0;
 
-
+//check if player is beside an object
+sidecontact = false;
 </string>
           </argument>
         </arguments>
@@ -101,18 +102,12 @@ onground = 0;
 if place_meeting(x,y,obj_death_block){
     x = respawnX;
     y = respawnY;
-    
     if(instance_exists(obj_hook)){
         inCutscene = 0;
         with(obj_hook){
         instance_destroy()
         }
     }
-    
-    if(instance_exists(obj_throwable)){
-        obj_throwable.state = "reset"
-        }
-    
 }
 
 /////////////////////////////
@@ -170,7 +165,7 @@ if vsp &lt; 0 then onground = 0;
 if inCutscene = 0{
     key_right = keyboard_check(vk_right);
     key_left = -keyboard_check(vk_left);
-    key_jump = keyboard_check_pressed(vk_space);
+    key_jump = keyboard_check_pressed(ord('Z'));
     } else{
     key_right = 0
     key_left = 0
@@ -212,7 +207,14 @@ if(place_meeting(x+hsp,y,obj_static)){
     hsp = 0;
     
 } 
+/*
+if(place_meeting(x+1, y, obj_static) || place_meeting(x-1,y, obj_static)){
+    sidecontact = true;
+} else{
+    sidecontact = false;
+}
 
+*/
 
 
   
@@ -232,7 +234,10 @@ if vsp &gt; 0{
 
 
 //Quicksand condition--maybe this could be stored as a state somewhere else
-      if(place_meeting(x, y, obj_quicksand)){
+     if(place_meeting(x, y-64, obj_quicksand)){
+        x = respawnX;
+        y = respawnY;
+     } else if(place_meeting(x, y, obj_quicksand)){
         if(hsp != 0){
             hsp = hsp/4;
         }
@@ -242,19 +247,6 @@ if vsp &gt; 0{
             vsp = 0.5;
         }
      }
-     
-     if(place_meeting(x, y-64, obj_quicksand)){
-        x = respawnX;
-        y = respawnY;
-        //Destroy hook if it exists
-            if(instance_exists(obj_hook)){
-                inCutscene = 0;
-                with(obj_hook){
-                instance_destroy()
-            }
-    }
-        
-     } 
             
 
 //Apply speed 
