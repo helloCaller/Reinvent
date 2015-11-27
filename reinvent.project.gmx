@@ -52,6 +52,7 @@
     <sprite>sprites\spr_intro</sprite>
     <sprite>sprites\spr_destructable_block</sprite>
     <sprite>sprites\sprite36</sprite>
+    <sprite>sprites\spr_venus</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -104,13 +105,14 @@
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
     <object>objects\obj_destructible_wall</object>
+    <object>objects\obj_venus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\challengeRoom_4</room>
     <room>rooms\introRoom</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\puzzleRoom_4</room>
+    <room>rooms\challengeRoom_4</room>
     <room>rooms\room_2</room>
   </rooms>
   <help>
