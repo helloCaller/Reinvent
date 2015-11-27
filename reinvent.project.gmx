@@ -18,11 +18,12 @@
     <sprite>sprites\spr_quicksand</sprite>
     <sprite>sprites\spr_wall_jumpthrough</sprite>
     <sprite>sprites\spr_wall_movethrough</sprite>
-    <sprite>sprites\spr_destructable_block</sprite>
+    <sprite>sprites\spr_drillwall</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_rock</sprite>
+    <sprite>sprites\spr_venus</sprite>
     <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
@@ -62,10 +63,6 @@
       <sprite>sprites\spr_lightbulb</sprite>
       <sprite>sprites\spr_cavewoman_pull</sprite>
     </sprites>
-    <sprite>sprites\spr_lightbulbs</sprite>
-    <sprite>sprites\spr_drilling</sprite>
-    <sprite>sprites\sprite36</sprite>
-    <sprite>sprites\spr_venus</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -119,18 +116,21 @@
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
+    <object>objects\obj_vft</object>
+    <object>objects\obj_shell</object>
+    <object>objects\obj_cavewoman</object>
     <object>objects\obj_venus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\challengeRoom_1</room>
-    <room>rooms\puzzleRoom_3</room>
-    <room>rooms\puzzleRoom_4</room>
     <room>rooms\puzzleRoom_1</room>
+    <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_4</room>
+    <room>rooms\challengeRoom_4</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\puzzleRoom_2</room>
     <room>rooms\challengeRoom_2</room>
     <room>rooms\challengeRoom_3</room>
-    <room>rooms\challengeRoom_4</room>
     <room>rooms\finalRoom</room>
     <room>rooms\introRoom</room>
     <room>rooms\outroRoom</room>
