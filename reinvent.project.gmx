@@ -16,14 +16,14 @@
     <sprite>sprites\spri_watertop</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
     <sprite>sprites\spr_quicksand</sprite>
-    <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_wall_jumpthrough</sprite>
+    <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_drillwall</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\spr_vft</sprite>
+    <sprite>sprites\spr_venus</sprite>
     <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
@@ -96,6 +96,7 @@
       <object>objects\obj_wall_jumpthrough</object>
       <object>objects\obj_water</object>
       <object>objects\obj_death_block</object>
+      <object>objects\obj_destructible_wall</object>
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
@@ -120,6 +121,7 @@
     <object>objects\obj_vft</object>
     <object>objects\obj_shell</object>
     <object>objects\obj_cavewoman</object>
+    <object>objects\obj_venus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
