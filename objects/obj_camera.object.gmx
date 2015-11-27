@@ -55,7 +55,7 @@ y= camera_target.y-80;
           <argument>
             <kind>1</kind>
             <string>x= camera_target.x;
-y= camera_target.y-80;
+y= camera_target.y - global.cameraOffset;
 </string>
           </argument>
         </arguments>
