@@ -18,18 +18,14 @@
     <sprite>sprites\spr_quicksand</sprite>
     <sprite>sprites\spr_wall_jumpthrough</sprite>
     <sprite>sprites\spr_wall_movethrough</sprite>
+    <sprite>sprites\spr_wall_jumpthrough</sprite>
+    <sprite>sprites\spr_drillwall</sprite>
     <sprite>sprites\spr_coconut</sprite>
-    <sprite>sprites\spr_hook</sprite>
-    <sprite>sprites\spr_grapple</sprite>
-    <sprite>sprites\spri_drill</sprite>
-    <sprite>sprites\spr_caveman_fish</sprite>
-    <sprite>sprites\spr_caveman_fish_walk</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
-    <sprite>sprites\spr_throwable</sprite>
     <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\spr_caveman_angry</sprite>
-    <sprite>sprites\spr_frustration_cloud</sprite>
+    <sprite>sprites\spr_vft</sprite>
+    <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
       <sprite>sprites\spr_player_spring_dead</sprite>
@@ -42,10 +38,31 @@
       <sprite>sprites\spr_wheels</sprite>
       <sprite>sprites\spr_wheels_jump</sprite>
     </sprites>
-    <sprites name="player_lever/arms">
+    <sprites name="player_lever">
       <sprite>sprites\spr_lever_idle</sprite>
       <sprite>sprites\spr_lever_dead</sprite>
       <sprite>sprites\spr_lever_walking</sprite>
+      <sprite>sprites\spr_player_lever_throw</sprite>
+      <sprite>sprites\spr_player_lever_jump</sprite>
+    </sprites>
+    <sprites name="player_drill">
+      <sprite>sprites\spri_drilling</sprite>
+    </sprites>
+    <sprites name="player_grapple">
+      <sprite>sprites\spr_hook</sprite>
+      <sprite>sprites\spr_grapple</sprite>
+      <sprite>sprites\spr_grappling</sprite>
+    </sprites>
+    <sprites name="cavepeople">
+      <sprite>sprites\spr_caveman_angry</sprite>
+      <sprite>sprites\spr_caveman_climb</sprite>
+      <sprite>sprites\spr_caveman_fish</sprite>
+      <sprite>sprites\spr_caveman_fish_walk</sprite>
+      <sprite>sprites\spr_caveman_panic</sprite>
+      <sprite>sprites\spr_cavewoman_idle</sprite>
+      <sprite>sprites\spr_frustration_cloud</sprite>
+      <sprite>sprites\spr_lightbulb</sprite>
+      <sprite>sprites\spr_cavewoman_pull</sprite>
     </sprites>
     <sprite>sprites\spr_lightbulb</sprite>
     <sprite>sprites\spr_drilling</sprite>
@@ -53,12 +70,13 @@
     <sprite>sprites\spr_destructable_block</sprite>
     <sprite>sprites\sprite36</sprite>
     <sprite>sprites\spr_venus</sprite>
-  </sprites>
+ </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\fish</background>
     <background>background\tile_prehistoric</background>
     <background>background\tile_tree</background>
+    <background>background\titlescreen</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -106,15 +124,23 @@
     <object>objects\obj_intro</object>
     <object>objects\obj_destructible_wall</object>
     <object>objects\obj_venus</object>
+    <object>objects\obj_vft</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\introRoom</room>
-    <room>rooms\puzzleRoom_1</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
+    <room>rooms\puzzleRoom_1</room>
+    <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_2</room>
+    <room>rooms\challengeRoom_2</room>
+    <room>rooms\challengeRoom_3</room>
     <room>rooms\challengeRoom_4</room>
-    <room>rooms\room_2</room>
-  </rooms>
+    <room>rooms\finalRoom</room>
+    <room>rooms\introRoom</room>
+    <room>rooms\outroRoom</room>
+    <room>rooms\room_blank</room>
+</rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

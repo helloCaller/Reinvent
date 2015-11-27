@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>nextRoom = room; //ADD THIS IN OBJECT CREATION CODE
+            <string>//nextRoom = room; //ADD THIS IN OBJECT CREATION CODE
 </string>
           </argument>
         </arguments>
