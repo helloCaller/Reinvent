@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1416</xoffset>
-    <yoffset>140</yoffset>
+    <xoffset>345</xoffset>
+    <yoffset>419</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -201,6 +201,7 @@
     <instance objName="obj_room_change_area" x="1968" y="496" name="inst_AFED3624" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="464" name="inst_D9B822C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="432" name="inst_368CBE30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_caveman" x="448" y="784" name="inst_15070EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="0" y="624" w="32" h="32" xo="0" yo="0" id="10004241" name="inst_67DCAD88" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

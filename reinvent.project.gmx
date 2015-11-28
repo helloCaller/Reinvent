@@ -76,6 +76,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fn_arial</font>
+    <font>fonts\fn_courier</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
