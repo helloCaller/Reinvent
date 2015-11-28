@@ -76,6 +76,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fn_arial</font>
+    <font>fonts\fn_courier</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
@@ -127,15 +128,15 @@
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_3</room>
+    <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
-    <room>rooms\puzzleRoom_3</room>
-    <room>rooms\puzzleRoom_2</room>
-    <room>rooms\challengeRoom_3</room>
     <room>rooms\finalRoom</room>
+    <room>rooms\room_blank</room>
     <room>rooms\introRoom</room>
     <room>rooms\outroRoom</room>
-    <room>rooms\room_blank</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

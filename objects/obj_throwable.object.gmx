@@ -65,12 +65,14 @@ currentY = y;
             <string>
     
 if state = "playerOnLeftFlipping"{
+    if(!place_meeting(x,y-17,obj_static)||!place_meeting(x+17,y,obj_static)){
     vsp = -10;
     hsp = 4;
     rotation += 3
    
     y+=  vsp;
     x+=  hsp; 
+    }
     
     if(currentY - y &gt;= 20){ //setting the height at which to come down
          state = "in air";
@@ -80,12 +82,14 @@ if state = "playerOnLeftFlipping"{
 
 
 if state = "playerOnRightFlipping"{
+    if(!place_meeting(x,y-17,obj_static)||!place_meeting(x-17,y,obj_static)){
       vsp = -10;
       hsp = -4;
       rotation -= 3;
    
       y+= vsp;
       x+= hsp; 
+    }
     
     if(currentY - y &gt;= 20){ //setting the height at which to come down
         state = "in air";
