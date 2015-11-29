@@ -177,10 +177,10 @@ if state = "in air"{
     if state = "reset"{
         x = startX;
         y = startY;
-        state= "staticPosition";
+        state= "";
     }
 
-show_debug_message(state);
+
 
 </string>
           </argument>

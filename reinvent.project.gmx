@@ -65,6 +65,7 @@
       <sprite>sprites\spr_lightbulb</sprite>
       <sprite>sprites\spr_cavewoman_sad</sprite>
     </sprites>
+    <sprite>sprites\sprite45</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -125,10 +126,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_3</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
