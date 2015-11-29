@@ -608,9 +608,6 @@ global.cameraOffset = 0;</code>
     <instance objName="obj_death_block" x="432" y="320" name="inst_EF1F458B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death_block" x="432" y="304" name="inst_7A82DB71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="304" y="656" name="inst_1135EE78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_destructible_wall" x="688" y="224" name="inst_08A99CF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_destructible_wall" x="752" y="224" name="inst_68AB56F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_destructible_wall" x="720" y="224" name="inst_04EC96F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="1088" y="544" w="80" h="32" xo="96" yo="32" id="10002502" name="inst_2814555C" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

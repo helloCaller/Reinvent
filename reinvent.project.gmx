@@ -45,7 +45,7 @@
       <sprite>sprites\spr_player_lever_jump</sprite>
     </sprites>
     <sprites name="player_drill">
-      <sprite>sprites\spri_drilling</sprite>
+      <sprite>sprites\spr_drilling</sprite>
     </sprites>
     <sprites name="player_grapple">
       <sprite>sprites\spr_hook</sprite>
@@ -97,7 +97,6 @@
       <object>objects\obj_wall_jumpthrough</object>
       <object>objects\obj_water</object>
       <object>objects\obj_death_block</object>
-      <object>objects\obj_destructible_wall</object>
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
@@ -126,10 +125,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
-    <room>rooms\puzzleRoom_3</room>
+    <room>rooms\puzzleRoom_2</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
