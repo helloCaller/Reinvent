@@ -126,18 +126,11 @@ if(keyboard_check_pressed(vk_up)){
         }
 
 }
-
-
-  //disabled for test build
-  /*  
+ 
 if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_spring);
    }
- */ 
- 
- 
-  
 </string>
           </argument>
         </arguments>

@@ -28,6 +28,8 @@
             <string>globalvar inCutscene;
 inCutscene = 0;
 
+global.cameraOffset = 80;
+
 //Respawn X &amp; Y
 globalvar respawnX;
 respawnX = 0;
