@@ -73,6 +73,7 @@ image_alpha= 1;
 onground = 0;
 
 
+
 </string>
           </argument>
         </arguments>
@@ -284,6 +285,11 @@ if roomChange != noone{
         inCutscene = 0;}}
         
 //if keyboard_check_pressed(ord('U')) then room_goto(room_2);
+
+//for animations
+grapple = keyboard_check(ord("W"));
+drill = keyboard_check(ord("D"));
+throw = keyboard_check(ord("A"));
 </string>
           </argument>
         </arguments>

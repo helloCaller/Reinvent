@@ -65,7 +65,6 @@ if(keyboard_check_pressed(ord("A"))){
     if(place_meeting(x+5*image_xscale,y, obj_throwable)){
         
         (throwableL).state = "playerOnLeftFlipping";
-            show_debug_message((throwableL).state);
         } 
         
     if(place_meeting(x-5*image_xscale,y, obj_throwable)){

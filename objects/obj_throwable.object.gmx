@@ -64,41 +64,54 @@ currentY = y;
             <kind>1</kind>
             <string>
     
-if state = "playerOnLeftFlipping"{
-    if(!place_meeting(x,y-17,obj_static)||!place_meeting(x+17,y,obj_static)){
-    vsp = -10;
-    hsp = 4;
-    rotation += 3
+if state = "playerOnLeftFlipping"{ 
+    
+    
+     if(!place_meeting(x+1,y,obj_static) || !place_meeting(x, y-1, obj_static)){//added condition so that you can't throw the object if it's up against a wall
+        vsp = -10;
+        hsp = 4;
+        rotation += 3
    
-    y+=  vsp;
-    x+=  hsp; 
-    }
+        y+=  vsp;
+        x+=  hsp; 
+    } else {
+    show_debug_message("fired");
+        state = "in air";
+        }
     
     if(currentY - y &gt;= 20){ //setting the height at which to come down
          state = "in air";
     }
     
+    
+    
 }  
 
 
 if state = "playerOnRightFlipping"{
-    if(!place_meeting(x,y-17,obj_static)||!place_meeting(x-17,y,obj_static)){
+    
+    
+     if(!place_meeting(x-1,y,obj_static) || !place_meeting(x-1, y-1, obj_static)){
       vsp = -10;
       hsp = -4;
       rotation -= 3;
    
       y+= vsp;
       x+= hsp; 
-    }
+    }  else {
+        state = "in air";
+        }
     
     if(currentY - y &gt;= 20){ //setting the height at which to come down
         state = "in air";
     }
     
+    
 }
 
 if state = "in air"{
     vsp += grav;
+    
     //collision objects + player
      if(place_meeting(x+hsp, y,obj_player_parent)){
        while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
@@ -139,11 +152,13 @@ if state = "in air"{
           hsp=0;
           vsp=0;
           rotation=0;
+          currentY = y;
+          state = " ";
     } 
 
     
       y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
-
+    
 }
     
     if state = "reset"{
