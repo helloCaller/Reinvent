@@ -29,7 +29,7 @@
 hsp = 0;
 vsp = 0;
 
-state = " ";
+state = "";
 
 grav = 0.5;
 rotation = 0;
@@ -62,13 +62,16 @@ currentY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-    
+            <string>  
 if state = "playerOnLeftFlipping"{  
-   
-    if(place_meeting(x, y-1, obj_static)){
+   //if there's an object right above, don't move
+    if(place_meeting(x, y-17, obj_static)){
         state= "in air";
         }else {
+        //if throwable object is directly beside another, it at least pops up
+        if(place_meeting(x+1,y,obj_throwable)){
+            vsp = -10;
+        }
     
      if(!place_meeting(x+1,y,obj_static)){//added condition so that you can't throw the object if it's up against a wall
         vsp = -10;
@@ -92,9 +95,14 @@ if state = "playerOnLeftFlipping"{
 
 
 if state = "playerOnRightFlipping"{
-      if(place_meeting(x, y-1, obj_static)){
+//all the same as above, just for reversed conditions
+    if(place_meeting(x, y-17, obj_static)){
         state="in air";
         }else {
+        
+        if(place_meeting(x-1,y,obj_throwable)){
+            vsp = -10;
+        }
     
      if(!place_meeting(x-1,y,obj_static)){
       vsp = -10;
@@ -115,9 +123,7 @@ if state = "playerOnRightFlipping"{
 }
 
 if state = "in air"{
-    if(place_meeting(x, y-1, obj_static)){
-        vsp=0;
-    }
+   
     vsp += grav;
     
     //collision objects + player
@@ -161,7 +167,7 @@ if state = "in air"{
           vsp=0;
           rotation=0;
           currentY = y;
-          state = " ";
+          state = "";
     } 
     
       y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
@@ -171,10 +177,10 @@ if state = "in air"{
     if state = "reset"{
         x = startX;
         y = startY;
-        state= " ";
+        state= "staticPosition";
     }
 
-
+show_debug_message(state);
 
 </string>
           </argument>

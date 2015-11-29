@@ -61,19 +61,15 @@ var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 
 if(keyboard_check_pressed(ord("A"))){
     if(place_meeting(x+5*image_xscale,y, obj_throwable)){
+        
         (throwableL).state = "playerOnLeftFlipping";
-        }
-     
+         
+     }
         
     if(place_meeting(x-5*image_xscale,y, obj_throwable)){
-        
         (throwableR).state = "playerOnRightFlipping";
-        }
-      
-
+        } 
 }
-
-
 </string>
           </argument>
         </arguments>
