@@ -3,7 +3,7 @@
   <spriteName>spr_hook</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>50</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -72,7 +72,9 @@ startingY = y;
 
 //Grapple is initiated
 if state = "shootgrapple"{
-    
+        obj_player_grapple.sprite_index = spr_grappling;
+        obj_player_grapple.image_speed=0;
+        
         aHookFiredAlready = true; //check if it's been fired already
         inCutscene = 1;
         vsp = -16;//shoot upwards
@@ -101,11 +103,14 @@ if state = "shootgrapple"{
             state = "finishgrapple";
         }
         
+        
        
  }
 
- //This is while the grappling is happening
+
  if state = "grappling"{
+    obj_player_grapple.sprite_index = spr_grappling;
+        obj_player_grapple.image_speed=0;
    // camera_target = obj_player_parent;
     inCutscene = 1;
     distanceY = obj_player_grapple.y - obj_hook.y;

@@ -269,6 +269,7 @@ respawnY = 480;</code>
     <instance objName="obj_venus" x="1472" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="1152" y="480" name="inst_668C2364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="1296" y="480" name="inst_B63749AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_text" x="80" y="16" name="inst_2278C7B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_tree" x="1584" y="320" w="160" h="128" xo="0" yo="128" id="10003359" name="inst_C4A95B24" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
