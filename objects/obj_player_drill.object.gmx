@@ -78,10 +78,12 @@ if(keyboard_check_pressed(ord("D"))){
 
     if(place_meeting(x+5*image_xscale,y, obj_breakable_wall)){
         (breakableL).image_speed = 1/6;
+        part_particles_create(global.P_System, (breakableL).x, (breakableL).y, global.p1, 50);
         
     } else if(place_meeting(x-5*image_xscale,y, obj_breakable_wall)){
         
         (breakableR).image_speed = 1/6;
+        part_particles_create(global.P_System, (breakableR).x, (breakableR).y, global.p1, 50);
     }
 
 }
