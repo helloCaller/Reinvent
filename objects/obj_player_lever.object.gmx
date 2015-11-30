@@ -3,7 +3,7 @@
   <spriteName>spr_lever_walking</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>5</depth>
   <persistent>0</persistent>
   <parentName>obj_player_parent</parentName>
   <maskName>spr_player_spring</maskName>
@@ -59,20 +59,17 @@ var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 
 
 
-if(keyboard_check_pressed(ord("X"))){
+if(keyboard_check_pressed(ord("A"))){
     if(place_meeting(x+5*image_xscale,y, obj_throwable)){
         
         (throwableL).state = "playerOnLeftFlipping";
-            show_debug_message((throwableL).state);
-        } 
+         
+     }
         
     if(place_meeting(x-5*image_xscale,y, obj_throwable)){
         (throwableR).state = "playerOnRightFlipping";
-        }  
-
+        } 
 }
-
-
 </string>
           </argument>
         </arguments>
@@ -115,23 +112,19 @@ if(keyboard_check_pressed(ord('S'))){
    
        //Jumping
     if jumping{
-        sprite_index = spr_wheels_jump; //Replace with lever/arms later
+        sprite_index = spr_player_lever_jump; 
         image_speed = 0.34;
         if floor(image_index) = 1{
             image_speed = 0;}}    
             
     //Falling
     else if vsp &gt; 0{
-        sprite_index = spr_wheels_jump; //Replace with lever/arms later
+        sprite_index = spr_player_lever_jump; 
         image_speed = 0;
         image_index = 2;}
    
    //Everything else
-   else if(keyboard_check_pressed(vk_down)){
-    sprite_index = spr_drilling
-    image_speed =0;
-    image_index = 1;
-    }
+   
    
    else{
    //movement animation 
@@ -147,9 +140,18 @@ if(keyboard_check_pressed(ord('S'))){
             sprite_index = spr_lever_walking
              }
         }
+        
+        if(throw){
+    sprite_index = spr_player_lever_throw;
+        image_speed = 0.1;
+        } 
+        
    }
+ 
 
-  
+
+    
+      
  
   
   

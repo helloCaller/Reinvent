@@ -3,7 +3,7 @@
   <spriteName>spr_hook</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>50</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -42,6 +42,8 @@ hookhit = false;
 timer = 5;
 */
 state = " ";
+
+startingY = y;
 </string>
           </argument>
         </arguments>
@@ -70,62 +72,73 @@ state = " ";
 
 //Grapple is initiated
 if state = "shootgrapple"{
-    aHookFiredAlready = true; //check if it's been fired already
-    inCutscene = 1;
-    vsp = -16;//shoot upwards
-    //camera_target = obj_hook;//change camera target
-
-   //collision check
-     if(place_meeting(x, y+vsp, obj_static)){
-        while(!place_meeting(x,y+sign(vsp),obj_static)){ 
-         y+= sign(vsp);
-        }
-        vsp=0;
-        state = "grappling";
-    }
+        obj_player_grapple.sprite_index = spr_grappling;
+        obj_player_grapple.image_speed=0;
         
-     y+=vsp;
+        aHookFiredAlready = true; //check if it's been fired already
+        inCutscene = 1;
+        vsp = -16;//shoot upwards
+        
+        //this makes sure movethrough is solid when the hook comes at it
+        if(instance_exists(obj_wall_movethrough)){
+            obj_wall_movethrough.allowedthrough = false;
+            };
+    
+        //camera_target = obj_hook;//change camera target
+
+        //collision check
+        if(place_meeting(x, y+vsp, obj_static)){
+            while(!place_meeting(x,y+sign(vsp),obj_static)){ 
+                y+= sign(vsp);
+            }
+            vsp=0;
+            state = "grappling";
+        }
+        
+        y+=vsp;
      
     
-     //If grapple shoots up into the sky
+     //If grapple shoots up into the sky and doesn't hit anything
        if(obj_hook.y &lt; room_height - room_height - 100){
             state = "finishgrapple";
         }
+        
+        
+       
  }
 
- //This is while the grappling is happening
+
  if state = "grappling"{
+    obj_player_grapple.sprite_index = spr_grappling;
+        obj_player_grapple.image_speed=0;
    // camera_target = obj_player_parent;
-   inCutscene = 1;
+    inCutscene = 1;
     distanceY = obj_player_grapple.y - obj_hook.y;
    
      if(distanceY &gt;= 30){
         obj_player_grapple.vsp = -4;
         obj_player_grapple.y += obj_player_grapple.vsp;
-    } else {
+        } else {
     //Stops player at the top of tether/grapple
         obj_player_grapple.grav = 0;
         obj_player_grapple.vsp = 0;
-            
-            //moves player up and through on jump
-            if(instance_exists(obj_wall_movethrough)){
-                //if player is at top of grapple height they can jump up
-                if(place_meeting(x, y + 30, obj_player_grapple) &amp;&amp; keyboard_check_pressed(ord("Z"))){
-                    
+    }
+    
+        if(instance_exists(obj_wall_movethrough)){
+                //if player is at top of grapple height they can jump through
+                if(place_meeting(x, y + 30, obj_player_grapple) &amp;&amp; keyboard_check_pressed(vk_space)){
+                 obj_wall_movethrough.allowedthrough = true;   
                  obj_wall_movethrough.sprite_index = -1;
-                 obj_wall_movethrough.allowedthrough = true;
-                 
                  obj_player_grapple.vsp = -12;
                  state="finishgrapple";
                 }
-            }
-    }
+        }
       
 }
         
- //returning state, back to normal
-  
-  if state = "finishgrapple"{
+ //Returning state, back to normal
+ 
+ if state = "finishgrapple"{
     
    // camera_target = obj_player_parent;
     inCutscene = 0;
