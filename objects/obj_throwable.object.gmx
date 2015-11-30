@@ -29,12 +29,13 @@
 hsp = 0;
 vsp = 0;
 
-state = " ";
+state = "";
 
 grav = 0.5;
 rotation = 0;
 
-
+startX = x;
+startY = y;
 
 currentY = y;
 
@@ -61,39 +62,70 @@ currentY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>  
+if state = "playerOnLeftFlipping"{  
+   //if there's an object right above, don't move
+    if(place_meeting(x, y-17, obj_static)){
+        state= "in air";
+        }else {
+        //if throwable object is directly beside another, it at least pops up
+        if(place_meeting(x+1,y,obj_throwable)){
+            vsp = -10;
+        }
     
-if state = "playerOnLeftFlipping"{
-    vsp = -10;
-    hsp = 4;
-    rotation += 3
+     if(!place_meeting(x+1,y,obj_static)){//added condition so that you can't throw the object if it's up against a wall
+        vsp = -10;
+        hsp = 4;
+        rotation += 3
    
-    y+=  vsp;
-    x+=  hsp; 
+        y+=  vsp;
+        x+=  hsp; 
+    } else {
+    
+        state = "in air";
+        }
     
     if(currentY - y &gt;= 20){ //setting the height at which to come down
          state = "in air";
     }
     
+   } 
+    
 }  
 
 
 if state = "playerOnRightFlipping"{
+//all the same as above, just for reversed conditions
+    if(place_meeting(x, y-17, obj_static)){
+        state="in air";
+        }else {
+        
+        if(place_meeting(x-1,y,obj_throwable)){
+            vsp = -10;
+        }
+    
+     if(!place_meeting(x-1,y,obj_static)){
       vsp = -10;
       hsp = -4;
       rotation -= 3;
    
       y+= vsp;
       x+= hsp; 
+    }  else {
+        state = "in air";
+        }
     
     if(currentY - y &gt;= 20){ //setting the height at which to come down
         state = "in air";
     }
     
+    }
 }
 
 if state = "in air"{
+   
     vsp += grav;
+    
     //collision objects + player
      if(place_meeting(x+hsp, y,obj_player_parent)){
        while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
@@ -134,14 +166,19 @@ if state = "in air"{
           hsp=0;
           vsp=0;
           rotation=0;
+          currentY = y;
+          state = "";
     } 
-
     
       y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
-
+    
+}
+    
+    if state = "reset"{
+        x = startX;
+        y = startY;
+        state= "";
     }
-    
-    
 
 
 

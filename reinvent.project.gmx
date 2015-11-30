@@ -16,14 +16,14 @@
     <sprite>sprites\spri_watertop</sprite>
     <sprite>sprites\spr_breakable_wall</sprite>
     <sprite>sprites\spr_quicksand</sprite>
-    <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_wall_jumpthrough</sprite>
+    <sprite>sprites\spr_wall_movethrough</sprite>
     <sprite>sprites\spr_drillwall</sprite>
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_treeleaf</sprite>
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\spr_vft</sprite>
+    <sprite>sprites\spr_venus</sprite>
     <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
       <sprite>sprites\spr_player_spring_idle</sprite>
@@ -45,7 +45,8 @@
       <sprite>sprites\spr_player_lever_jump</sprite>
     </sprites>
     <sprites name="player_drill">
-      <sprite>sprites\spri_drilling</sprite>
+      <sprite>sprites\spr_drilling</sprite>
+      <sprite>sprites\spr_particle_drillwall</sprite>
     </sprites>
     <sprites name="player_grapple">
       <sprite>sprites\spr_hook</sprite>
@@ -74,8 +75,12 @@
     <background>background\titlescreen</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script_text.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fn_arial</font>
+    <font>fonts\fn_courier</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
@@ -103,6 +108,8 @@
     <object>objects\obj_pause</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_background</object>
+    <object>objects\obj_particles</object>
+    <object>objects\obj_text</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_caveman_fish</object>
     <object>objects\obj_caveman</object>
@@ -117,23 +124,23 @@
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
-    <object>objects\obj_vft</object>
     <object>objects\obj_shell</object>
     <object>objects\obj_cavewoman</object>
+    <object>objects\obj_venus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_3</room>
+    <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
-    <room>rooms\puzzleRoom_3</room>
-    <room>rooms\puzzleRoom_2</room>
-    <room>rooms\challengeRoom_3</room>
     <room>rooms\finalRoom</room>
+    <room>rooms\room_blank</room>
     <room>rooms\introRoom</room>
     <room>rooms\outroRoom</room>
-    <room>rooms\room_blank</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

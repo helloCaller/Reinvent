@@ -3,7 +3,7 @@
   <spriteName>spr_drillwall</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>10</depth>
   <persistent>0</persistent>
   <parentName>obj_static</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///CODE FOR START UP
-timer = 1000;
+
 image_speed = 0;
 image_index = 0;
 
