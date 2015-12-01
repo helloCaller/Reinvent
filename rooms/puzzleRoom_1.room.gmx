@@ -56,7 +56,7 @@ global.cameraOffset = 32;</code>
   <instances>
     <instance objName="obj_wall" x="1936" y="736" name="inst_58A5D012" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1968" y="736" name="inst_6779186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_spring" x="688" y="560" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_spring" x="1472" y="576" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coconut_drop" x="656" y="608" name="inst_4AA5BDA1" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="736" name="inst_8999939E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveman_fish" x="1104" y="704" name="inst_B3964DE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
