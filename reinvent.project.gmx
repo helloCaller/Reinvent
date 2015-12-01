@@ -45,7 +45,8 @@
       <sprite>sprites\spr_player_lever_jump</sprite>
     </sprites>
     <sprites name="player_drill">
-      <sprite>sprites\spri_drilling</sprite>
+      <sprite>sprites\spr_drilling</sprite>
+      <sprite>sprites\spr_particle_drillwall</sprite>
     </sprites>
     <sprites name="player_grapple">
       <sprite>sprites\spr_hook</sprite>
@@ -74,6 +75,9 @@
     <background>background\titlescreen</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script_text.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fn_arial</font>
     <font>fonts\fn_courier</font>
@@ -97,7 +101,6 @@
       <object>objects\obj_wall_jumpthrough</object>
       <object>objects\obj_water</object>
       <object>objects\obj_death_block</object>
-      <object>objects\obj_destructible_wall</object>
     </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_global</object>
@@ -105,6 +108,8 @@
     <object>objects\obj_pause</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_background</object>
+    <object>objects\obj_particles</object>
+    <object>objects\obj_text</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_caveman_fish</object>
     <object>objects\obj_caveman</object>
@@ -119,7 +124,6 @@
     <object>objects\object24</object>
     <object>objects\obj_watertop</object>
     <object>objects\obj_intro</object>
-    <object>objects\obj_vft</object>
     <object>objects\obj_shell</object>
     <object>objects\obj_cavewoman</object>
     <object>objects\obj_venus</object>

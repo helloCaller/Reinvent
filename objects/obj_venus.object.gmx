@@ -69,8 +69,7 @@ image_speed = 0;
    }
  
  */
- show_debug_message(image_index);
-  //show_debug_message(y);
+
 
  
  if(instance_exists(obj_player_parent)){
