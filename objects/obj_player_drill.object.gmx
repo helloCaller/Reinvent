@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 //CODE UNIQUE TO WHEEL PLAYER GOES HERE
+upgradeState = "drill"
 </string>
           </argument>
         </arguments>
@@ -88,7 +89,15 @@ if(keyboard_check_pressed(ord("D"))){
 
 }
 
-
+///////////////
+// Upgrading //
+///////////////
+if upgradeState = "grapple"{
+    var wf = whiteFlash;
+    with instance_create(x,y, obj_player_grapple){
+        whiteFlash = wf;
+        camera_target = obj_player_grapple;}
+    instance_destroy();}
 
 </string>
           </argument>
