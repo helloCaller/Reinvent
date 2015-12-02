@@ -136,7 +136,7 @@
     <instance objName="obj_wall" x="368" y="768" name="inst_E868804B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="616" y="448" name="inst_15D71F47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1232" y="656" name="inst_7559F633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fish" x="672" y="704" name="inst_541FB2A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="672" y="704" name="inst_541FB2A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_throwable" x="224" y="640" name="inst_E63C37F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="160" y="624" name="inst_3B710B0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="1072" y="688" name="inst_8480EEB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
