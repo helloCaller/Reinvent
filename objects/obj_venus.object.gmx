@@ -28,7 +28,6 @@
             <string>//sprite_index = -1;
 
 
-
 image_index = 0;
 
 image_speed = 0;
@@ -72,9 +71,11 @@ rockEat = false;
         //eat rock
     }else if(place_meeting(x,y-1, (yummythrowable))){
         rockEat = true;
+        
         with(yummythrowable){
-           x = startX;
-           y = startY;
+         
+          x = 0;
+          y = 0;
         }
             
        
@@ -82,6 +83,16 @@ rockEat = false;
         image_index = 0;
     } 
  
+ if(obj_player_parent.playerDead == true){
+    if(instance_exists(yummythrowable)){
+    with(yummythrowable){
+         
+          x = startX;
+          y = startY;
+        }
+ 
+        }
+ }
  
  if(rockEat == true){
  image_index = 1;
@@ -91,8 +102,8 @@ rockEat = false;
  if(rockEatTimer &gt;= 30){
  image_index = 0
  rockEatTimer = 0;
- 
  rockEat = false;
+ 
  }
  
  

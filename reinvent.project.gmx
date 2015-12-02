@@ -141,16 +141,17 @@
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_shell</object>
       <object>objects\obj_fulcrum</object>
+      <object>objects\obj_fish</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_3</room>
-    <room>rooms\puzzleRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
-    <room>rooms\puzzleRoom_4</room>
+    <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\challengeRoom_3</room>
+    <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\finalRoom</room>
     <room>rooms\room_blank</room>
