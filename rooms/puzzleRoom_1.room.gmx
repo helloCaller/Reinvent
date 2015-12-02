@@ -19,8 +19,8 @@ global.cameraOffset = 32;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1071</w>
-    <h>922</h>
+    <w>1024</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -29,9 +29,9 @@ global.cameraOffset = 32;</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>44</xoffset>
-    <yoffset>230</yoffset>
+    <page>2</page>
+    <xoffset>1550</xoffset>
+    <yoffset>294</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -423,7 +423,7 @@ global.cameraOffset = 32;</code>
     <tile bgName="tile_tree" x="1840" y="608" w="160" h="128" xo="0" yo="128" id="10002630" name="inst_369BEB31" depth="40" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="576" y="480" w="16" h="16" xo="0" yo="0" id="10000005" name="inst_8969D5A6" depth="25" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1880" y="629" w="32" h="32" xo="0" yo="64" id="10002671" name="inst_21FB4653" depth="25" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="1856" y="672" w="32" h="64" xo="64" yo="128" id="10005070" name="inst_1D2C031B" depth="25" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_prehistoric" x="1840" y="672" w="32" h="64" xo="64" yo="128" id="10005070" name="inst_1D2C031B" depth="25" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="80" y="336" w="32" h="32" xo="0" yo="64" id="10001285" name="inst_E9BD0544" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1930" y="628" w="32" h="32" xo="0" yo="64" id="10001287" name="inst_55EE9620" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="608" y="608" w="160" h="128" xo="0" yo="0" id="10001272" name="inst_3355CBDA" depth="8" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
