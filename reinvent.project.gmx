@@ -5,6 +5,8 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\mp3_caves</sound>
+    <sound>sound\mp3_cutscene</sound>
     <sound>sound\mp3_prehistoric</sound>
     <sound>sound\mp3_prehistoric_v2</sound>
   </sounds>
@@ -25,6 +27,7 @@
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_venus</sprite>
+    <sprite>sprites\spr_venus_chew</sprite>
     <sprite>sprites\spr_vine</sprite>
     <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
@@ -146,9 +149,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_3</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
