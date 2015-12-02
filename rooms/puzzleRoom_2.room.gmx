@@ -137,7 +137,7 @@
     <instance objName="obj_wall" x="368" y="768" name="inst_E868804B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="624" y="448" name="inst_15D71F47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1232" y="656" name="inst_7559F633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fish" x="672" y="704" name="inst_541FB2A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="672" y="704" name="inst_541FB2A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_throwable" x="224" y="640" name="inst_E63C37F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="160" y="624" name="inst_3B710B0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="1072" y="688" name="inst_8480EEB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -202,6 +202,7 @@
     <instance objName="obj_room_change_area" x="1968" y="464" name="inst_D9B822C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="432" name="inst_368CBE30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveman" x="448" y="784" name="inst_15070EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="592" y="784" name="inst_DE863D8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="352" y="544" w="32" h="32" xo="32" yo="0" id="10005072" name="inst_7DDD3BE3" depth="35" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
