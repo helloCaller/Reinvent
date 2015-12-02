@@ -138,16 +138,16 @@
       <object>objects\obj_throwable</object>
       <object>objects\obj_vine</object>
       <object>objects\obj_watertop</object>
+      <object>objects\obj_checkpoint</object>
       <object>objects\obj_shell</object>
     </objects>
-    <object>objects\obj_checkpoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_3</room>
-    <room>rooms\puzzleRoom_4</room>
     <room>rooms\puzzleRoom_1</room>
+    <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\challengeRoom_1</room>
