@@ -31,8 +31,10 @@ image_speed = 0;
 image_index = 0;
 
  
+ hsp = 0;
+ vsp = 0;
   
-    
+ grav = 0.4;  
 </string>
           </argument>
         </arguments>
@@ -64,6 +66,58 @@ image_index = 0;
 
     
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>vsp += grav;
+
+if(place_meeting(x+hsp,y,obj_static)){
+    while(!place_meeting(x+sign(hsp),y,obj_static)){
+     x += sign(hsp);
+     
+     }
+    hsp = 0;
+    
+} 
+
+x+=hsp;
+
+  
+//Wall Above
+if vsp &lt; 0{
+    if place_meeting(x,y+vsp,obj_static){
+        move_contact_solid(90,32);
+        vsp = 0;}}
+        
+//Wall Below
+if vsp &gt; 0{
+    if place_meeting(x,y+vsp,obj_static){
+        move_contact_solid(270,32);
+        vsp = 0;
+        onground = 1;}}
+        
+        
+
+y += vsp;
 </string>
           </argument>
         </arguments>

@@ -58,6 +58,9 @@ var breakableL = instance_place(x+5*image_xscale,y, obj_breakable_wall);
 var throwableR = instance_place(x-5*image_xscale,y, obj_throwable);
 var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 
+var venusR = instance_place(x-5*image_xscale,y, obj_venus);
+var venusL = instance_place(x+5*image_xscale,y, obj_venus);
+
 
 //Throw code
 if(keyboard_check_pressed(ord("A"))){
@@ -85,6 +88,20 @@ if(keyboard_check_pressed(ord("D"))){
         
         (breakableR).image_speed = 1/6;
         part_particles_create(global.P_System, (breakableR).x, (breakableR).y, global.p1, 50);
+    }
+    
+    //kill venus with drill
+    if(place_meeting(x+5*image_xscale,y, obj_venus)){
+        with(venusL){
+            instance_destroy();
+            part_particles_create(global.P_System, x, y, global.p1, 50);
+        }
+        
+    } else if(place_meeting(x-5*image_xscale,y, obj_venus)){
+        with(venusR){
+            instance_destroy();
+            part_particles_create(global.P_System, x, y, global.p1, 50);
+            }
     }
 
 }
@@ -176,7 +193,7 @@ if(keyboard_check_pressed(ord('S'))){
         
         if(drill){
            sprite_index = spr_drilling;
-           image_speed = 0.2; 
+           image_speed = 0.1; 
             }
    }
 
