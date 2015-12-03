@@ -91,13 +91,13 @@ if(keyboard_check_pressed(ord("D"))){
     }
     
     //kill venus with drill
-    if(place_meeting(x+5*image_xscale,y, obj_venus)){
+    if(place_meeting(x+5*image_xscale+1,y, obj_venus)){
         with(venusL){
             instance_destroy();
             part_particles_create(global.P_System, x, y, global.p1, 50);
         }
         
-    } else if(place_meeting(x-5*image_xscale,y, obj_venus)){
+    } else if(place_meeting(x-5*image_xscale-1,y, obj_venus)){
         with(venusR){
             instance_destroy();
             part_particles_create(global.P_System, x, y, global.p1, 50);
