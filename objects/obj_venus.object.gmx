@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//sprite_index = -1;
 
-
+sprite_index = spr_venus;
 image_index = 0;
 
 image_speed = 0;
@@ -64,24 +64,36 @@ rockEat = false;
     distY = round(y - obj_player_parent.y);
     distX = round(x - obj_player_parent.x);
  
+    if(rockEat == true){
+    sprite_index = spr_venus_chew;
+    image_speed = 0.06;
+    rockEatTimer += 1;
+ }
+ 
+ if(rockEatTimer &gt;= 100){
+    sprite_index = spr_venus
+    rockEatTimer = 0;
+    rockEat = false;
+ 
+ }
     
  //close venus near peak of jump. 
+ if(rockEat == false){
     if(distY &gt;= 70 &amp;&amp; distX &lt; 49 &amp;&amp; distX &gt; -49){
         image_index = 1;
         //eat rock
-    }else if(place_meeting(x,y-1, (yummythrowable))){
+    } else {
+     image_index = 0;
+     }
+    
+      if(place_meeting(x,y-1, (yummythrowable))){
         rockEat = true;
-        
-        with(yummythrowable){
-         
-          x = 0;
-          y = 0;
-        }
-            
-       
-    }else {
-        image_index = 0;
+         with(yummythrowable){
+            x = 0;
+            y = 0;
+         }
     } 
+ }
  
  if(obj_player_parent.playerDead == true){
     if(instance_exists(yummythrowable)){
@@ -91,26 +103,16 @@ rockEat = false;
           y = startY;
         }
  
-        }
+    }
  }
  
- if(rockEat == true){
- image_index = 1;
-    rockEatTimer += 1;
- }
- 
- if(rockEatTimer &gt;= 30){
- image_index = 0
- rockEatTimer = 0;
- rockEat = false;
- 
- }
+
  
  
 }
 
  
- 
+ show_debug_message(sprite_index);
  
 </string>
           </argument>
@@ -134,7 +136,7 @@ rockEat = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_venus,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
 </string>
           </argument>
         </arguments>
