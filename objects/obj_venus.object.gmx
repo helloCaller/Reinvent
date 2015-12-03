@@ -27,13 +27,13 @@
             <kind>1</kind>
             <string>//sprite_index = -1;
 
-
-
+sprite_index = spr_venus;
 image_index = 0;
 
 image_speed = 0;
 
-
+rockEatTimer = 0;
+rockEat = false;
 </string>
           </argument>
         </arguments>
@@ -56,34 +56,63 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>  /*
-  if(round(image_index) == 16){
-  image_index = 0
-  }
-  
-  
-  if(round(image_index) &gt;= 8){
-        mask_index = -1;
-    } else {
-        mask_index = 37;
-   }
- 
- */
+            <string> var yummythrowable = instance_place(x,y-5*image_xscale, obj_throwable);
 
 
  
  if(instance_exists(obj_player_parent)){
     distY = round(y - obj_player_parent.y);
     distX = round(x - obj_player_parent.x);
+ 
+    if(rockEat == true){
+    sprite_index = spr_venus_chew;
+    image_speed = 0.06;
+    rockEatTimer += 1;
+ }
+ 
+ if(rockEatTimer &gt;= 100){
+    sprite_index = spr_venus
+    rockEatTimer = 0;
+    rockEat = false;
+ 
+ }
     
  //close venus near peak of jump. 
-    if(distY &gt;= 70 &amp;&amp; distX &lt; 48 &amp;&amp; distX &gt; -48){
+ if(rockEat == false){
+    if(distY &gt;= 70 &amp;&amp; distX &lt; 49 &amp;&amp; distX &gt; -49){
         image_index = 1;
-    }else{
-        image_index = 0;
+        //eat rock
+    } else {
+     image_index = 0;
+     }
+    
+      if(place_meeting(x,y-1, (yummythrowable))){
+        rockEat = true;
+         with(yummythrowable){
+            x = 0;
+            y = 0;
+         }
+    } 
+ }
+ 
+ if(obj_player_parent.playerDead == true){
+    if(instance_exists(yummythrowable)){
+    with(yummythrowable){
+         
+          x = startX;
+          y = startY;
+        }
+ 
     }
  }
  
+
+ 
+ 
+}
+
+ 
+ show_debug_message(sprite_index);
  
 </string>
           </argument>
@@ -107,7 +136,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_venus,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
 </string>
           </argument>
         </arguments>
