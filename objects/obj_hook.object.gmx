@@ -3,7 +3,7 @@
   <spriteName>spr_hook</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>6</depth>
+  <depth>50</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -44,8 +44,6 @@ timer = 5;
 state = " ";
 
 startingY = y;
-
-darkBlue = make_colour_rgb(0,4,102);
 </string>
           </argument>
         </arguments>
@@ -196,7 +194,7 @@ if(hookhit == true){
           <argument>
             <kind>1</kind>
             <string>
-draw_set_colour(darkBlue);
+draw_set_colour(c_black);
 draw_line_width( x, y, obj_player_grapple.x, obj_player_grapple.y, 2);
 draw_sprite_ext(spr_hook, image_index, x, y, image_xscale, image_yscale, 0, c_white, image_alpha );
 
