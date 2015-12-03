@@ -77,9 +77,53 @@ if state = "playerOnLeftFlipping"{
         vsp = -10;
         hsp = 4;
         rotation += 3
+       
+         if(place_meeting(x+hsp, y,obj_player_parent)){
+       while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
+           x += sign(hsp);
+        }
+            hsp=0;
+            rotation = 0;
+    }
+
+      
+    if(place_meeting(x+hsp, y,obj_static)){
+        while(!place_meeting(x+sign(hsp), y,obj_static)){
+           x += sign(hsp);
+        }
+            hsp = 0;
+            rotation = 0;
+    }
+    
+    
+    x+=hsp;
+    
+
+// collision
+     if(place_meeting(x, y+vsp,obj_player_parent)){
+        while(!place_meeting(x, y+sign(vsp),obj_player_parent)){
+           y += sign(vsp)
+        }
+            hsp = 0;
+           vsp = 0 ;
+           rotation = 0;
+    }
+
+      
+    if(place_meeting(x, y+vsp, obj_static)){
+        while(!place_meeting(x, y+sign(vsp),obj_static)){
+          y+= sign(vsp);
+        }
+          hsp=0;
+          vsp=0;
+          rotation=0;
+          currentY = y;
+          state = "";
+    } 
+    
    
         y+=  vsp;
-        x+=  hsp; 
+       
     } else {
     
         state = "in air";
@@ -108,9 +152,53 @@ if state = "playerOnRightFlipping"{
       vsp = -10;
       hsp = -4;
       rotation -= 3;
+      
+      if(place_meeting(x+hsp, y,obj_player_parent)){
+       while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
+           x += sign(hsp);
+        }
+            hsp=0;
+            rotation = 0;
+    }
+
+      
+    if(place_meeting(x+hsp, y,obj_static)){
+        while(!place_meeting(x+sign(hsp), y,obj_static)){
+           x += sign(hsp);
+        }
+            hsp = 0;
+            rotation = 0;
+    }
+    
+    
+    x+=hsp;
+    
+
+// collision
+     if(place_meeting(x, y+vsp,obj_player_parent)){
+        while(!place_meeting(x, y+sign(vsp),obj_player_parent)){
+           y += sign(vsp)
+        }
+            hsp = 0;
+           vsp = 0 ;
+           rotation = 0;
+    }
+
+      
+    if(place_meeting(x, y+vsp, obj_static)){
+        while(!place_meeting(x, y+sign(vsp),obj_static)){
+          y+= sign(vsp);
+        }
+          hsp=0;
+          vsp=0;
+          rotation=0;
+          currentY = y;
+          state = "";
+    } 
+    
    
       y+= vsp;
-      x+= hsp; 
+      
     }  else {
         state = "in air";
         }
