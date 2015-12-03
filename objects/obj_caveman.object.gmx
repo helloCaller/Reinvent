@@ -33,6 +33,7 @@ emotionSpeed = 30;
 emotionTimer = 0;
 emotionLoop = 1;
 emotionFade = -1;
+rotation = 0;
 </string>
           </argument>
         </arguments>
@@ -77,6 +78,12 @@ if state = "walking"{
     image_speed = 1/6;
     sprite_index = spr_caveman_fish_walk;
     emotion = -1;}
+    
+//Shell
+if state = "shell"{
+    sprite_index = spr_caveman_shell;
+    image_speed = 0;
+    image_index = 0;}
     
 if emotion = spr_lightbulb then emotionLoop = 0;
 else emotionLoop = 1;
@@ -123,7 +130,7 @@ if emotion != -1{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,1);
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,rotation,c_white,1);
 if emotion != -1{
     draw_sprite_ext(emotion,emotionTimer,x,y-48,1,1,0,c_white,1);}
     
