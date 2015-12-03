@@ -547,8 +547,6 @@ global.cameraOffset = 0;</code>
     <instance objName="obj_death_block" x="896" y="192" name="inst_BA0BD2EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1280" y="384" name="inst_7CD5C0F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1280" y="400" name="inst_4AD0C9DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_death_block" x="1248" y="384" name="inst_522A2A68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_death_block" x="1248" y="400" name="inst_AA5A8F01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death_block" x="432" y="352" name="inst_443FFD8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death_block" x="432" y="368" name="inst_CBB06190" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death_block" x="432" y="384" name="inst_B150677D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1904,6 +1902,8 @@ global.cameraOffset = 0;</code>
     <tile bgName="tile_prehistoric" x="1280" y="960" w="32" h="32" xo="0" yo="32" id="10004760" name="inst_B216E36A" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1312" y="960" w="32" h="32" xo="0" yo="32" id="10004761" name="inst_4CBC113D" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1088" y="960" w="32" h="32" xo="0" yo="32" id="10004762" name="inst_1B57F090" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_prehistoric" x="928" y="192" w="32" h="32" xo="0" yo="96" id="10006144" name="inst_1CDB4576" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_prehistoric" x="904" y="192" w="32" h="32" xo="0" yo="96" id="10006145" name="inst_20EEB5CF" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
