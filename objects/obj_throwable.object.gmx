@@ -265,6 +265,7 @@ if state = "in air"{
     if state = "reset"{
         x = startX;
         y = startY;
+        currentY = startY;
         state= "";
     }
 

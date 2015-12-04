@@ -112,7 +112,7 @@ rockEat = false;
 }
 
  
- show_debug_message(sprite_index);
+
  
 </string>
           </argument>

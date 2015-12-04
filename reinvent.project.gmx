@@ -5,11 +5,16 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\mp3_caves</sound>
-    <sound>sound\mp3_cutscene</sound>
-    <sound>sound\mp3_menu</sound>
-    <sound>sound\mp3_prehistoric</sound>
-    <sound>sound\mp3_prehistoric_v2</sound>
+    <sounds name="mp3">
+      <sound>sound\mp3_caves</sound>
+      <sound>sound\mp3_cutscene</sound>
+      <sound>sound\mp3_menu</sound>
+      <sound>sound\mp3_prehistoric</sound>
+      <sound>sound\mp3_prehistoric_v2</sound>
+    </sounds>
+    <sounds name="sfx">
+      <sound>sound\sfx_upgrade</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>

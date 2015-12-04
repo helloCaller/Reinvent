@@ -156,6 +156,8 @@ if flag[5] &gt; 0 and obj_fade.fadeState != "out"{
         inCutscene = 0;
         obj_player_parent.upgradeState = "drill"; 
         obj_player_parent.whiteFlash = 1;
+        var scr = "Hazahh, the screw has been invented! Now I can drill through blocks of rock by pressing 'D'"
+        script_text(scr,0.3, obj_player_parent.x - 50, obj_player_parent.y - 120); 
         flag[5] = -1;
         instance_destroy();}}
 </string>
