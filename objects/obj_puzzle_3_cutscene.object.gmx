@@ -118,7 +118,7 @@ with caveman{
 ///////////////
 if flag[3] = 1{
     with caveman{
-        if place_meeting(x,y,obj_cavewoman){
+        if place_meeting(x-32,y,obj_cavewoman){
             hspeed = 0;
             obj_cavewoman.state = "standing";
             with obj_puzzle_3_cutscene{
