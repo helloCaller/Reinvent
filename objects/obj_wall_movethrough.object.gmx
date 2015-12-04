@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_wall_movethrough</spriteName>
   <solid>-1</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_static</parentName>
@@ -57,7 +57,10 @@ if(instance_exists(obj_player_parent)){
     
     if round(obj_player_parent.y + (obj_player_parent.sprite_height/2) &gt; y &amp;&amp; allowedthrough == true){
          mask_index = -1;
-    } else {
+    }  else if round(obj_player_parent.y + (obj_player_parent.sprite_height/2) &lt; y){
+        mask_index = spr_wall_movethrough;
+        allowedthrough = false;
+    }else {
         mask_index = spr_wall_movethrough;
         allowedthrough = false;
         }

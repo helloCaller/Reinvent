@@ -32,10 +32,10 @@ armsredorgreen = c_red;
 drillredorgreen = c_red;
 tetherredorgreen = c_red;
 
-pausetext[0] = "Tires Offline....Wheels not found";
-pausetext[1] = "Arms Offline....Lever not found";
-pausetext[2] = "Drill Offline....Screw not found";
-pausetext[3] = "Tether Offline....Pulley not found";
+pausetext[0] = "Speeding Offline....Wheels not found";
+pausetext[1] = "Throwing Offline....Lever not found";
+pausetext[2] = "Drilling Offline....Screw not found";
+pausetext[3] = "Grappling Offline....Pulley not found";
 pausetext[4] = "System Paused"
 </string>
           </argument>
@@ -73,17 +73,17 @@ tether = "Tether Offline....Pulley not found";
     
     if(instance_exists(obj_player_lever)){
         armsredorgreen = c_green;
-        pausetext[1] = "Arms Online....Press X to throw yellow containers#";
+        pausetext[1] = "Arms Online....Press 'A' to throw rocks#";
     }
     
     if(instance_exists(obj_player_drill)){
         drillredorgreen = c_green;
-        pausetext[2] = "Drill Online....Press down key to drill through brown containers#";
+        pausetext[2] = "Drill Online....Press 'D' to drill through grey blocks#";
     }
     
     if(instance_exists(obj_player_grapple)){
          tetherredorgreen = c_green;
-        pausetext[3] = "Tether Online....Press up key to shoot grapple";
+        pausetext[3] = "Grappling Online....Press 'W' to shoot grapple";
     }
 
 
@@ -91,13 +91,14 @@ tether = "Tether Offline....Pulley not found";
 
 
 if(pause){
-    show_debug_message(view_wview[0]);
+    
     draw_set_colour(c_black);
+    draw_set_alpha(0.8);
     //draw rectangle that covers viewport 
     draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], 0);
     
     draw_set_halign(fa_center);
-    draw_set_font(fn_arial);
+    draw_set_font(fn_courier);
     
     draw_set_colour(c_white);
     draw_text(view_xview[0] + view_wview[0]/2,view_yview[0] + view_hview[0]/2 , pausetext[4] );
@@ -119,7 +120,7 @@ if(pause){
     draw_set_colour(tetherredorgreen);
     draw_text(view_xview[0] + view_wview[0]/2, stringh + view_yview[0] + view_hview[0]/2, pausetext[3] );
 
-   show_debug_message(stringh);
+ 
 
 }
 </string>
@@ -144,7 +145,8 @@ if(pause){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!pause){
+            <string>
+if(!pause){
     pause = 1;
     instance_deactivate_all(true);
     audio_pause_sound(mp3_prehistoric_v2);

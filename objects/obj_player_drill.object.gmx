@@ -3,7 +3,7 @@
   <spriteName>spr_lever_walking</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>5</depth>
   <persistent>0</persistent>
   <parentName>obj_player_parent</parentName>
   <maskName>spr_player_spring</maskName>
@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 //CODE UNIQUE TO WHEEL PLAYER GOES HERE
+upgradeState = "drill"
 </string>
           </argument>
         </arguments>
@@ -57,13 +58,14 @@ var breakableL = instance_place(x+5*image_xscale,y, obj_breakable_wall);
 var throwableR = instance_place(x-5*image_xscale,y, obj_throwable);
 var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 
+var venusR = instance_place(x-5*image_xscale,y, obj_venus);
+var venusL = instance_place(x+5*image_xscale,y, obj_venus);
 
 //Throw code
-if(keyboard_check_pressed(ord("X"))){
+if(keyboard_check_pressed(ord("A"))){
     if(place_meeting(x+5*image_xscale,y, obj_throwable)){
         
         (throwableL).state = "playerOnLeftFlipping";
-            show_debug_message((throwableL).state);
         } 
         
     if(place_meeting(x-5*image_xscale,y, obj_throwable)){
@@ -74,20 +76,44 @@ if(keyboard_check_pressed(ord("X"))){
 
 
 //Drill code
-if(keyboard_check_pressed(vk_down)){
+if(keyboard_check_pressed(ord("D"))){
  
 
     if(place_meeting(x+5*image_xscale,y, obj_breakable_wall)){
         (breakableL).image_speed = 1/6;
+        part_particles_create(global.P_System, (breakableL).x, (breakableL).y, global.p1, 50);
         
     } else if(place_meeting(x-5*image_xscale,y, obj_breakable_wall)){
         
         (breakableR).image_speed = 1/6;
+        part_particles_create(global.P_System, (breakableR).x, (breakableR).y, global.p1, 50);
+    }
+    
+    //kill venus with drill
+    if(place_meeting(x+5*image_xscale,y, obj_venus)){
+        with(venusL){
+            instance_destroy();
+            part_particles_create(global.P_System, x, y, global.p1, 50);
+        }
+        
+    } else if(place_meeting(x-5*image_xscale,y, obj_venus)){
+        with(venusR){
+            instance_destroy();
+            part_particles_create(global.P_System, x, y, global.p1, 50);
+            }
     }
 
 }
 
-
+///////////////
+// Upgrading //
+///////////////
+if upgradeState = "grapple"{
+    var wf = whiteFlash;
+    with instance_create(x,y, obj_player_grapple){
+        whiteFlash = wf;
+        camera_target = obj_player_grapple;}
+    instance_destroy();}
 
 </string>
           </argument>
@@ -129,14 +155,14 @@ if(keyboard_check_pressed(ord('S'))){
    
        //Jumping
      if jumping{
-        sprite_index = spr_wheels_jump; //Replace with lever/arms later
+        sprite_index = spr_player_lever_jump; 
         image_speed = 0.34;
         if floor(image_index) = 1{
             image_speed = 0;}}    
             
     //Falling
     else if vsp &gt; 0{
-        sprite_index = spr_wheels_jump; //Replace with lever/arms later
+        sprite_index = spr_player_lever_jump; 
         image_speed = 0;
         image_index = 2;}
    
@@ -158,6 +184,16 @@ if(keyboard_check_pressed(ord('S'))){
             sprite_index = spr_lever_walking
              }
         }
+        
+        if(throw){
+            sprite_index = spr_player_lever_throw;
+            image_speed = 0.1;
+        } 
+        
+        if(drill){
+           sprite_index = spr_drilling;
+           image_speed = 0.2; 
+            }
    }
 
   

@@ -7,7 +7,119 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = 1/9;
+state = "sad";
+startX = x;
+emotion = -1;
+emotionSpeed = 30;
+emotionTimer = 0;
+emotionLoop = 1;
+emotionFade = -1;
+emotion = -1;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+///////////////////    
+// Emotion Timer //
+///////////////////
+if emotion != -1{
+    var frames = 0;
+    if emotionSpeed != 0 then frames = 1/emotionSpeed;
+    emotionTimer += frames;
+    if emotionTimer + frames &gt;= sprite_get_number(emotion){
+        if emotionLoop = 1 then emotionTimer = 0;
+        else{
+            emotionSpeed = 0;}}
+    if emotionLoop = 0{
+        if emotionFade = -1 then emotionFade = 90;
+        if emotionFade &gt; 0 then emotionFade --;
+        else{
+            emotionFade = -1;
+            emotionTimer = 0;
+            emotion = -1;}}}
+//////////////           
+// Standing //
+//////////////
+if state = "standing"{
+    image_speed = 1/30;
+    sprite_index = spr_cavewoman_idle;}
+    
+/////////
+// Sad //
+/////////
+if state = "sad"{
+    image_speed = 1/30;
+    sprite_index = spr_cavewoman_sad;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,1);
+if emotion != -1{
+    draw_sprite_ext(emotion,emotionTimer,x,y-48,1,1,0,c_white,1);}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
@@ -19,5 +131,8 @@
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>24,32</point>
+    <point>32,32</point>
+  </PhysicsShapePoints>
 </object>

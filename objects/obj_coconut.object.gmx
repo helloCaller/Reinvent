@@ -167,6 +167,10 @@ if state = "creating wagon"{
                     inCutscene = 0;
                     obj_player_parent.upgradeState = "wheels";
                     obj_player_parent.whiteFlash = 1;
+                    audio_play_sound(sfx_upgrade,1,0);
+                    var scr = "Wow, thanks Caveperson! With my wheels back, I have speed again!";
+                    script_text(scr,0.3, obj_player_parent.x - 50, obj_player_parent.y - 120); 
+                    
                     state = "done";}}}}
         
         
