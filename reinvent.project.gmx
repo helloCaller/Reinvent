@@ -6,10 +6,11 @@
   <NewExtensions/>
   <sounds name="sound">
     <sounds name="mp3">
-      <sound>sound\mp3_prehistoric</sound>
       <sound>sound\mp3_caves</sound>
-      <sound>sound\mp3_prehistoric_v2</sound>
       <sound>sound\mp3_cutscene</sound>
+      <sound>sound\mp3_menu</sound>
+      <sound>sound\mp3_prehistoric</sound>
+      <sound>sound\mp3_prehistoric_v2</sound>
     </sounds>
     <sounds name="sfx">
       <sound>sound\sfx_upgrade</sound>
@@ -157,11 +158,11 @@
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
-    <room>rooms\challengeRoom_3</room>
-    <room>rooms\puzzleRoom_4</room>
-    <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_3</room>
+    <room>rooms\puzzleRoom_4</room>
+    <room>rooms\challengeRoom_1</room>
+    <room>rooms\challengeRoom_3</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\finalRoom</room>
     <room>rooms\room_blank</room>
