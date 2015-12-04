@@ -169,7 +169,7 @@ if vineCut = 1{
             inCutscene = 0;
             obj_player_parent.upgradeState = "grapple";
             obj_player_parent.whiteFlash = 1;
-            var scr = "Sweet! Now I finally have my grapple mechanics back! Hit 'W' to engage and disengage.";
+            var scr = "Sweet! Now I finally have my grapple mechanics back!";
             script_text(scr,0.2, obj_player_parent.x - 50, obj_player_parent.y - 120); 
             instance_destroy();}}}
 </string>
