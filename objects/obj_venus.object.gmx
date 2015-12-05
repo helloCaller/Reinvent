@@ -33,7 +33,7 @@ image_index = 0;
 image_speed = 0;
 
 rockEatTimer = 0;
-rockEat = false;
+state = "waiting";
 </string>
           </argument>
         </arguments>
@@ -57,37 +57,32 @@ rockEat = false;
           <argument>
             <kind>1</kind>
             <string> var yummythrowable = instance_place(x,y-5*image_xscale, obj_throwable);
-
-
  
  if(instance_exists(obj_player_parent)){
     distY = round(y - obj_player_parent.y);
     distX = round(x - obj_player_parent.x);
  
-    if(rockEat == true){
-    sprite_index = spr_venus_chew;
-    image_speed = 0.06;
-    rockEatTimer += 1;
- }
+    if(state == "eating rock"){
+        mask_index = spr_venus_chew;
+        sprite_index = spr_venus_chew;
+        image_speed = 0.06;
+      
+     
+   }
  
- if(rockEatTimer &gt;= 100){
-    sprite_index = spr_venus
-    rockEatTimer = 0;
-    rockEat = false;
  
- }
-    
+  
  //close venus near peak of jump. 
- if(rockEat == false){
+if(state == "waiting"){
     if(distY &gt;= 70 &amp;&amp; distX &lt; 49 &amp;&amp; distX &gt; -49){
         image_index = 1;
-        //eat rock
+       
     } else {
      image_index = 0;
      }
-    
+    //eat rock
       if(place_meeting(x,y-1, (yummythrowable))){
-        rockEat = true;
+        state = "eating rock";
          with(yummythrowable){
             x = 0;
             y = 0;
@@ -104,13 +99,13 @@ rockEat = false;
         }
  
     }
- }
+ 
  
 
- 
- 
 }
+ 
 
+}
  
 
  
