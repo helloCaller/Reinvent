@@ -155,6 +155,7 @@
       <object>objects\obj_shell</object>
       <object>objects\obj_fulcrum</object>
       <object>objects\obj_rose</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>

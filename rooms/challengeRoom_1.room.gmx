@@ -2,9 +2,9 @@
 <room>
   <caption></caption>
   <width>2000</width>
-  <height>1200</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <height>740</height>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -17,19 +17,19 @@ respawnY = 480;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
-    <showGrid>-1</showGrid>
+    <w>1071</w>
+    <h>922</h>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
-    <xoffset>-34</xoffset>
-    <yoffset>246</yoffset>
+    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
+    <page>0</page>
+    <xoffset>-56</xoffset>
+    <yoffset>520</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -206,10 +206,28 @@ respawnY = 480;</code>
     <instance objName="obj_room_change_area" x="1968" y="224" name="inst_03804BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="192" name="inst_8CEDC733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="160" name="inst_764926DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_room_change_area" x="1968" y="128" name="inst_D3433948" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_venus" x="1424" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_venus" x="1168" y="480" name="inst_668C2364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="320" y="480" name="inst_0FA0C5AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_venus" x="1168" y="480" name="inst_668C2364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_venus" x="1424" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water" x="768" y="560" name="inst_E75616E5" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water" x="928" y="560" name="inst_5F523BFC" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="416" y="496" name="inst_3C31AD4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="432" y="496" name="inst_AA0FB772" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="496" y="496" name="inst_A2D67CD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="544" y="496" name="inst_8941601F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="224" y="496" name="inst_6B0F55AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="160" y="496" name="inst_F040AC8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="720" y="496" name="inst_40CC0648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1088" y="496" name="inst_1CCFDFF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1280" y="496" name="inst_4D0230F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1248" y="496" name="inst_DE0520B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1504" y="464" name="inst_99015A1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1568" y="464" name="inst_C9ABDEB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1616" y="432" name="inst_7FC6DB1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1920" y="272" name="inst_0A46B2F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="1856" y="272" name="inst_E1FDC175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_jumpthrough" x="1552" y="352" name="inst_2F4A48D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_jumpthrough" x="1520" y="352" name="inst_C8F115A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="480" w="32" h="32" xo="32" yo="64" id="10008101" name="inst_F4500D29" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
