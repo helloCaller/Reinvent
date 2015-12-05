@@ -80,6 +80,7 @@
     <sprite>sprites\spr_shell</sprite>
     <sprite>sprites\spr_caveman_shell</sprite>
     <sprite>sprites\spr_rose</sprite>
+    <sprite>sprites\spr_fire</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -155,6 +156,7 @@
       <object>objects\obj_shell</object>
       <object>objects\obj_fulcrum</object>
       <object>objects\obj_rose</object>
+      <object>objects\obj_fire</object>
     </objects>
   </objects>
   <rooms name="rooms">
