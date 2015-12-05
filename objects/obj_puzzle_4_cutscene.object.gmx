@@ -160,6 +160,8 @@ if vineCut = 1{
             with obj_caveman{
                 instance_destroy();}
             with obj_vine{
+                instance_destroy();}
+            with obj_fish{
                 instance_destroy();}}}
      
      //Upgrade
