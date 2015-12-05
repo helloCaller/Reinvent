@@ -19,16 +19,23 @@
     <w>1071</w>
     <h>922</h>
     <showGrid>0</showGrid>
-    <showObjects>-1</showObjects>
+    <showObjects>0</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
+<<<<<<< HEAD
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
     <xoffset>13</xoffset>
     <yoffset>-34</yoffset>
+=======
+    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
+    <page>2</page>
+    <xoffset>226</xoffset>
+    <yoffset>294</yoffset>
+>>>>>>> origin/clay
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -168,7 +175,11 @@
     <instance objName="obj_wall" x="1616" y="592" name="inst_42A5DD5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1600" y="592" name="inst_1EF3E81E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1600" y="608" name="inst_63F7633D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="obj_fulcrum" x="880" y="800" name="inst_B07F55EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="obj_player_lever" x="160" y="592" name="inst_8954C7DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> origin/clay
     <instance objName="obj_wall_jumpthrough" x="640" y="544" name="inst_529B4BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="392" y="480" name="inst_06201ECC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="424" y="480" name="inst_24105E93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -201,7 +212,11 @@
     <instance objName="obj_room_change_area" x="1968" y="464" name="inst_D9B822C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="432" name="inst_368CBE30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveman" x="448" y="784" name="inst_15070EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="obj_player_wheel" x="64" y="592" name="inst_E991C44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="obj_fulcrum" x="880" y="800" name="inst_B07F55EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> origin/clay
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="344" y="544" w="32" h="32" xo="32" yo="0" id="10005072" name="inst_7DDD3BE3" depth="35" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -781,6 +796,7 @@
     <tile bgName="tile_prehistoric" x="1920" y="944" w="32" h="32" xo="0" yo="32" id="10007768" name="inst_E49D00B7" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1952" y="944" w="32" h="32" xo="0" yo="32" id="10007769" name="inst_2546EB50" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1984" y="944" w="32" h="32" xo="0" yo="32" id="10007770" name="inst_7A90CB8B" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+<<<<<<< HEAD
     <tile bgName="tile_prehistoric" x="0" y="976" w="64" h="64" xo="128" yo="192" id="10007825" name="inst_1A2888AB" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="64" y="976" w="64" h="64" xo="128" yo="192" id="10007845" name="inst_15E13A6B" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="128" y="976" w="64" h="64" xo="128" yo="192" id="10007846" name="inst_AB14D88A" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -878,6 +894,8 @@
     <tile bgName="tile_prehistoric" x="1920" y="1104" w="64" h="64" xo="128" yo="192" id="10007986" name="inst_989F3380" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1984" y="1104" w="64" h="64" xo="128" yo="192" id="10007987" name="inst_B7526031" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="2048" y="1104" w="64" h="64" xo="128" yo="192" id="10007988" name="inst_F74ED05B" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+=======
+>>>>>>> origin/clay
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

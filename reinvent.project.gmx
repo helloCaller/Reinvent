@@ -79,7 +79,10 @@
     </sprites>
     <sprite>sprites\spr_shell</sprite>
     <sprite>sprites\spr_caveman_shell</sprite>
+<<<<<<< HEAD
     <sprite>sprites\spr_rose</sprite>
+=======
+>>>>>>> origin/clay
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -160,11 +163,15 @@
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
     <room>rooms\puzzleRoom_1</room>
+<<<<<<< HEAD
     <room>rooms\challengeRoom_1</room>
+=======
+>>>>>>> origin/clay
     <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_3</room>
-    <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
+    <room>rooms\challengeRoom_1</room>
+    <room>rooms\challengeRoom_3</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\finalRoom</room>
     <room>rooms\room_blank</room>
