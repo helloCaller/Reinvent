@@ -73,17 +73,17 @@ tether = "Tether Offline....Pulley not found";
     
     if(instance_exists(obj_player_lever)){
         armsredorgreen = c_green;
-        pausetext[1] = "Arms Online....Press 'A' to throw rocks#";
+        pausetext[1] = "Arms Online....Press 'X' or 'J' for throwing#";
     }
     
     if(instance_exists(obj_player_drill)){
         drillredorgreen = c_green;
-        pausetext[2] = "Drill Online....Press 'D' to drill through grey blocks#";
+        pausetext[2] = "Drill Online....Press 'S' or 'Down' for drilling#";
     }
     
     if(instance_exists(obj_player_grapple)){
          tetherredorgreen = c_green;
-        pausetext[3] = "Grappling Online....Press 'W' to shoot grapple";
+        pausetext[3] = "Grappling Online....Press 'W' or 'Up' for grappling";
     }
 
 
