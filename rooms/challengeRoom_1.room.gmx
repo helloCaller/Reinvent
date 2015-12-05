@@ -2,15 +2,9 @@
 <room>
   <caption></caption>
   <width>2000</width>
-<<<<<<< HEAD
-  <height>740</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
-=======
   <height>1200</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
->>>>>>> origin/clay
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -23,32 +17,19 @@ respawnY = 480;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-<<<<<<< HEAD
-    <w>1071</w>
-    <h>922</h>
-    <showGrid>0</showGrid>
-=======
     <w>1024</w>
     <h>600</h>
     <showGrid>-1</showGrid>
->>>>>>> origin/clay
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-<<<<<<< HEAD
-    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-56</xoffset>
-    <yoffset>520</yoffset>
-=======
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
     <xoffset>-34</xoffset>
     <yoffset>246</yoffset>
->>>>>>> origin/clay
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -225,35 +206,10 @@ respawnY = 480;</code>
     <instance objName="obj_room_change_area" x="1968" y="224" name="inst_03804BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="192" name="inst_8CEDC733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_change_area" x="1968" y="160" name="inst_764926DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
-    <instance objName="obj_venus" x="320" y="480" name="inst_0FA0C5AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_venus" x="1168" y="480" name="inst_668C2364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_venus" x="1424" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="768" y="560" name="inst_E75616E5" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="928" y="560" name="inst_5F523BFC" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="416" y="496" name="inst_3C31AD4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="432" y="496" name="inst_AA0FB772" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="496" y="496" name="inst_A2D67CD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="544" y="496" name="inst_8941601F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="224" y="496" name="inst_6B0F55AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="160" y="496" name="inst_F040AC8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="720" y="496" name="inst_40CC0648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1088" y="496" name="inst_1CCFDFF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1280" y="496" name="inst_4D0230F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1248" y="496" name="inst_DE0520B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1504" y="464" name="inst_99015A1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1568" y="464" name="inst_C9ABDEB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1616" y="432" name="inst_7FC6DB1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1920" y="272" name="inst_0A46B2F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="1856" y="272" name="inst_E1FDC175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall_jumpthrough" x="1552" y="352" name="inst_2F4A48D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall_jumpthrough" x="1520" y="352" name="inst_C8F115A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
     <instance objName="obj_room_change_area" x="1968" y="128" name="inst_D3433948" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="1424" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="1168" y="480" name="inst_668C2364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="320" y="480" name="inst_0FA0C5AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> origin/clay
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="480" w="32" h="32" xo="32" yo="64" id="10008101" name="inst_F4500D29" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -541,12 +497,9 @@ respawnY = 480;</code>
     <tile bgName="tile_prehistoric" x="1056" y="640" w="32" h="32" xo="0" yo="32" id="10005879" name="inst_66466DE2" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1056" y="672" w="32" h="32" xo="0" yo="32" id="10005880" name="inst_AA35A116" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1056" y="704" w="32" h="32" xo="0" yo="32" id="10005881" name="inst_1A5519AE" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-<<<<<<< HEAD
     <tile bgName="tile_prehistoric" x="1625" y="340" w="32" h="32" xo="0" yo="64" id="10008618" name="inst_CEF00856" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1674" y="339" w="32" h="32" xo="0" yo="64" id="10008619" name="inst_96512F5B" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1872" y="240" w="32" h="48" xo="64" yo="144" id="10008620" name="inst_F5D2201F" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-=======
->>>>>>> origin/clay
     <tile bgName="tile_tree" x="1584" y="320" w="160" h="128" xo="0" yo="0" id="10003352" name="inst_E2608F48" depth="8" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="96" y="448" w="32" h="64" xo="64" yo="128" id="10008087" name="inst_8FECCE66" depth="8" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="0" y="512" w="32" h="32" xo="0" yo="0" id="10001019" name="inst_778E2255" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1038,7 +991,6 @@ respawnY = 480;</code>
     <tile bgName="tile_prehistoric" x="1760" y="640" w="32" h="32" xo="0" yo="32" id="10006137" name="inst_CDF76947" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1824" y="640" w="32" h="32" xo="0" yo="32" id="10006138" name="inst_07FC301D" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1888" y="640" w="32" h="32" xo="0" yo="32" id="10006139" name="inst_4F3D879F" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-<<<<<<< HEAD
     <tile bgName="tile_prehistoric" x="576" y="736" w="64" h="64" xo="128" yo="192" id="10008051" name="inst_70F0B27D" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="640" y="736" w="64" h="64" xo="128" yo="192" id="10008052" name="inst_37E9BEEA" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="704" y="736" w="64" h="64" xo="128" yo="192" id="10008053" name="inst_0F389F98" depth="-50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1090,8 +1042,6 @@ respawnY = 480;</code>
     <tile bgName="tile_prehistoric" x="1088" y="480" w="32" h="32" xo="64" yo="0" id="10008567" name="inst_D208275E" depth="-51" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1056" y="480" w="32" h="32" xo="64" yo="0" id="10008568" name="inst_06C49946" depth="-51" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="896" y="480" w="32" h="32" xo="64" yo="0" id="10008569" name="inst_57AC33A4" depth="-51" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-=======
->>>>>>> origin/clay
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

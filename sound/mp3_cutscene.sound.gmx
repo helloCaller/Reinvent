@@ -2,11 +2,7 @@
 <sound>
   <kind>3</kind>
   <extension>.mp3</extension>
-<<<<<<< HEAD
-  <origname>C:\Users\Clay\Documents\GitHub\Reinvent\\sound\audio\mp3_cutscene.mp3</origname>
-=======
   <origname>sound\audio\mp3_cutscene.mp3</origname>
->>>>>>> origin/clay
   <effects>0</effects>
   <volume>
     <volume>1</volume>
@@ -29,8 +25,5 @@
   <compressed>1</compressed>
   <streamed>1</streamed>
   <uncompressOnLoad>0</uncompressOnLoad>
-<<<<<<< HEAD
-=======
   <audioGroup>0</audioGroup>
->>>>>>> origin/clay
 </sound>

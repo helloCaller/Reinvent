@@ -17,15 +17,9 @@ global.cameraOffset = 32;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-<<<<<<< HEAD
-    <w>1071</w>
-    <h>922</h>
-    <showGrid>0</showGrid>
-=======
     <w>1024</w>
     <h>600</h>
     <showGrid>-1</showGrid>
->>>>>>> origin/clay
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -33,15 +27,9 @@ global.cameraOffset = 32;</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-<<<<<<< HEAD
-    <page>2</page>
-    <xoffset>253</xoffset>
-    <yoffset>474</yoffset>
-=======
     <page>1</page>
     <xoffset>1126</xoffset>
     <yoffset>334</yoffset>
->>>>>>> origin/clay
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -275,7 +263,6 @@ global.cameraOffset = 32;</code>
     <instance objName="obj_wall_jumpthrough" x="1456" y="608" name="inst_D224821F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="1488" y="608" name="inst_A5A52397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="1680" y="784" name="inst_3CB68719" locked="0" code="" scaleX="4.5" scaleY="3.5" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
     <instance objName="obj_rose" x="1520" y="720" name="inst_44BA1350" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="1376" y="720" name="inst_B87F7328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="640" y="720" name="inst_A884ABA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -289,9 +276,6 @@ global.cameraOffset = 32;</code>
     <instance objName="obj_rose" x="768" y="720" name="inst_DAF729FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="1952" y="720" name="inst_D9021305" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="1888" y="720" name="inst_61E74201" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_C1C3DEFB" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
->>>>>>> origin/clay
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="320" y="688" w="64" h="64" xo="0" yo="192" id="10007989" name="inst_CD797961" depth="70" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
