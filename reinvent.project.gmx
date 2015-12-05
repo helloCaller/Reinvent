@@ -5,8 +5,16 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\mp3_prehistoric</sound>
-    <sound>sound\mp3_prehistoric_v2</sound>
+    <sounds name="mp3">
+      <sound>sound\mp3_caves</sound>
+      <sound>sound\mp3_cutscene</sound>
+      <sound>sound\mp3_menu</sound>
+      <sound>sound\mp3_prehistoric</sound>
+      <sound>sound\mp3_prehistoric_v2</sound>
+    </sounds>
+    <sounds name="sfx">
+      <sound>sound\sfx_upgrade</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
@@ -25,6 +33,7 @@
     <sprite>sprites\spr_fish</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_venus</sprite>
+    <sprite>sprites\spr_venus_chew</sprite>
     <sprite>sprites\spr_vine</sprite>
     <sprite>sprites\spr_intro</sprite>
     <sprites name="player_square">
@@ -68,6 +77,9 @@
       <sprite>sprites\spr_lightbulb</sprite>
       <sprite>sprites\spr_cavewoman_sad</sprite>
     </sprites>
+    <sprite>sprites\spr_shell</sprite>
+    <sprite>sprites\spr_caveman_shell</sprite>
+    <sprite>sprites\spr_rose</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -135,20 +147,21 @@
     </objects>
     <objects name="Misc_Objects">
       <object>objects\obj_venus</object>
+      <object>objects\obj_fish</object>
       <object>objects\obj_throwable</object>
       <object>objects\obj_vine</object>
       <object>objects\obj_watertop</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_shell</object>
       <object>objects\obj_fulcrum</object>
-      <object>objects\obj_fish</object>
     </objects>
+    <object>objects\obj_rose</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
+    <room>rooms\puzzleRoom_2</room>
     <room>rooms\puzzleRoom_3</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
