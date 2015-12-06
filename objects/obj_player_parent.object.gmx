@@ -101,25 +101,31 @@ playerDead = false;
             <string>/////////////////
 // Death Block //
 /////////////////
-if place_meeting(x,y,obj_death_block){
-playerDead = true;
-    x = respawnX;
-    y = respawnY;
-   
-    
-    
-    if(instance_exists(obj_hook)){
-        inCutscene = 0;
-        with(obj_hook){
-        instance_destroy()
-        }
-    }
-    
-    if(instance_exists(obj_throwable)){
-        obj_throwable.state = "reset"
-        }
-    
-} else playerDead = false;
+
+var deathBlock = instance_place(x,y,obj_death_block);
+if deathBlock != noone{
+    if deathBlock.harmful = 1{
+        playerDead = true;
+        audio_play_sound(sfx_death,1,0);
+            x = respawnX;
+            y = respawnY;
+           
+            
+            
+            if(instance_exists(obj_hook)){
+                inCutscene = 0;
+                with(obj_hook){
+                instance_destroy()
+                }
+            }
+            
+            if(instance_exists(obj_throwable)){
+                obj_throwable.state = "reset"
+                }
+            
+        } else playerDead = false;
+        
+    } else playerDead = false;
 
 
 
@@ -165,7 +171,7 @@ if whiteFlash &gt; 0{
 // In Cutscene Changes //
 /////////////////////////
 if inCutscene{
-    hsp = 0; vsp = 0;}
+    hsp = 0;} //vsp = 0;}
     
 ////////////////
 // On Ground? //

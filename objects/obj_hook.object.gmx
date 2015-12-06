@@ -90,6 +90,7 @@ if state = "shootgrapple"{
 
         //collision check
         if(place_meeting(x, y+vsp, obj_static)){
+         audio_play_sound(sfx_grapplehit,0,0);
             while(!place_meeting(x,y+sign(vsp),obj_static)){ 
                 y+= sign(vsp);
             }
@@ -111,6 +112,7 @@ if state = "shootgrapple"{
 
 
  if state = "grappling"{
+  
     obj_player_grapple.sprite_index = spr_grappling;
         obj_player_grapple.image_speed=0;
    // camera_target = obj_player_parent;
@@ -143,6 +145,7 @@ if state = "shootgrapple"{
  if state = "finishgrapple"{
     
    // camera_target = obj_player_parent;
+  
     inCutscene = 0;
     obj_player_grapple.grav = 0.4;
     aHookFiredAlready = false;

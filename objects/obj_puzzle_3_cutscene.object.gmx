@@ -72,7 +72,8 @@ if flag[0] = 0{
 if flag[1] &gt; 0{
     flag[1] ++;
     if flag[1] = 90{
-        caveman.emotion = spr_lightbulb;}
+        caveman.emotion = spr_lightbulb;
+        audio_play_sound(sfx_idea,1,0);}
     if flag[1] = 180{
         caveman.emotion = -1;
         caveman.state = ""}

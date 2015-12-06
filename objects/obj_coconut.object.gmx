@@ -101,6 +101,7 @@ if state = "sitting"{
         if cavemanTimer = 80{
             //lightbulb goes here}
             obj_caveman_fish.emotion = spr_lightbulb;
+            audio_play_sound(sfx_idea,1,0);
             obj_caveman_fish.emotionTimer = 0;}
             //Caveman begins walking off screen
         if cavemanTimer = 0{
