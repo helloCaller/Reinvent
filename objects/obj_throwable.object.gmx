@@ -78,6 +78,7 @@ if state = "playerOnLeftFlipping"{
         hsp = 4;
         rotation += 3
        
+        //if it hits player
          if(place_meeting(x+hsp, y,obj_player_parent)){
        while(!place_meeting(x+sign(hsp), y,obj_player_parent)){
            x += sign(hsp);
@@ -85,16 +86,26 @@ if state = "playerOnLeftFlipping"{
             hsp=0;
             rotation = 0;
     }
+    
 
-      
+     //if it hits a static obj (wall) 
     if(place_meeting(x+hsp, y,obj_static)){
         while(!place_meeting(x+sign(hsp), y,obj_static)){
            x += sign(hsp);
         }
             hsp = 0;
             rotation = 0;
+            
     }
     
+     if(place_meeting(x+hsp, y,obj_throwable)){
+       while(!place_meeting(x+sign(hsp), y,obj_throwable)){
+           x += sign(hsp);
+        }
+            hsp=0;
+            vsp = grav;
+            rotation = 0;
+    }
     
     x+=hsp;
     
@@ -108,6 +119,9 @@ if state = "playerOnLeftFlipping"{
            vsp = 0 ;
            rotation = 0;
     }
+    
+    
+    
 
       
     if(place_meeting(x, y+vsp, obj_static)){
@@ -121,7 +135,14 @@ if state = "playerOnLeftFlipping"{
           state = "";
     } 
     
-   
+    if(place_meeting(x, y+vsp,obj_throwable)){
+        while(!place_meeting(x, y+sign(vsp),obj_throwable)){
+           y += sign(vsp)
+        }
+            hsp = 0;
+           vsp =grav;
+           rotation = 0;
+    }
         y+=  vsp;
        
     } else {
@@ -170,7 +191,14 @@ if state = "playerOnRightFlipping"{
             rotation = 0;
     }
     
-    
+     if(place_meeting(x+hsp, y,obj_throwable)){
+       while(!place_meeting(x+sign(hsp), y,obj_throwable)){
+           x += sign(hsp);
+        }
+            hsp=0;
+            vsp = grav;
+            rotation = 0;
+    }
     x+=hsp;
     
 
@@ -184,6 +212,7 @@ if state = "playerOnRightFlipping"{
            rotation = 0;
     }
 
+
       
     if(place_meeting(x, y+vsp, obj_static)){
         while(!place_meeting(x, y+sign(vsp),obj_static)){
@@ -196,6 +225,14 @@ if state = "playerOnRightFlipping"{
           state = "";
     } 
     
+    if(place_meeting(x, y+vsp,obj_throwable)){
+        while(!place_meeting(x, y+sign(vsp),obj_throwable)){
+           y += sign(vsp)
+        }
+            hsp = 0;
+           vsp = grav;
+           rotation = 0;
+    }
    
       y+= vsp;
       
@@ -232,6 +269,15 @@ if state = "in air"{
             rotation = 0;
     }
     
+    if(place_meeting(x+hsp, y,obj_throwable) &amp;&amp; (currentY - y &gt;=1)){
+        while(!place_meeting(x+sign(hsp), y,obj_throwable)){
+           x += sign(hsp);
+        }
+            hsp = 0;
+            rotation = 0;
+    }
+    
+    
     
     x+=hsp;
     
@@ -245,6 +291,7 @@ if state = "in air"{
            vsp = 0 ;
            rotation = 0;
     }
+   
 
       
     if(place_meeting(x, y+vsp, obj_static)){
@@ -258,9 +305,23 @@ if state = "in air"{
           state = "";
     } 
     
+    if(place_meeting(x, y+vsp,obj_throwable) &amp;&amp; (currentY - y &gt;= 1)){
+        while(!place_meeting(x, y+sign(vsp),obj_throwable)){
+           y += sign(vsp)
+        }
+            hsp = 0;
+           
+           rotation = 0;
+    }
+    
+    
+    
       y += vsp;// should be called after movement and collision checks but I'm still tinkering with them
     
 }
+
+
+
     
     if state = "reset"{
         x = startX;
