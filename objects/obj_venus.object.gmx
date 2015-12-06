@@ -58,8 +58,6 @@ harmful = 1;
           <argument>
             <kind>1</kind>
             <string> var yummythrowable = instance_place(x,y-5*image_xscale, obj_throwable);
-
-
  
  if(instance_exists(obj_player_parent)){
     distY = round(y - obj_player_parent.y);
@@ -72,22 +70,17 @@ harmful = 1;
     //rockEatTimer += 1;
  }
  
- if(rockEatTimer &gt;= 100){
-    sprite_index = spr_venus
-    rockEatTimer = 0;
-    rockEat = false;
  
- }
-    
+  
  //close venus near peak of jump. 
- if(rockEat == false){
+if(rockEat == false){
     if(distY &gt;= 70 &amp;&amp; distX &lt; 49 &amp;&amp; distX &gt; -49){
         image_index = 1;
-        //eat rock
+       
     } else {
      image_index = 0;
      }
-    
+    //eat rock
       if(place_meeting(x,y-1, (yummythrowable))){
         rockEat = true;
          with(yummythrowable){
@@ -106,13 +99,13 @@ harmful = 1;
         }
  
     }
- }
+ 
  
 
- 
- 
 }
+ 
 
+}
  
 
  

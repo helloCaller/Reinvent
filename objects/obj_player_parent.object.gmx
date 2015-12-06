@@ -101,10 +101,12 @@ playerDead = false;
             <string>/////////////////
 // Death Block //
 /////////////////
+
 var deathBlock = instance_place(x,y,obj_death_block);
 if deathBlock != noone{
     if deathBlock.harmful = 1{
         playerDead = true;
+        audio_play_sound(sfx_death,1,0);
             x = respawnX;
             y = respawnY;
            
