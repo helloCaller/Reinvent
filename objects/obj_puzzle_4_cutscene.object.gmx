@@ -89,6 +89,7 @@ if vineCut = 1{
     //Lightbulb
     if flag[2] = 1{
         obj_cavewoman.emotion = spr_lightbulb;
+        audio_play_sound(sfx_idea,1,0);
         obj_cavewoman.state = "standing"
         flag[3] = 1;
         flag[2] = -1;}

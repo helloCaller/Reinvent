@@ -102,6 +102,7 @@ playerDead = false;
 // Death Block //
 /////////////////
 if place_meeting(x,y,obj_death_block){
+audio_play_sound(sfx_death,1,0);
 playerDead = true;
     x = respawnX;
     y = respawnY;
