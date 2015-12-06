@@ -86,6 +86,7 @@
     <sprite>sprites\spr_shell</sprite>
     <sprite>sprites\spr_caveman_shell</sprite>
     <sprite>sprites\spr_rose</sprite>
+    <sprite>sprites\spr_dead_tree</sprite>
     <sprite>sprites\spr_fire</sprite>
   </sprites>
   <backgrounds name="background">
@@ -164,6 +165,7 @@
       <object>objects\obj_rose</object>
       <object>objects\obj_fire</object>
     </objects>
+    <object>objects\obj_dead_tree</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
