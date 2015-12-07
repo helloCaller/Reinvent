@@ -66,7 +66,12 @@ currentY = y;
  vsp +=grav;
  }
  
- 
+ if state = ""{
+    if(!place_meeting(x, y+1, obj_static)){
+    vsp=2;
+    y+=vsp;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -177,7 +182,9 @@ if state = "playerOnRightFlipping"{
         state="in air";
         }else {
         
-        
+        if(place_meeting(x-1,y,obj_throwable)){
+            vsp = -10;
+        }
     
      if(!place_meeting(x-1,y,obj_static)){
       vsp = -10;
@@ -226,7 +233,7 @@ if state = "playerOnRightFlipping"{
           rotation=0;
           currentY = y;
           state = "";
-    } 
+    }  
     
     
    
@@ -292,7 +299,7 @@ if state = "in air"{
           rotation=0;
           currentY = y;
           state = "";
-    } 
+    }
     
     
     
