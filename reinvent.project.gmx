@@ -23,7 +23,6 @@
       </sounds>
       <sound>sound\sfx_blockdrill</sound>
     </sounds>
-    <sound>sound\sound12</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
@@ -66,6 +65,7 @@
     </sprites>
     <sprites name="player_drill">
       <sprite>sprites\spr_drilling</sprite>
+      <sprite>sprites\spr_drill_transform</sprite>
       <sprite>sprites\spr_particle_drillwall</sprite>
     </sprites>
     <sprites name="player_grapple">
@@ -78,19 +78,22 @@
       <sprite>sprites\spr_caveman_climb</sprite>
       <sprite>sprites\spr_caveman_fish</sprite>
       <sprite>sprites\spr_caveman_fish_walk</sprite>
+      <sprite>sprites\spr_caveman_happy</sprite>
       <sprite>sprites\spr_caveman_panic</sprite>
       <sprite>sprites\spr_caveman_push</sprite>
+      <sprite>sprites\spr_caveman_shell</sprite>
+      <sprite>sprites\spr_cavewoman_happy</sprite>
       <sprite>sprites\spr_cavewoman_idle</sprite>
       <sprite>sprites\spr_cavewoman_pull</sprite>
+      <sprite>sprites\spr_cavewoman_sad</sprite>
       <sprite>sprites\spr_frustration_cloud</sprite>
       <sprite>sprites\spr_lightbulb</sprite>
-      <sprite>sprites\spr_cavewoman_sad</sprite>
     </sprites>
     <sprite>sprites\spr_shell</sprite>
-    <sprite>sprites\spr_caveman_shell</sprite>
     <sprite>sprites\spr_rose</sprite>
     <sprite>sprites\spr_dead_tree</sprite>
     <sprite>sprites\spr_fire</sprite>
+    <sprite>sprites\spr_warp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -169,20 +172,21 @@
       <object>objects\obj_fire</object>
     </objects>
     <object>objects\obj_dead_tree</object>
+    <object>objects\obj_warp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\challengeRoom_4</room>
-    <room>rooms\puzzleRoom_3</room>
-    <room>rooms\introRoom</room>
-    <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
+    <room>rooms\challengeRoom_4</room>
+    <room>rooms\puzzleRoom_1</room>
     <room>rooms\finalRoom</room>
     <room>rooms\room_blank</room>
     <room>rooms\room12</room>
+    <room>rooms\introRoom</room>
     <room>rooms\outroRoom</room>
   </rooms>
   <help>

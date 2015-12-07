@@ -16,9 +16,9 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1071</w>
-    <h>922</h>
-    <showGrid>0</showGrid>
+    <w>1024</w>
+    <h>600</h>
+    <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>997</xoffset>
-    <yoffset>449</yoffset>
+    <xoffset>801</xoffset>
+    <yoffset>251</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -245,7 +245,7 @@
     <instance objName="obj_rose" x="1392" y="672" name="inst_5BD7FEE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="1632" y="672" name="inst_0F6E80AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="1680" y="640" name="inst_3E9D8DD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rose" x="944" y="672" name="inst_59576A8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rose" x="896" y="672" name="inst_59576A8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="720" y="672" name="inst_F7AFC92B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="784" y="672" name="inst_0101AFD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="416" y="608" name="inst_CD34006F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

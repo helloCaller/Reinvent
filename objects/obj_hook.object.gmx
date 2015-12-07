@@ -120,7 +120,7 @@ if state = "shootgrapple"{
     distanceY = obj_player_grapple.y - obj_hook.y;
    
      if(distanceY &gt;= 30){
-        obj_player_grapple.vsp = -4;
+        obj_player_grapple.vsp = -2;
         obj_player_grapple.y += obj_player_grapple.vsp;
         } else {
     //Stops player at the top of tether/grapple
