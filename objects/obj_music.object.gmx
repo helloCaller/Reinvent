@@ -25,10 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(mp3_prehistoric_v2,1,1);
-
-audioplaying = 1;
-
+            <string>audioplaying = 1;
+songstart = 1;
 </string>
           </argument>
         </arguments>
@@ -51,12 +49,19 @@ audioplaying = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check_pressed(ord("M"))){
+            <string>if(songstart){
+    audio_stop_sound(global.nowplaying);
+    audio_play_sound(song,1,1);
+    global.nowplaying = song;
+    songstart = 0;
+}
+
+if(keyboard_check_pressed(ord("M"))){
     if(audioplaying==1){
-        audio_pause_sound(mp3_prehistoric_v2);
+        audio_pause_sound(song);
         audioplaying = 0;
     } else {
-    audio_resume_sound(mp3_prehistoric_v2);
+    audio_resume_sound(song);
     audioplaying = 1;
     }
 }
