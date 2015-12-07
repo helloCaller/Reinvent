@@ -116,9 +116,12 @@ if flag[3] &gt; 0{
         flag[3] ++;
         if flag[3] = 90{
             obj_player_parent.upgradeState = "lever";
+            audio_play_sound(sfx_upgrade,1,0);
             obj_player_parent.whiteFlash = 1;
             inCutscene = 0;
             //text here
+            var scr = "Bazinga, the lever has been invented! Now I can throw rocks and shells!"
+        script_text(scr,0.3, obj_player_parent.x - 50, obj_player_parent.y - 120); 
             instance_destroy();
             }}}
 </string>
