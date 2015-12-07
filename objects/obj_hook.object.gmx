@@ -51,6 +51,32 @@ darkBlue = make_colour_rgb(0,4,102);
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(state == "grappling" &amp;&amp; place_meeting(obj_player_grapple.x-10, obj_player_grapple.y -20, obj_static)||
+state == "grappling" &amp;&amp; place_meeting(obj_player_grapple.x+10, obj_player_grapple.y -20, obj_static)){
+                state="finishgrapple";
+                }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -94,8 +120,10 @@ if state = "shootgrapple"{
             while(!place_meeting(x,y+sign(vsp),obj_static)){ 
                 y+= sign(vsp);
             }
+            
             vsp=0;
             state = "grappling";
+            
         }
         
         y+=vsp;
@@ -105,6 +133,7 @@ if state = "shootgrapple"{
        if(obj_hook.y &lt; room_height - room_height - 100){
             state = "finishgrapple";
         }
+        
         
         
        
@@ -118,15 +147,22 @@ if state = "shootgrapple"{
    // camera_target = obj_player_parent;
     inCutscene = 1;
     distanceY = obj_player_grapple.y - obj_hook.y;
+    
+     
    
      if(distanceY &gt;= 30){
-        obj_player_grapple.vsp = -2;
-        obj_player_grapple.y += obj_player_grapple.vsp;
+        
+             obj_player_grapple.vsp = -2;
+            obj_player_grapple.y += obj_player_grapple.vsp; 
+        
+           
         } else {
     //Stops player at the top of tether/grapple
         obj_player_grapple.grav = 0;
         obj_player_grapple.vsp = 0;
     }
+     
+     
     
         if(instance_exists(obj_wall_movethrough)){
                 //if player is at top of grapple height they can jump through
@@ -137,8 +173,12 @@ if state = "shootgrapple"{
                  state="finishgrapple";
                 }
         }
+        
+    }    
+    
+            
       
-}
+
         
  //Returning state, back to normal
  
