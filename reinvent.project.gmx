@@ -9,7 +9,6 @@
       <sound>sound\mp3_caves</sound>
       <sound>sound\mp3_cutscene</sound>
       <sound>sound\mp3_menu</sound>
-      <sound>sound\mp3_prehistoric</sound>
       <sound>sound\mp3_prehistoric_v2</sound>
     </sounds>
     <sounds name="sfx">
@@ -94,6 +93,7 @@
     <sprite>sprites\spr_dead_tree</sprite>
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_warp</sprite>
+    <sprite>sprites\spr_outro</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -133,6 +133,7 @@
     </objects>
     <objects name="Cutscenes">
       <object>objects\obj_intro</object>
+      <object>objects\obj_outro</object>
       <object>objects\obj_puzzle_4_cutscene</object>
       <object>objects\obj_puzzle_3_cutscene</object>
       <object>objects\obj_puzzle_2_cutscene</object>
@@ -170,12 +171,13 @@
       <object>objects\obj_fulcrum</object>
       <object>objects\obj_rose</object>
       <object>objects\obj_fire</object>
+      <object>objects\obj_warp</object>
+      <object>objects\obj_dead_tree</object>
     </objects>
-    <object>objects\obj_dead_tree</object>
-    <object>objects\obj_warp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
+    <room>rooms\introRoom</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
@@ -184,10 +186,9 @@
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>
     <room>rooms\finalRoom</room>
+    <room>rooms\outroRoom</room>
     <room>rooms\room_blank</room>
     <room>rooms\room12</room>
-    <room>rooms\introRoom</room>
-    <room>rooms\outroRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

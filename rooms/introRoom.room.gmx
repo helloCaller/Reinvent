@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>0</xoffset>
-    <yoffset>0</yoffset>
+    <xoffset>-151</xoffset>
+    <yoffset>-178</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_intro" x="0" y="0" name="inst_97170242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music" x="0" y="-32" name="inst_0CBF50D7" locked="0" code="song = mp3_cutscene;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
