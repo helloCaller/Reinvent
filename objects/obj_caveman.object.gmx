@@ -60,6 +60,24 @@ rotation = 0;
 // Animations //
 ////////////////
 
+//Happy
+if state = "happy"{
+    image_speed = 1/30;
+    sprite_index = spr_caveman_happy;}
+    
+//Panic
+if state = "panic"{
+    image_speed = 1/30;
+    sprite_index = spr_caveman_panic;}
+    
+//Pushing
+if state = "pushing"{
+    image_speed = 1/9;
+    sprite_index = spr_caveman_push;
+    emotion = spr_frustration_cloud;
+    emotionLoop = 1;
+    emotionSpeed = 30;}
+
 //Angry
 if state = "angry"{
     image_speed = 1/30;
