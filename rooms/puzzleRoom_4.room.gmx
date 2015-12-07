@@ -17,8 +17,8 @@ global.cameraOffset = 0;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1698</w>
-    <h>1020</h>
+    <w>1024</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +28,8 @@ global.cameraOffset = 0;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>541</xoffset>
-    <yoffset>6</yoffset>
+    <xoffset>697</xoffset>
+    <yoffset>161</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -167,7 +167,6 @@ global.cameraOffset = 0;</code>
     <instance objName="obj_wall" x="1280" y="576" name="inst_5AB07218" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1296" y="576" name="inst_A62B9AC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_background" x="64" y="32" name="inst_8591CF27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_grapple" x="48" y="576" name="inst_315431AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1312" y="560" name="inst_7F5322AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1312" y="544" name="inst_A2185F9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1312" y="528" name="inst_D5A03658" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -534,6 +533,7 @@ global.cameraOffset = 0;</code>
     <instance objName="obj_wall_jumpthrough" x="848" y="576" name="inst_90C219E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="880" y="576" name="inst_E79D5409" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="912" y="576" name="inst_FFB10DC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_drill" x="48" y="576" name="inst_EE47A8AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="608" y="448" w="32" h="32" xo="160" yo="96" id="10004821" name="inst_E1D095A8" depth="70" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1186,7 +1186,7 @@ global.cameraOffset = 0;</code>
     <tile bgName="tile_tree" x="944" y="448" w="160" h="128" xo="0" yo="128" id="10009213" name="inst_5FEB8B14" depth="20" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="944" y="448" w="160" h="128" xo="0" yo="0" id="10009214" name="inst_83F666DD" depth="18" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="1104" y="448" w="160" h="128" xo="0" yo="0" id="10009215" name="inst_24A16F3A" depth="18" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_prehistoric" x="32" y="544" w="32" h="64" xo="64" yo="128" id="10009224" name="inst_45CB17C0" depth="17" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tile_prehistoric" x="80" y="544" w="32" h="64" xo="64" yo="128" id="10009224" name="inst_45CB17C0" depth="17" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1056" y="288" w="32" h="32" xo="0" yo="96" id="10009229" name="inst_D68553F7" depth="17" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="992" y="224" w="32" h="32" xo="0" yo="96" id="10009230" name="inst_E71544F4" depth="17" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="1104" y="320" w="32" h="32" xo="0" yo="96" id="10009232" name="inst_3ED8CFB9" depth="17" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
