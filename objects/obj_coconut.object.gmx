@@ -69,7 +69,7 @@ if state = "falling"{
     inCutscene = 1;
     if place_meeting(x,y+vspeed+gravity,obj_wall){ //Check if going to hit ground
         move_contact_solid(270,vspeed+gravity); //Move to ground
-        hspeed = 1; //Start moving horizontally
+        hspeed = 1.5; //Start moving horizontally
         inCutscene = 1; //Start Cutscene
         if vspeed &gt; 1 then vspeed = -vspeed*0.85; //Bounce
         else{ //Done bouncing, start rolling
