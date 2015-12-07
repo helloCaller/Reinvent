@@ -89,6 +89,10 @@ if state = "standing"{
 if state = "sad"{
     image_speed = 1/30;
     sprite_index = spr_cavewoman_sad;}
+    
+if state = "happy"{
+    image_speed = 1/30;
+    sprite_index = spr_cavewoman_happy;}
 </string>
           </argument>
         </arguments>
