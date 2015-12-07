@@ -59,15 +59,16 @@ var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 
 
 
-if(keyboard_check_pressed(ord("A"))){
+if(keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("J"))){
     if(place_meeting(x+5*image_xscale,y, obj_throwable)){
-        
         (throwableL).state = "playerOnLeftFlipping";
-         
-     }
+        audio_play_sound(sfx_throw,1,0);
+        
+    }
         
     if(place_meeting(x-5*image_xscale,y, obj_throwable)){
         (throwableR).state = "playerOnRightFlipping";
+        audio_play_sound(sfx_throw,1,0);
         } 
 }
 
@@ -111,11 +112,11 @@ if upgradeState = "drill"{
 
 
 
-
+/*
 if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_drill);
-   }
+   }*/
 
 
  ////SPRITE ANIMATION

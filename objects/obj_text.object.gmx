@@ -28,7 +28,7 @@
             <string>alpha = 0;
 print = " ";
 time = 0;
-depth = instance_number(obj_text);
+
 
 
 textTimer = 0;
@@ -63,7 +63,8 @@ textTimer = 0;
         
     } else {
     textTimer +=1;
-        if(textTimer &gt;= 95){
+        //adjust number to adjust how long text stays up
+        if(textTimer &gt;= 100){
             instance_destroy();
             textTimer = 0;
         }
@@ -102,10 +103,10 @@ if(alpha &lt; 1){
  //text box
  draw_set_font(font);
  draw_set_colour(c_black);
- draw_rectangle(x,y, x+boxwidth, y+boxheight, 0);
+ draw_rectangle(x,y, x+boxwidth+13, y+boxheight, 0);
  //border
  draw_set_colour(c_gray);
- draw_rectangle(x,y, x+boxwidth, y+boxheight, 1);
+ draw_rectangle(x,y, x+boxwidth+13, y+boxheight, 1);
  brightGreen = make_colour_rgb(87,255,84);
  draw_set_color(brightGreen);
  draw_set_halign(fa_left);

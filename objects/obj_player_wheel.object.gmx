@@ -32,6 +32,38 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+///////////////
+// Upgrading //
+///////////////
+if upgradeState = "lever"{
+    var wf = whiteFlash;
+    with instance_create(x,y, obj_player_lever){
+        whiteFlash = wf;
+        camera_target = obj_player_lever;}
+    instance_destroy();}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -50,11 +82,11 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited(); //Executes parent code
-
+/*
 if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_lever);
-   }
+   }*/
 
    ////SPRITE ANIMATION
    

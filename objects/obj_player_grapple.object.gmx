@@ -51,7 +51,7 @@ state = " ";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>event_inherited();    
 
 var breakableR = instance_place(x-5*image_xscale,y, obj_breakable_wall);
 var breakableL = instance_place(x+5*image_xscale,y, obj_breakable_wall);
@@ -59,30 +59,53 @@ var breakableL = instance_place(x+5*image_xscale,y, obj_breakable_wall);
 var throwableR = instance_place(x-5*image_xscale,y, obj_throwable);
 var throwableL = instance_place(x+5*image_xscale,y, obj_throwable);
 
+var venusR = instance_place(x-5*image_xscale,y, obj_venus);
+var venusL = instance_place(x+5*image_xscale,y, obj_venus);
 
 //Throw code
-if(keyboard_check_pressed(ord("A"))){
+if(keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("J"))){
     if(place_meeting(x+5*image_xscale,y, obj_throwable)){
-        
         (throwableL).state = "playerOnLeftFlipping";
-        } 
+        audio_play_sound(sfx_throw,1,0);
+    } 
         
     if(place_meeting(x-5*image_xscale,y, obj_throwable)){
         (throwableR).state = "playerOnRightFlipping";
+        audio_play_sound(sfx_throw,1,0);
         }  
 
 }
 
 
 //Drill code
-if(keyboard_check_pressed(ord("D"))){
+if(keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down)){
+ 
+
     if(place_meeting(x+5*image_xscale,y, obj_breakable_wall)){
-        
         (breakableL).image_speed = 1/6;
-        
+        part_particles_create(global.P_System, (breakableL).x, (breakableL).y, global.p1, 50);
+        audio_play_sound(sfx_blockdrill,1,0);
     } else if(place_meeting(x-5*image_xscale,y, obj_breakable_wall)){
-        
         (breakableR).image_speed = 1/6;
+        part_particles_create(global.P_System, (breakableR).x, (breakableR).y, global.p1, 50);
+        audio_play_sound(sfx_blockdrill,1,0);
+    }
+    
+    
+    //kill venus with drill
+    if(place_meeting(x+5*image_xscale,y, obj_venus)){
+        with(venusL){
+            instance_destroy();
+            part_particles_create(global.P_System, x, y, global.p1, 50);
+            audio_play_sound(sfx_blockdrill,1,0);
+        }
+        
+    } else if(place_meeting(x-5*image_xscale,y, obj_venus)){
+        with(venusR){
+            instance_destroy();
+            part_particles_create(global.P_System, x, y, global.p1, 50);
+            audio_play_sound(sfx_blockdrill,1,0);
+            }
     }
 
 }
@@ -116,7 +139,7 @@ if(keyboard_check_pressed(ord("D"))){
 
 //State code in obj_hook
 
-if(keyboard_check_pressed(ord("W"))){
+if(keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up)){
     instance_create(x,y, obj_hook);
         if(obj_hook.aHookFiredAlready == false){
             obj_hook.state = "shootgrapple";
@@ -125,11 +148,11 @@ if(keyboard_check_pressed(ord("W"))){
         }
 
 }
- 
+/* 
 if(keyboard_check_pressed(ord('S'))){
    instance_destroy();
    instance_create(x,y, obj_player_spring);
-   }
+   }*/
    
     ////SPRITE ANIMATION
   

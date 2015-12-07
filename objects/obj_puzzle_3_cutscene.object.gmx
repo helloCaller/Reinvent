@@ -72,7 +72,8 @@ if flag[0] = 0{
 if flag[1] &gt; 0{
     flag[1] ++;
     if flag[1] = 90{
-        caveman.emotion = spr_lightbulb;}
+        caveman.emotion = spr_lightbulb;
+        audio_play_sound(sfx_idea,1,0);}
     if flag[1] = 180{
         caveman.emotion = -1;
         caveman.state = ""}
@@ -118,7 +119,7 @@ with caveman{
 ///////////////
 if flag[3] = 1{
     with caveman{
-        if place_meeting(x,y,obj_cavewoman){
+        if place_meeting(x-32,y,obj_cavewoman){
             hspeed = 0;
             obj_cavewoman.state = "standing";
             with obj_puzzle_3_cutscene{
@@ -155,7 +156,10 @@ if flag[5] &gt; 0 and obj_fade.fadeState != "out"{
     if flag[5] = 90{
         inCutscene = 0;
         obj_player_parent.upgradeState = "drill"; 
+        audio_play_sound(sfx_upgrade,0,0);
         obj_player_parent.whiteFlash = 1;
+        var scr = "Hazahh, the screw has been invented! Now I can drill through blocks of stone, and maybe some other things!"
+        script_text(scr,0.3, obj_player_parent.x - 50, obj_player_parent.y - 120); 
         flag[5] = -1;
         instance_destroy();}}
 </string>

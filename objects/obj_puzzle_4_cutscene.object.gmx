@@ -89,6 +89,7 @@ if vineCut = 1{
     //Lightbulb
     if flag[2] = 1{
         obj_cavewoman.emotion = spr_lightbulb;
+        audio_play_sound(sfx_idea,1,0);
         obj_cavewoman.state = "standing"
         flag[3] = 1;
         flag[2] = -1;}
@@ -160,6 +161,8 @@ if vineCut = 1{
             with obj_caveman{
                 instance_destroy();}
             with obj_vine{
+                instance_destroy();}
+            with obj_fish{
                 instance_destroy();}}}
      
      //Upgrade
@@ -168,9 +171,10 @@ if vineCut = 1{
         if flag[9] = 90{
             inCutscene = 0;
             obj_player_parent.upgradeState = "grapple";
+            audio_play_sound(sfx_upgrade,0,0);
             obj_player_parent.whiteFlash = 1;
             var scr = "Sweet! Now I finally have my grapple mechanics back!";
-            script_text(scr,0.3, obj_player_parent.x - 50, obj_player_parent.y - 120); 
+            script_text(scr,0.2, obj_player_parent.x - 50, obj_player_parent.y - 120); 
             instance_destroy();}}}
 </string>
           </argument>
