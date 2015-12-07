@@ -3,7 +3,7 @@
   <caption></caption>
   <width>2000</width>
   <height>1200</height>
-  <vsnap>32</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -27,9 +27,9 @@ global.cameraOffset = 32;</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>302</xoffset>
-    <yoffset>390</yoffset>
+    <page>2</page>
+    <xoffset>926</xoffset>
+    <yoffset>454</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,7 +57,7 @@ global.cameraOffset = 32;</code>
     <instance objName="obj_player_spring" x="1472" y="576" name="inst_F969FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coconut_drop" x="656" y="608" name="inst_4AA5BDA1" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="736" name="inst_8999939E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_caveman_fish" x="1104" y="704" name="inst_B3964DE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_caveman_fish" x="1088" y="704" name="inst_B3964DE4" locked="0" code="state = &quot;pushing&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="192" y="736" name="inst_8580712E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="736" name="inst_C10BCDEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="208" y="736" name="inst_DA62BD4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -253,7 +253,7 @@ global.cameraOffset = 32;</code>
     <instance objName="obj_wall" x="128" y="704" name="inst_8FB5ED0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_watertop" x="1680" y="720" name="inst_80D1E812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_watertop" x="1744" y="720" name="inst_541FBBB7" locked="0" code="" scaleX="1.25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music" x="48" y="16" name="inst_258E48A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music" x="48" y="16" name="inst_258E48A2" locked="0" code="song = mp3_prehistoric_v2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="672" y="608" name="inst_21D508CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="704" y="608" name="inst_C226D4B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="560" y="608" name="inst_A5D68F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -314,14 +314,12 @@ global.cameraOffset = 32;</code>
     <tile bgName="tile_tree" x="224" y="608" w="160" h="128" xo="160" yo="128" id="10008391" name="inst_4ECD99A1" depth="65" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="848" y="608" w="160" h="128" xo="160" yo="128" id="10008396" name="inst_8FF28FED" depth="65" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="1296" y="608" w="160" h="128" xo="160" yo="128" id="10008397" name="inst_5FFD86A6" depth="65" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_tree" x="1008" y="608" w="160" h="128" xo="160" yo="128" id="10008398" name="inst_14FA8D96" depth="65" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="1920" y="608" w="160" h="128" xo="160" yo="128" id="10008399" name="inst_8E4B12C0" depth="65" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="224" y="608" w="176" h="64" xo="160" yo="0" id="10008392" name="inst_C1399D93" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="384" y="608" w="176" h="64" xo="160" yo="0" id="10008393" name="inst_98186608" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="528" y="608" w="176" h="64" xo="160" yo="0" id="10008394" name="inst_AAD7BDD8" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="1920" y="608" w="160" h="128" xo="160" yo="0" id="10008400" name="inst_FCB805DC" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="1296" y="608" w="160" h="128" xo="160" yo="0" id="10008401" name="inst_983E4100" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tile_tree" x="1008" y="608" w="160" h="128" xo="160" yo="0" id="10008402" name="inst_7F253567" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_tree" x="848" y="608" w="160" h="128" xo="160" yo="0" id="10008403" name="inst_B7569806" depth="63" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="192" y="704" w="128" h="32" xo="64" yo="32" id="10000613" name="inst_80A2D176" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tile_prehistoric" x="288" y="704" w="64" h="32" xo="96" yo="32" id="10000616" name="inst_8BF072DA" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
