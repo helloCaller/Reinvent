@@ -28,8 +28,8 @@ respawnY = 480;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>494</xoffset>
-    <yoffset>190</yoffset>
+    <xoffset>870</xoffset>
+    <yoffset>150</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -208,7 +208,7 @@ respawnY = 480;</code>
     <instance objName="obj_room_change_area" x="1968" y="160" name="inst_764926DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="320" y="480" name="inst_0FA0C5AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_venus" x="1168" y="480" name="inst_668C2364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_venus" x="1424" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_venus" x="1440" y="448" name="inst_1A4112F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="768" y="560" name="inst_E75616E5" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="928" y="560" name="inst_5F523BFC" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_rose" x="416" y="496" name="inst_3C31AD4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
