@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 0.5;
+            <string>event_inherited();
+image_alpha = 0.5;
 </string>
           </argument>
         </arguments>
