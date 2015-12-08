@@ -77,6 +77,11 @@ if state = "pushing"{
     emotion = spr_frustration_cloud;
     emotionLoop = 1;
     emotionSpeed = 30;}
+    
+//Climbing
+if state = "climbing"{
+    image_speed = 1/9;
+    sprite_index = spr_caveman_climb;}
 
 //Angry
 if state = "angry"{
