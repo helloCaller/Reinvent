@@ -56,7 +56,7 @@ newY = y;
     }
     
     
-   show_debug_message(respawnX);
+  
 </string>
           </argument>
         </arguments>
