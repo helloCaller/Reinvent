@@ -143,6 +143,7 @@ if state = "creating wagon"{
     else{
         //Smoke goes here
         if cavemanTimer = 0{
+            obj_caveman_fish.state = "happy";
             obj_fish.state = "cart";
             obj_fish.whiteFlash = 1;}
         if cavemanTimer &gt; -100{
