@@ -177,9 +177,13 @@ if(keyboard_check_pressed(ord('S'))){
    //movement animation 
    
    
-        if(hsp==0){
-    sprite_index = spr_lever_idle;
-   image_speed = 0.334;
+   if(hsp==0){
+        if(drill){
+            sprite_index = spr_drilling;
+            image_speed = 0.2; 
+        }else{
+            sprite_index = spr_lever_idle;
+            image_speed = 0.334;}
    } else {
    image_speed = 0.334;
    //so as to restart image_index from 0
@@ -193,20 +197,7 @@ if(keyboard_check_pressed(ord('S'))){
             sprite_index = spr_player_lever_throw;
             image_speed = 0.1;
         } 
-        
-        if(drill){
-           sprite_index = spr_drilling;
-           image_speed = 0.2; 
-            }
-   }
-
-  
- 
-  
-  
- 
-  
-  
+   }  
 </string>
           </argument>
         </arguments>

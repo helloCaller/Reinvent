@@ -28,8 +28,8 @@ respawnY = 480;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>870</xoffset>
-    <yoffset>150</yoffset>
+    <xoffset>982</xoffset>
+    <yoffset>206</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -228,6 +228,7 @@ respawnY = 480;</code>
     <instance objName="obj_rose" x="1856" y="272" name="inst_E1FDC175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="1552" y="352" name="inst_2F4A48D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_jumpthrough" x="1520" y="352" name="inst_C8F115A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1248" y="464" name="inst_FD68BCDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_prehistoric" x="192" y="480" w="32" h="32" xo="32" yo="64" id="10008101" name="inst_F4500D29" depth="60" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

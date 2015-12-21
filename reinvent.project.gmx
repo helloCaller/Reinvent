@@ -177,11 +177,11 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_initialize</room>
-    <room>rooms\puzzleRoom_3</room>
     <room>rooms\introRoom</room>
     <room>rooms\puzzleRoom_1</room>
     <room>rooms\challengeRoom_1</room>
     <room>rooms\puzzleRoom_2</room>
+    <room>rooms\puzzleRoom_3</room>
     <room>rooms\challengeRoom_3</room>
     <room>rooms\puzzleRoom_4</room>
     <room>rooms\challengeRoom_4</room>

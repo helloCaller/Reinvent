@@ -260,6 +260,7 @@ if vsp &gt; 0{
      if(place_meeting(x, y-64, obj_quicksand)){
         x = respawnX;
         y = respawnY;
+        audio_play_sound(sfx_death,1,0);
         //Destroy hook if it exists
             if(instance_exists(obj_hook)){
                 inCutscene = 0;
