@@ -165,6 +165,7 @@
       <object>objects\obj_fish</object>
       <object>objects\obj_throwable</object>
       <object>objects\obj_vine</object>
+      <object>objects\obj_vine2</object>
       <object>objects\obj_watertop</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_shell</object>

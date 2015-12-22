@@ -69,7 +69,7 @@ if vineCut = 1{
     
     //Vine falling
     if flag[0] &lt; 4 and flag[0] &gt;= 0{
-        flag[0] += 1/30;
+        flag[0] += 1/15;
         obj_vine.vspeed = flag[0];}
     
     //Vine touching ground
@@ -109,7 +109,8 @@ if vineCut = 1{
     //Move cavewoman
     if flag[4] = 2{
         if obj_fade.fadeAlpha &gt; 1{
-            obj_cavewoman.y = 544;
+            //obj_cavewoman.y = 544;
+            instance_create(obj_vine.x+16,obj_vine.y,obj_vine2);
             camTarget = obj_cavewoman;
             obj_cavewoman.emotion = -1;
             inst_AE2A4E1E.emotion = -1;
@@ -124,7 +125,7 @@ if vineCut = 1{
     //More delay
     if flag[5] &gt; 0{
         flag[5] ++
-        if flag[5] = 40{
+        if flag[5] = 30{
             flag[5] = -1;
             flag[6] = 1;}}
             
@@ -136,6 +137,8 @@ if vineCut = 1{
         obj_caveman.state = "climbing";
         obj_caveman.vspeed = -1;
         inst_AE2A4E1E.x += 16;
+        obj_vine.vspeed = -0.05;
+        obj_vine2.vspeed = 0.05;
         flag[6] = 2
         flag[7] = 1;}
     
@@ -163,6 +166,8 @@ if vineCut = 1{
             with obj_caveman{
                 instance_destroy();}
             with obj_vine{
+                instance_destroy();}
+            with obj_vine2{
                 instance_destroy();}
             with obj_fish{
                 instance_destroy();}}}
